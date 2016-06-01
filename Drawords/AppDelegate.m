@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "HomeViewController.h"
+#import "GeneralSettingsViewController.h"
+#import "RESideMenu.h"
+#import "Consistant.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +20,18 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+//    [NSThread sleepForTimeInterval:1.5];
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    UINavigationController * navi = [[UINavigationController alloc]initWithRootViewController:[[HomeViewController alloc ]init]];
+    GeneralSettingsViewController * settingsMenu = [[GeneralSettingsViewController alloc]init];
+    RESideMenu * sideViewController = [[RESideMenu alloc] initWithContentViewController:navi leftMenuViewController:settingsMenu rightMenuViewController:nil];
+    sideViewController.scaleContentView = NO;
+    sideViewController.scaleMenuView = NO;
+    sideViewController.contentViewShadowEnabled = YES;
+    sideViewController.contentViewShadowColor = HJCWORDCOLOR;
+    self.window.rootViewController = sideViewController;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

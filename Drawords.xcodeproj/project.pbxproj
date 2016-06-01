@@ -9,13 +9,25 @@
 /* Begin PBXBuildFile section */
 		2E5E44BA1CFE7D1700FF318D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E44B91CFE7D1700FF318D /* main.m */; };
 		2E5E44BD1CFE7D1700FF318D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E44BC1CFE7D1700FF318D /* AppDelegate.m */; };
-		2E5E44C01CFE7D1700FF318D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E44BF1CFE7D1700FF318D /* ViewController.m */; };
-		2E5E44C31CFE7D1700FF318D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E5E44C11CFE7D1700FF318D /* Main.storyboard */; };
 		2E5E44C61CFE7D1700FF318D /* Drawords.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E44C41CFE7D1700FF318D /* Drawords.xcdatamodeld */; };
 		2E5E44C81CFE7D1700FF318D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E5E44C71CFE7D1700FF318D /* Assets.xcassets */; };
 		2E5E44CB1CFE7D1700FF318D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E5E44C91CFE7D1700FF318D /* LaunchScreen.storyboard */; };
 		2E5E44D61CFE7D1700FF318D /* DrawordsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E44D51CFE7D1700FF318D /* DrawordsTests.m */; };
 		2E5E44E11CFE7D1700FF318D /* DrawordsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E44E01CFE7D1700FF318D /* DrawordsUITests.m */; };
+		2E5E44F01CFE7D5700FF318D /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E44EF1CFE7D5700FF318D /* HomeViewController.m */; };
+		2E5E44F31CFE7F8B00FF318D /* Consistant.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E44F21CFE7F8B00FF318D /* Consistant.m */; };
+		2E5E45001CFE9C5E00FF318D /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E44FB1CFE9C5E00FF318D /* RECommonFunctions.m */; };
+		2E5E45011CFE9C5E00FF318D /* RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E44FD1CFE9C5E00FF318D /* RESideMenu.m */; };
+		2E5E45021CFE9C5E00FF318D /* UIViewController+RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E44FF1CFE9C5E00FF318D /* UIViewController+RESideMenu.m */; };
+		2E5E45051CFEAC5000FF318D /* GeneralSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E45041CFEAC5000FF318D /* GeneralSettingsViewController.m */; };
+		2E5E45131CFEB51500FF318D /* SoftWareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E45121CFEB51500FF318D /* SoftWareViewController.m */; };
+		2E5E45161CFED05E00FF318D /* AccountSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E45151CFED05E00FF318D /* AccountSettingViewController.m */; };
+		2E5E451A1CFED08900FF318D /* SuggestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E45191CFED08900FF318D /* SuggestionViewController.m */; };
+		2E5E451E1CFED0A600FF318D /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E451D1CFED0A600FF318D /* AboutViewController.m */; };
+		2E5E45221CFF117C00FF318D /* UITextView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E45211CFF117C00FF318D /* UITextView+Extension.m */; };
+		2E5E45271CFF18ED00FF318D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E5E45261CFF18ED00FF318D /* Images.xcassets */; };
+		2E5E45291CFF1D4D00FF318D /* icon_home_up@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E5E45281CFF1D4D00FF318D /* icon_home_up@2x.png */; };
+		2E5E452C1CFF24B000FF318D /* StudyPlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E452B1CFF24B000FF318D /* StudyPlanViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,9 +52,6 @@
 		2E5E44B91CFE7D1700FF318D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2E5E44BB1CFE7D1700FF318D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2E5E44BC1CFE7D1700FF318D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2E5E44BE1CFE7D1700FF318D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2E5E44BF1CFE7D1700FF318D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		2E5E44C21CFE7D1700FF318D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2E5E44C51CFE7D1700FF318D /* Drawords.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Drawords.xcdatamodel; sourceTree = "<group>"; };
 		2E5E44C71CFE7D1700FF318D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E5E44CA1CFE7D1700FF318D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +62,33 @@
 		2E5E44DC1CFE7D1700FF318D /* DrawordsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawordsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E5E44E01CFE7D1700FF318D /* DrawordsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawordsUITests.m; sourceTree = "<group>"; };
 		2E5E44E21CFE7D1700FF318D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E5E44EE1CFE7D5700FF318D /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		2E5E44EF1CFE7D5700FF318D /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		2E5E44F11CFE7F8B00FF318D /* Consistant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Consistant.h; sourceTree = "<group>"; };
+		2E5E44F21CFE7F8B00FF318D /* Consistant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Consistant.m; sourceTree = "<group>"; };
+		2E5E44F81CFE822600FF318D /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		2E5E44FA1CFE9C5E00FF318D /* RECommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECommonFunctions.h; sourceTree = "<group>"; };
+		2E5E44FB1CFE9C5E00FF318D /* RECommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECommonFunctions.m; sourceTree = "<group>"; };
+		2E5E44FC1CFE9C5E00FF318D /* RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RESideMenu.h; sourceTree = "<group>"; };
+		2E5E44FD1CFE9C5E00FF318D /* RESideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESideMenu.m; sourceTree = "<group>"; };
+		2E5E44FE1CFE9C5E00FF318D /* UIViewController+RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RESideMenu.h"; sourceTree = "<group>"; };
+		2E5E44FF1CFE9C5E00FF318D /* UIViewController+RESideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RESideMenu.m"; sourceTree = "<group>"; };
+		2E5E45031CFEAC5000FF318D /* GeneralSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralSettingsViewController.h; sourceTree = "<group>"; };
+		2E5E45041CFEAC5000FF318D /* GeneralSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneralSettingsViewController.m; sourceTree = "<group>"; };
+		2E5E45111CFEB51500FF318D /* SoftWareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoftWareViewController.h; sourceTree = "<group>"; };
+		2E5E45121CFEB51500FF318D /* SoftWareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoftWareViewController.m; sourceTree = "<group>"; };
+		2E5E45141CFED05E00FF318D /* AccountSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountSettingViewController.h; sourceTree = "<group>"; };
+		2E5E45151CFED05E00FF318D /* AccountSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountSettingViewController.m; sourceTree = "<group>"; };
+		2E5E45181CFED08900FF318D /* SuggestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuggestionViewController.h; sourceTree = "<group>"; };
+		2E5E45191CFED08900FF318D /* SuggestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuggestionViewController.m; sourceTree = "<group>"; };
+		2E5E451C1CFED0A600FF318D /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		2E5E451D1CFED0A600FF318D /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		2E5E45201CFF117C00FF318D /* UITextView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Extension.h"; sourceTree = "<group>"; };
+		2E5E45211CFF117C00FF318D /* UITextView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Extension.m"; sourceTree = "<group>"; };
+		2E5E45261CFF18ED00FF318D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2E5E45281CFF1D4D00FF318D /* icon_home_up@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_home_up@2x.png"; sourceTree = "<group>"; };
+		2E5E452A1CFF24B000FF318D /* StudyPlanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudyPlanViewController.h; sourceTree = "<group>"; };
+		2E5E452B1CFF24B000FF318D /* StudyPlanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudyPlanViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +119,11 @@
 		2E5E44AC1CFE7D1700FF318D = {
 			isa = PBXGroup;
 			children = (
+				2E5E45281CFF1D4D00FF318D /* icon_home_up@2x.png */,
+				2E5E45261CFF18ED00FF318D /* Images.xcassets */,
+				2E5E45201CFF117C00FF318D /* UITextView+Extension.h */,
+				2E5E45211CFF117C00FF318D /* UITextView+Extension.m */,
+				2E5E44F91CFE9C5E00FF318D /* RESideMenu */,
 				2E5E44B71CFE7D1700FF318D /* Drawords */,
 				2E5E44D41CFE7D1700FF318D /* DrawordsTests */,
 				2E5E44DF1CFE7D1700FF318D /* DrawordsUITests */,
@@ -103,16 +144,15 @@
 		2E5E44B71CFE7D1700FF318D /* Drawords */ = {
 			isa = PBXGroup;
 			children = (
-				2E5E44BB1CFE7D1700FF318D /* AppDelegate.h */,
-				2E5E44BC1CFE7D1700FF318D /* AppDelegate.m */,
-				2E5E44BE1CFE7D1700FF318D /* ViewController.h */,
-				2E5E44BF1CFE7D1700FF318D /* ViewController.m */,
-				2E5E44C11CFE7D1700FF318D /* Main.storyboard */,
+				2E5E450C1CFEB32300FF318D /* Home */,
+				2E5E45091CFEB2D400FF318D /* GeneralSettings */,
+				2E5E450B1CFEB31B00FF318D /* Delegate */,
 				2E5E44C71CFE7D1700FF318D /* Assets.xcassets */,
 				2E5E44C91CFE7D1700FF318D /* LaunchScreen.storyboard */,
 				2E5E44CC1CFE7D1700FF318D /* Info.plist */,
 				2E5E44C41CFE7D1700FF318D /* Drawords.xcdatamodeld */,
 				2E5E44B81CFE7D1700FF318D /* Supporting Files */,
+				2E5E450D1CFEB33400FF318D /* cons */,
 			);
 			path = Drawords;
 			sourceTree = "<group>";
@@ -121,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				2E5E44B91CFE7D1700FF318D /* main.m */,
+				2E5E44F81CFE822600FF318D /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -141,6 +182,105 @@
 				2E5E44E21CFE7D1700FF318D /* Info.plist */,
 			);
 			path = DrawordsUITests;
+			sourceTree = "<group>";
+		};
+		2E5E44F91CFE9C5E00FF318D /* RESideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				2E5E44FA1CFE9C5E00FF318D /* RECommonFunctions.h */,
+				2E5E44FB1CFE9C5E00FF318D /* RECommonFunctions.m */,
+				2E5E44FC1CFE9C5E00FF318D /* RESideMenu.h */,
+				2E5E44FD1CFE9C5E00FF318D /* RESideMenu.m */,
+				2E5E44FE1CFE9C5E00FF318D /* UIViewController+RESideMenu.h */,
+				2E5E44FF1CFE9C5E00FF318D /* UIViewController+RESideMenu.m */,
+			);
+			path = RESideMenu;
+			sourceTree = "<group>";
+		};
+		2E5E45091CFEB2D400FF318D /* GeneralSettings */ = {
+			isa = PBXGroup;
+			children = (
+				2E5E45031CFEAC5000FF318D /* GeneralSettingsViewController.h */,
+				2E5E45041CFEAC5000FF318D /* GeneralSettingsViewController.m */,
+				2E5E452D1CFF24BA00FF318D /* StudyPlan */,
+				2E5E450A1CFEB2E200FF318D /* SoftwareSettings */,
+				2E5E45171CFED06900FF318D /* AccountSettings */,
+				2E5E451B1CFED09000FF318D /* Suggestioon */,
+				2E5E451F1CFED0A800FF318D /* About */,
+			);
+			name = GeneralSettings;
+			sourceTree = "<group>";
+		};
+		2E5E450A1CFEB2E200FF318D /* SoftwareSettings */ = {
+			isa = PBXGroup;
+			children = (
+				2E5E45111CFEB51500FF318D /* SoftWareViewController.h */,
+				2E5E45121CFEB51500FF318D /* SoftWareViewController.m */,
+			);
+			name = SoftwareSettings;
+			sourceTree = "<group>";
+		};
+		2E5E450B1CFEB31B00FF318D /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				2E5E44BB1CFE7D1700FF318D /* AppDelegate.h */,
+				2E5E44BC1CFE7D1700FF318D /* AppDelegate.m */,
+			);
+			name = Delegate;
+			sourceTree = "<group>";
+		};
+		2E5E450C1CFEB32300FF318D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2E5E44EE1CFE7D5700FF318D /* HomeViewController.h */,
+				2E5E44EF1CFE7D5700FF318D /* HomeViewController.m */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		2E5E450D1CFEB33400FF318D /* cons */ = {
+			isa = PBXGroup;
+			children = (
+				2E5E44F11CFE7F8B00FF318D /* Consistant.h */,
+				2E5E44F21CFE7F8B00FF318D /* Consistant.m */,
+			);
+			name = cons;
+			sourceTree = "<group>";
+		};
+		2E5E45171CFED06900FF318D /* AccountSettings */ = {
+			isa = PBXGroup;
+			children = (
+				2E5E45141CFED05E00FF318D /* AccountSettingViewController.h */,
+				2E5E45151CFED05E00FF318D /* AccountSettingViewController.m */,
+			);
+			name = AccountSettings;
+			sourceTree = "<group>";
+		};
+		2E5E451B1CFED09000FF318D /* Suggestioon */ = {
+			isa = PBXGroup;
+			children = (
+				2E5E45181CFED08900FF318D /* SuggestionViewController.h */,
+				2E5E45191CFED08900FF318D /* SuggestionViewController.m */,
+			);
+			name = Suggestioon;
+			sourceTree = "<group>";
+		};
+		2E5E451F1CFED0A800FF318D /* About */ = {
+			isa = PBXGroup;
+			children = (
+				2E5E451C1CFED0A600FF318D /* AboutViewController.h */,
+				2E5E451D1CFED0A600FF318D /* AboutViewController.m */,
+			);
+			name = About;
+			sourceTree = "<group>";
+		};
+		2E5E452D1CFF24BA00FF318D /* StudyPlan */ = {
+			isa = PBXGroup;
+			children = (
+				2E5E452A1CFF24B000FF318D /* StudyPlanViewController.h */,
+				2E5E452B1CFF24B000FF318D /* StudyPlanViewController.m */,
+			);
+			name = StudyPlan;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,9 +389,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E5E45271CFF18ED00FF318D /* Images.xcassets in Resources */,
+				2E5E45291CFF1D4D00FF318D /* icon_home_up@2x.png in Resources */,
 				2E5E44CB1CFE7D1700FF318D /* LaunchScreen.storyboard in Resources */,
 				2E5E44C81CFE7D1700FF318D /* Assets.xcassets in Resources */,
-				2E5E44C31CFE7D1700FF318D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,10 +417,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E5E44C01CFE7D1700FF318D /* ViewController.m in Sources */,
+				2E5E45011CFE9C5E00FF318D /* RESideMenu.m in Sources */,
+				2E5E45221CFF117C00FF318D /* UITextView+Extension.m in Sources */,
+				2E5E44F31CFE7F8B00FF318D /* Consistant.m in Sources */,
 				2E5E44BD1CFE7D1700FF318D /* AppDelegate.m in Sources */,
 				2E5E44BA1CFE7D1700FF318D /* main.m in Sources */,
 				2E5E44C61CFE7D1700FF318D /* Drawords.xcdatamodeld in Sources */,
+				2E5E452C1CFF24B000FF318D /* StudyPlanViewController.m in Sources */,
+				2E5E44F01CFE7D5700FF318D /* HomeViewController.m in Sources */,
+				2E5E45001CFE9C5E00FF318D /* RECommonFunctions.m in Sources */,
+				2E5E45051CFEAC5000FF318D /* GeneralSettingsViewController.m in Sources */,
+				2E5E451A1CFED08900FF318D /* SuggestionViewController.m in Sources */,
+				2E5E45021CFE9C5E00FF318D /* UIViewController+RESideMenu.m in Sources */,
+				2E5E45161CFED05E00FF318D /* AccountSettingViewController.m in Sources */,
+				2E5E451E1CFED0A600FF318D /* AboutViewController.m in Sources */,
+				2E5E45131CFEB51500FF318D /* SoftWareViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,14 +467,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2E5E44C11CFE7D1700FF318D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2E5E44C21CFE7D1700FF318D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2E5E44C91CFE7D1700FF318D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -422,7 +566,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				INFOPLIST_FILE = Drawords/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hjc.Drawords;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -433,7 +579,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				INFOPLIST_FILE = Drawords/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hjc.Drawords;
 				PRODUCT_NAME = "$(TARGET_NAME)";
