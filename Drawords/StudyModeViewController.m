@@ -9,8 +9,13 @@
 #import "StudyModeViewController.h"
 #import "Consistant.h"
 #import "UIView+Extension.h"
+#import "WordDisplayButton.h"
 
 @interface StudyModeViewController ()
+@property(nonatomic,strong)UIButton * tooEasyBtn;
+@property(nonatomic,strong)UIButton * forgetBtn;
+@property(nonatomic,strong)UIButton * rememberBtn;
+
 
 @end
 
@@ -29,32 +34,44 @@
     progressView.backgroundColor = HJCMENUCOLOR;
     [self.view addSubview:progressView];
     
-    UIButton * wordDisplay = [[UIButton alloc]init];
+    WordDisplayButton * wordDisplay = [[WordDisplayButton alloc]init];
     wordDisplay.frame = CGRectMake(progressView.x, progressView.y+15, progressView.width, 40);
     wordDisplay.backgroundColor = HJCMENUCOLOR;
+    wordDisplay.soundView.image = [UIImage imageNamed:@"d_haha"];
+    wordDisplay.phonogramLabel.text = @"hkjhkjh";
+    wordDisplay.wordLabel.text = @"hehehe";
     [self.view addSubview:wordDisplay];
    
     
-    UIButton * tooEasyBtn = [[UIButton alloc]init];
-    tooEasyBtn.frame = CGRectMake(progressView.x, self.view.height-250, progressView.width, 40);
-    tooEasyBtn.backgroundColor = [UIColor colorWithRed:153.0/255 green:77.0/255 blue:82.0/255 alpha:1];
-    [tooEasyBtn setTitle:@"很熟悉，不再学习" forState:UIControlStateNormal];
-    [self.view addSubview:tooEasyBtn];
+    _tooEasyBtn = [[UIButton alloc]init];
+    _tooEasyBtn.frame = CGRectMake(progressView.x, self.view.height-250, progressView.width, 40);
+    _tooEasyBtn.backgroundColor = [UIColor colorWithRed:153.0/255 green:77.0/255 blue:82.0/255 alpha:1];
+    [_tooEasyBtn setTitle:@"很熟悉，不再学习" forState:UIControlStateNormal];
+    [self.view addSubview:_tooEasyBtn];
     
-    UIButton * rememberBtn = [[UIButton alloc]init];
-    rememberBtn.frame = CGRectMake(progressView.x, CGRectGetMaxY(tooEasyBtn.frame)+5, progressView.width, 40);
-    rememberBtn.backgroundColor = HJCWORDCOLOR;
-    [rememberBtn setTitle:@"记得" forState:UIControlStateNormal];
-    [self.view addSubview:rememberBtn];
+    _rememberBtn = [[UIButton alloc]init];
+    _rememberBtn.frame = CGRectMake(progressView.x, CGRectGetMaxY(_tooEasyBtn.frame)+5, progressView.width, 40);
+    _rememberBtn.backgroundColor = HJCWORDCOLOR;
+    [_rememberBtn setTitle:@"记得" forState:UIControlStateNormal];
+    [self.view addSubview:_rememberBtn];
     
-    UIButton * forgetBtn = [[UIButton alloc]init];
-    forgetBtn.frame = CGRectMake(progressView.x, CGRectGetMaxY(rememberBtn.frame)+5, progressView.width, 40);
-    forgetBtn.backgroundColor = [UIColor colorWithRed:230.0/255 green:180.0/255 blue:80.0/255 alpha:1];
+    _forgetBtn = [[UIButton alloc]init];
+    _forgetBtn.frame = CGRectMake(progressView.x, CGRectGetMaxY(_rememberBtn.frame)+5, progressView.width,
+                                 40);
+    _forgetBtn.backgroundColor = [UIColor colorWithRed:230.0/255 green:180.0/255 blue:80.0/255 alpha:1];
+    [_forgetBtn setTitle:@"忘记了" forState:UIControlStateNormal];
     
-    [forgetBtn setTitle:@"忘记了" forState:UIControlStateNormal];
-    [self.view addSubview:forgetBtn];
-    
-    
+    [_forgetBtn addTarget:self action:@selector(showReminder) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:_forgetBtn];
+}
+-(void)showReminder
+{
+    self.navigationItem.title = @"提醒模式";
+    _tooEasyBtn.frame = _rememberBtn.frame;
+    _forgetBtn.frame = _rememberBtn.frame;
+    [_rememberBtn setTitle:@"下一个" forState:UIControlStateNormal];
+    _tooEasyBtn.hidden = YES;
+    _forgetBtn.hidden = YES;
 }
 -(void)setUpNavi
 {

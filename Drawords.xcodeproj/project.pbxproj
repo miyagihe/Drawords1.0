@@ -29,6 +29,9 @@
 		2E5E45321CFF3F7800FF318D /* MyprofileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E45311CFF3F7800FF318D /* MyprofileViewController.m */; };
 		2E5E45361CFFCD2000FF318D /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E45351CFFCD2000FF318D /* UIView+Extension.m */; };
 		2E5E45391D00161E00FF318D /* StudyModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E45381D00161E00FF318D /* StudyModeViewController.m */; };
+		2E5E453D1D0029A900FF318D /* WordDisplayButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E453C1D0029A900FF318D /* WordDisplayButton.m */; };
+		2E5E45401D00492800FF318D /* RemindModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E453F1D00492800FF318D /* RemindModeViewController.m */; };
+		2E5E45431D0067EE00FF318D /* HJCButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E45421D0067EE00FF318D /* HJCButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +96,12 @@
 		2E5E45351CFFCD2000FF318D /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		2E5E45371D00161E00FF318D /* StudyModeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudyModeViewController.h; sourceTree = "<group>"; };
 		2E5E45381D00161E00FF318D /* StudyModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudyModeViewController.m; sourceTree = "<group>"; };
+		2E5E453B1D0029A900FF318D /* WordDisplayButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordDisplayButton.h; sourceTree = "<group>"; };
+		2E5E453C1D0029A900FF318D /* WordDisplayButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordDisplayButton.m; sourceTree = "<group>"; };
+		2E5E453E1D00492800FF318D /* RemindModeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemindModeViewController.h; sourceTree = "<group>"; };
+		2E5E453F1D00492800FF318D /* RemindModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemindModeViewController.m; sourceTree = "<group>"; };
+		2E5E45411D0067EE00FF318D /* HJCButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJCButton.h; sourceTree = "<group>"; };
+		2E5E45421D0067EE00FF318D /* HJCButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJCButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,6 +247,8 @@
 			children = (
 				2E5E44EE1CFE7D5700FF318D /* HomeViewController.h */,
 				2E5E44EF1CFE7D5700FF318D /* HomeViewController.m */,
+				2E5E45411D0067EE00FF318D /* HJCButton.h */,
+				2E5E45421D0067EE00FF318D /* HJCButton.m */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -310,6 +321,10 @@
 			children = (
 				2E5E45371D00161E00FF318D /* StudyModeViewController.h */,
 				2E5E45381D00161E00FF318D /* StudyModeViewController.m */,
+				2E5E453B1D0029A900FF318D /* WordDisplayButton.h */,
+				2E5E453C1D0029A900FF318D /* WordDisplayButton.m */,
+				2E5E453E1D00492800FF318D /* RemindModeViewController.h */,
+				2E5E453F1D00492800FF318D /* RemindModeViewController.m */,
 			);
 			name = StudyMode;
 			sourceTree = "<group>";
@@ -447,6 +462,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E5E453D1D0029A900FF318D /* WordDisplayButton.m in Sources */,
 				2E5E45011CFE9C5E00FF318D /* RESideMenu.m in Sources */,
 				2E5E44F31CFE7F8B00FF318D /* Consistant.m in Sources */,
 				2E5E44BD1CFE7D1700FF318D /* AppDelegate.m in Sources */,
@@ -455,11 +471,13 @@
 				2E5E44C61CFE7D1700FF318D /* Drawords.xcdatamodeld in Sources */,
 				2E5E452C1CFF24B000FF318D /* StudyPlanViewController.m in Sources */,
 				2E5E44F01CFE7D5700FF318D /* HomeViewController.m in Sources */,
+				2E5E45401D00492800FF318D /* RemindModeViewController.m in Sources */,
 				2E5E45391D00161E00FF318D /* StudyModeViewController.m in Sources */,
 				2E5E45001CFE9C5E00FF318D /* RECommonFunctions.m in Sources */,
 				2E5E45051CFEAC5000FF318D /* GeneralSettingsViewController.m in Sources */,
 				2E5E45321CFF3F7800FF318D /* MyprofileViewController.m in Sources */,
 				2E5E451A1CFED08900FF318D /* SuggestionViewController.m in Sources */,
+				2E5E45431D0067EE00FF318D /* HJCButton.m in Sources */,
 				2E5E45021CFE9C5E00FF318D /* UIViewController+RESideMenu.m in Sources */,
 				2E5E45161CFED05E00FF318D /* AccountSettingViewController.m in Sources */,
 				2E5E451E1CFED0A600FF318D /* AboutViewController.m in Sources */,

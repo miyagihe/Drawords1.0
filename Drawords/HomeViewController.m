@@ -12,6 +12,7 @@
 #import "RESideMenu.h"
 #import "UIView+Extension.h"
 #import "StudyModeViewController.h"
+#import "HJCButton.h"
 @interface HomeViewController ()
 
 @end
@@ -37,6 +38,11 @@
     upContainerView.layer.cornerRadius = 5;
     [self.view addSubview:upContainerView];
     
+    UIView * divider = [[UIView alloc]init];
+    divider.frame = CGRectMake(upContainerView.width/2, 10, 2, upContainerView.height-20);
+    divider.backgroundColor = HJCWORDCOLOR;
+    [upContainerView addSubview:divider];
+    
     UIButton * totalDays = [[UIButton alloc]init];
     [totalDays setTitle:@"12341" forState:UIControlStateNormal];
     totalDays.titleLabel.font = [ UIFont systemFontOfSize:32];
@@ -52,47 +58,41 @@
     totalDaysWord.frame = CGRectMake(totalDays.x, totalDays.y+totalDays.height, 100, 30);
     [upContainerView addSubview:totalDaysWord];
     
-    UIButton * totalQuantity = [[UIButton alloc]init];
-    [totalQuantity setTitle:@"12345" forState:UIControlStateNormal];
-    totalQuantity.titleLabel.font = [UIFont systemFontOfSize:15];
-    totalQuantity.layer.cornerRadius = 5;
-    [totalQuantity setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
-    totalQuantity.frame = CGRectMake(CGRectGetMaxX(totalDays.frame)+20, totalDays.y, 50, 40);
+    //累计学习单词数
+    HJCButton * totalQuantity = [[HJCButton alloc]init];
+    totalQuantity.quantity.text = @"12345";
+    totalQuantity.quantity.textAlignment = NSTextAlignmentRight;
+    totalQuantity.quantity.font = [UIFont systemFontOfSize:20];
+    totalQuantity.quantity.textColor =[UIColor colorWithRed:230.0/255 green:180.0/255 blue:80.0/255 alpha:1];
+    totalQuantity.Qdescription.text = @"/累计学习单词数";
+    totalQuantity.Qdescription.font = [UIFont systemFontOfSize:12];
+    totalQuantity.Qdescription.textColor = HJCWORDCOLOR;
+    totalQuantity.y = totalDays.y;
+    totalQuantity.width = upContainerView.width-CGRectGetMaxX(divider.frame)-20;
+    totalQuantity.height = 40;
+    totalQuantity.x= CGRectGetMaxX(divider.frame)+(upContainerView.width-CGRectGetMaxX(divider.frame))/2-totalQuantity.width/2;
     [upContainerView addSubview:totalQuantity];
     
-    UILabel * totalQuantityWords = [[UILabel alloc]init];
-    totalQuantityWords.textAlignment = NSTextAlignmentLeft;
-    totalQuantityWords.textColor=HJCWORDCOLOR;
-    totalQuantityWords.text = @"/累计学习单词数";
-    totalQuantityWords.font = [UIFont systemFontOfSize:10];
-    totalQuantityWords.frame = CGRectMake(CGRectGetMaxX(totalQuantity.frame), totalQuantity.y, 100, 40);
-    [upContainerView addSubview:totalQuantityWords];
+    //掌握单词数
+    HJCButton * quantiryInHand = [[HJCButton alloc]init];
+    quantiryInHand.quantity.text = @"12";
+    quantiryInHand.quantity.textAlignment = NSTextAlignmentRight;
+    quantiryInHand.quantity.font = [UIFont systemFontOfSize:20];
+    quantiryInHand.quantity.textColor =[UIColor colorWithRed:230.0/255 green:180.0/255 blue:80.0/255 alpha:1];
+    quantiryInHand.Qdescription.text = @"/已掌握单词数";
+    quantiryInHand.Qdescription.font = [UIFont systemFontOfSize:12];
+    quantiryInHand.Qdescription.textColor = HJCWORDCOLOR;
+    quantiryInHand.y = totalDays.y+40;
+    quantiryInHand.width = upContainerView.width-CGRectGetMaxX(divider.frame)-20;
+    quantiryInHand.height = 40;
+    quantiryInHand.x= CGRectGetMaxX(divider.frame)+(upContainerView.width-CGRectGetMaxX(divider.frame))/2-totalQuantity.width/2;
+    [upContainerView addSubview:quantiryInHand];
     
-    UIButton * quantityInhand = [[UIButton alloc]init];
-    [quantityInhand setTitle:@"67" forState:UIControlStateNormal];
-    quantityInhand.titleLabel.font= [UIFont systemFontOfSize:15];
-    quantityInhand.layer.cornerRadius = 5;
-    [quantityInhand setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
-    
-    quantityInhand.frame = CGRectMake(totalQuantity.x, totalDays.y+40, 50, 40);
-    [upContainerView addSubview:quantityInhand];
-    
-    
-    UILabel * quantityInhandWords = [[UILabel alloc]init];
-    quantityInhandWords.textAlignment = NSTextAlignmentLeft;
-    quantityInhandWords.textColor = HJCWORDCOLOR;
-    quantityInhandWords.text = @"/已掌握单词数";
-    quantityInhandWords.font = [UIFont systemFontOfSize:10];
-    quantityInhandWords.frame = CGRectMake(CGRectGetMaxX(quantityInhand.frame), quantityInhand.y, 100, 40);
-    [upContainerView addSubview:quantityInhandWords];
-    
-
     UIView * downContainerView = [[UIView alloc]init];
     downContainerView.frame = CGRectMake(upContainerView.x, CGRectGetMaxY(upContainerView.frame)+30, upContainerView.width, upContainerView.height);
     downContainerView.backgroundColor = upContainerView.backgroundColor;
     downContainerView.layer.cornerRadius = 5;
     [self.view addSubview:downContainerView];
-    
     
     UIButton * todayQuantity = [[UIButton alloc]init];
     [todayQuantity setTitle:@"999" forState:UIControlStateNormal];
@@ -145,6 +145,8 @@
     goBtn.frame = CGRectMake(self.view.width/2-40,(CGRectGetMaxY(downContainerView.frame)+(self.view.height-CGRectGetMaxY(downContainerView.frame))/2)-80, 80, 80);
     goBtn.layer.cornerRadius = 40;
     [goBtn setTitle:@"GO" forState:UIControlStateNormal];
+    [goBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [goBtn setTitleColor:[UIColor grayColor] forState:UIControlStateSelected];
     goBtn.titleLabel.font = [UIFont systemFontOfSize:30];
     [goBtn addTarget:self action:@selector(goToStudy) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:goBtn];
