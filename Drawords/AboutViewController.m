@@ -8,7 +8,6 @@
 
 #import "AboutViewController.h"
 #import "Consistant.h"
-#import "UITextView+Extension.h"
 
 @interface AboutViewController ()
 

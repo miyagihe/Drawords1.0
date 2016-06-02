@@ -30,6 +30,8 @@
     sideViewController.scaleMenuView = NO;
     sideViewController.contentViewShadowEnabled = YES;
     sideViewController.contentViewShadowColor = HJCWORDCOLOR;
+    NSLog(@"%f",sideViewController.contentViewInPortraitOffsetCenterX);
+
     self.window.rootViewController = sideViewController;
     [self.window makeKeyAndVisible];
     return YES;

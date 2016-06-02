@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SuggestionViewController : UIViewController
+@interface SuggestionViewController : UIViewController<UITextViewDelegate>
 
 @end

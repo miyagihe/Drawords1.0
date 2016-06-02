@@ -289,7 +289,8 @@
             self.contentViewContainer.transform = CGAffineTransformIdentity;
         }
         
-        if (NSFoundationVersionNumber > NSFoundationVersionNumber_iOS_7_1) {
+        if (NSFoundationVersionNumber > NSFoundationVersionNumber_iOS_7_1)
+        {
             self.contentViewContainer.center = CGPointMake((UIInterfaceOrientationIsLandscape([[UIApplication sharedApplication] statusBarOrientation]) ? self.contentViewInLandscapeOffsetCenterX + CGRectGetWidth(self.view.frame) : self.contentViewInPortraitOffsetCenterX + CGRectGetWidth(self.view.frame)), self.contentViewContainer.center.y);
         } else {
             self.contentViewContainer.center = CGPointMake((UIInterfaceOrientationIsLandscape([[UIApplication sharedApplication] statusBarOrientation]) ? self.contentViewInLandscapeOffsetCenterX + CGRectGetHeight(self.view.frame) : self.contentViewInPortraitOffsetCenterX + CGRectGetWidth(self.view.frame)), self.contentViewContainer.center.y);
@@ -314,6 +315,7 @@
     }];
     
     [self statusBarNeedsAppearanceUpdate];
+    NSLog(@"%f",self.contentViewContainer.bounds.origin.x);
 }
 
 - (void)showRightMenuViewController

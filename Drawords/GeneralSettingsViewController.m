@@ -14,6 +14,8 @@
 #import "SuggestionViewController.h"
 #import "AboutViewController.h"
 #import "StudyPlanViewController.h"
+#import "RESideMenu.h"
+#import "MyprofileViewController.h"
 
 
 
@@ -27,13 +29,37 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
     self.view.backgroundColor = HJCBACKGROUNDCOLOR;
     
     [self.navigationItem setTitle:@"设置"];
     [self.navigationController.navigationBar setTitleTextAttributes:
      @{NSFontAttributeName:[UIFont systemFontOfSize:19],
        NSForegroundColorAttributeName:HJCWORDCOLOR}];
+    
 
+    UIButton * iconView = [[UIButton alloc]init];
+    iconView.frame = CGRectMake(30, 60, 50, 50);
+    iconView.backgroundColor = [UIColor redColor];
+    [iconView setImage:[UIImage imageNamed:@"avatar_default_big"] forState:UIControlStateNormal];
+    [self.view addSubview:iconView];
+    [iconView addTarget:self action:@selector(myProfile) forControlEvents:UIControlEventTouchUpInside
+     ];
+    
+    
+    UILabel * nameLabel = [[UILabel alloc]init];
+    nameLabel.frame = CGRectMake(85, 60, 100, 20);
+    nameLabel.text = @"超哥哥2010";
+    nameLabel.font = [UIFont systemFontOfSize:12];
+    [nameLabel setTextColor:[UIColor whiteColor]];
+    [self.view addSubview:nameLabel];
+    
+    UILabel * daysLabel = [[UILabel alloc]init];
+    daysLabel.frame = CGRectMake(85, 90, 100, 20);
+    daysLabel.text = @"已使用100天";
+    daysLabel.font = [UIFont systemFontOfSize:15];
+    [daysLabel setTextColor:[UIColor whiteColor]];
+    [self.view addSubview:daysLabel];
 
     UIButton * PLbtn = [[UIButton alloc]init];
     [self initbutton:PLbtn withtitle:@"学习规划" cordinationY:140];
@@ -78,6 +104,12 @@
     [self initbutton:aboutBtn withtitle:@"关于软件" cordinationY:380];
     [aboutBtn addTarget:self action:@selector(About) forControlEvents:UIControlEventTouchUpInside];
    
+}
+-(void)myProfile
+{
+    MyprofileViewController * myProfile = [[MyprofileViewController alloc]init];
+    UINavigationController * navi = [[UINavigationController alloc]initWithRootViewController:myProfile];
+    [self presentViewController:navi animated:YES completion:nil];
 }
 -(void)planClick
 {

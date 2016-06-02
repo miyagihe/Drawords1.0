@@ -24,10 +24,11 @@
 		2E5E45161CFED05E00FF318D /* AccountSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E45151CFED05E00FF318D /* AccountSettingViewController.m */; };
 		2E5E451A1CFED08900FF318D /* SuggestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E45191CFED08900FF318D /* SuggestionViewController.m */; };
 		2E5E451E1CFED0A600FF318D /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E451D1CFED0A600FF318D /* AboutViewController.m */; };
-		2E5E45221CFF117C00FF318D /* UITextView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E45211CFF117C00FF318D /* UITextView+Extension.m */; };
 		2E5E45271CFF18ED00FF318D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E5E45261CFF18ED00FF318D /* Images.xcassets */; };
-		2E5E45291CFF1D4D00FF318D /* icon_home_up@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E5E45281CFF1D4D00FF318D /* icon_home_up@2x.png */; };
 		2E5E452C1CFF24B000FF318D /* StudyPlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E452B1CFF24B000FF318D /* StudyPlanViewController.m */; };
+		2E5E45321CFF3F7800FF318D /* MyprofileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E45311CFF3F7800FF318D /* MyprofileViewController.m */; };
+		2E5E45361CFFCD2000FF318D /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E45351CFFCD2000FF318D /* UIView+Extension.m */; };
+		2E5E45391D00161E00FF318D /* StudyModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E45381D00161E00FF318D /* StudyModeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,12 +84,15 @@
 		2E5E45191CFED08900FF318D /* SuggestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuggestionViewController.m; sourceTree = "<group>"; };
 		2E5E451C1CFED0A600FF318D /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		2E5E451D1CFED0A600FF318D /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
-		2E5E45201CFF117C00FF318D /* UITextView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Extension.h"; sourceTree = "<group>"; };
-		2E5E45211CFF117C00FF318D /* UITextView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Extension.m"; sourceTree = "<group>"; };
 		2E5E45261CFF18ED00FF318D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		2E5E45281CFF1D4D00FF318D /* icon_home_up@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_home_up@2x.png"; sourceTree = "<group>"; };
 		2E5E452A1CFF24B000FF318D /* StudyPlanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudyPlanViewController.h; sourceTree = "<group>"; };
 		2E5E452B1CFF24B000FF318D /* StudyPlanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudyPlanViewController.m; sourceTree = "<group>"; };
+		2E5E45301CFF3F7800FF318D /* MyprofileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyprofileViewController.h; sourceTree = "<group>"; };
+		2E5E45311CFF3F7800FF318D /* MyprofileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyprofileViewController.m; sourceTree = "<group>"; };
+		2E5E45341CFFCD2000FF318D /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		2E5E45351CFFCD2000FF318D /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		2E5E45371D00161E00FF318D /* StudyModeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudyModeViewController.h; sourceTree = "<group>"; };
+		2E5E45381D00161E00FF318D /* StudyModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudyModeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,11 +123,9 @@
 		2E5E44AC1CFE7D1700FF318D = {
 			isa = PBXGroup;
 			children = (
-				2E5E45281CFF1D4D00FF318D /* icon_home_up@2x.png */,
 				2E5E45261CFF18ED00FF318D /* Images.xcassets */,
-				2E5E45201CFF117C00FF318D /* UITextView+Extension.h */,
-				2E5E45211CFF117C00FF318D /* UITextView+Extension.m */,
 				2E5E44F91CFE9C5E00FF318D /* RESideMenu */,
+				2E5E452E1CFF331400FF318D /* categary */,
 				2E5E44B71CFE7D1700FF318D /* Drawords */,
 				2E5E44D41CFE7D1700FF318D /* DrawordsTests */,
 				2E5E44DF1CFE7D1700FF318D /* DrawordsUITests */,
@@ -144,6 +146,7 @@
 		2E5E44B71CFE7D1700FF318D /* Drawords */ = {
 			isa = PBXGroup;
 			children = (
+				2E5E453A1D00162400FF318D /* StudyMode */,
 				2E5E450C1CFEB32300FF318D /* Home */,
 				2E5E45091CFEB2D400FF318D /* GeneralSettings */,
 				2E5E450B1CFEB31B00FF318D /* Delegate */,
@@ -207,6 +210,7 @@
 				2E5E45171CFED06900FF318D /* AccountSettings */,
 				2E5E451B1CFED09000FF318D /* Suggestioon */,
 				2E5E451F1CFED0A800FF318D /* About */,
+				2E5E45331CFF3FD800FF318D /* Myprofile */,
 			);
 			name = GeneralSettings;
 			sourceTree = "<group>";
@@ -281,6 +285,33 @@
 				2E5E452B1CFF24B000FF318D /* StudyPlanViewController.m */,
 			);
 			name = StudyPlan;
+			sourceTree = "<group>";
+		};
+		2E5E452E1CFF331400FF318D /* categary */ = {
+			isa = PBXGroup;
+			children = (
+				2E5E45341CFFCD2000FF318D /* UIView+Extension.h */,
+				2E5E45351CFFCD2000FF318D /* UIView+Extension.m */,
+			);
+			name = categary;
+			sourceTree = "<group>";
+		};
+		2E5E45331CFF3FD800FF318D /* Myprofile */ = {
+			isa = PBXGroup;
+			children = (
+				2E5E45301CFF3F7800FF318D /* MyprofileViewController.h */,
+				2E5E45311CFF3F7800FF318D /* MyprofileViewController.m */,
+			);
+			name = Myprofile;
+			sourceTree = "<group>";
+		};
+		2E5E453A1D00162400FF318D /* StudyMode */ = {
+			isa = PBXGroup;
+			children = (
+				2E5E45371D00161E00FF318D /* StudyModeViewController.h */,
+				2E5E45381D00161E00FF318D /* StudyModeViewController.m */,
+			);
+			name = StudyMode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -390,7 +421,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E5E45271CFF18ED00FF318D /* Images.xcassets in Resources */,
-				2E5E45291CFF1D4D00FF318D /* icon_home_up@2x.png in Resources */,
 				2E5E44CB1CFE7D1700FF318D /* LaunchScreen.storyboard in Resources */,
 				2E5E44C81CFE7D1700FF318D /* Assets.xcassets in Resources */,
 			);
@@ -418,15 +448,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E5E45011CFE9C5E00FF318D /* RESideMenu.m in Sources */,
-				2E5E45221CFF117C00FF318D /* UITextView+Extension.m in Sources */,
 				2E5E44F31CFE7F8B00FF318D /* Consistant.m in Sources */,
 				2E5E44BD1CFE7D1700FF318D /* AppDelegate.m in Sources */,
 				2E5E44BA1CFE7D1700FF318D /* main.m in Sources */,
+				2E5E45361CFFCD2000FF318D /* UIView+Extension.m in Sources */,
 				2E5E44C61CFE7D1700FF318D /* Drawords.xcdatamodeld in Sources */,
 				2E5E452C1CFF24B000FF318D /* StudyPlanViewController.m in Sources */,
 				2E5E44F01CFE7D5700FF318D /* HomeViewController.m in Sources */,
+				2E5E45391D00161E00FF318D /* StudyModeViewController.m in Sources */,
 				2E5E45001CFE9C5E00FF318D /* RECommonFunctions.m in Sources */,
 				2E5E45051CFEAC5000FF318D /* GeneralSettingsViewController.m in Sources */,
+				2E5E45321CFF3F7800FF318D /* MyprofileViewController.m in Sources */,
 				2E5E451A1CFED08900FF318D /* SuggestionViewController.m in Sources */,
 				2E5E45021CFE9C5E00FF318D /* UIViewController+RESideMenu.m in Sources */,
 				2E5E45161CFED05E00FF318D /* AccountSettingViewController.m in Sources */,

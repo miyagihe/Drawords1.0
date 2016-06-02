@@ -30,15 +30,46 @@
     
     [_textView becomeFirstResponder];
     
+    _textView.keyboardType = UIKeyboardTypeNamePhonePad;
+    _textView.textColor = HJCWORDCOLOR;
+    _textView.font = [UIFont systemFontOfSize:19];
+    [_textView setTextAlignment:NSTextAlignmentNatural];
+    _textView.alwaysBounceVertical = YES;
+    _textView.delegate = self;
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
     UIButton * sendbtn = [[UIButton alloc]init];
     [sendbtn setTitle:@"发送" forState:UIControlStateNormal];
     [sendbtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [sendbtn setTitleColor:[UIColor grayColor] forState:UIControlStateHighlighted];
     sendbtn.backgroundColor = HJCWORDCOLOR;
     sendbtn.frame = CGRectMake(self.view.bounds.size.width/2-50, self.view.bounds.size.height/2-20, 100, 40);
+    [sendbtn addTarget:self action:@selector(sendSuggestion) forControlEvents:UIControlEventTouchUpInside];
     
     [self.view addSubview:sendbtn];
     
+}
+-(void)sendSuggestion
+{
+
+    NSLog(@"%s,%@",__func__,_textView.text);
+    _textView.text = @"";
+}
+-(void)addGesture
+{
+    UIPanGestureRecognizer * pan = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(hideKeyboard)];
+    
+    [self.view addGestureRecognizer:pan];
+    
+    
+    UITapGestureRecognizer * tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(hideKeyboard)];
+    [self.view addGestureRecognizer:tap];
+    
+}
+
+-(void)hideKeyboard
+{
+    [_textView resignFirstResponder];
 }
 -(void)viewWillDisappear:(BOOL)animated
 {
