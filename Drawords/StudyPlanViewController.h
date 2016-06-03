@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface StudyPlanViewController : UIViewController
+@interface StudyPlanViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 
 @end

@@ -8,6 +8,7 @@
 
 #import "AboutViewController.h"
 #import "Consistant.h"
+#import "UIView+Extension.h"
 
 @interface AboutViewController ()
 
@@ -41,6 +42,15 @@
     weibo.backgroundColor = HJCWORDCOLOR;
     
     
+    UILabel * authorLabel = [[UILabel alloc]init];
+    authorLabel.text = @"@MIYAGIHE";
+    authorLabel.font  = [UIFont systemFontOfSize:20 weight:5];
+    authorLabel.x = weibo.x;
+    authorLabel.textColor = HJCWORDCOLOR;
+    authorLabel.y =self.view.bounds.size.height/2+180;
+    authorLabel.width = weibo.width;
+    authorLabel.height  = weibo.height;
+    [self.view addSubview:authorLabel];
     
     
     

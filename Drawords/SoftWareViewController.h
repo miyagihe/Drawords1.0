@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SoftWareViewController : UIViewController
+@interface SoftWareViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 
 @end

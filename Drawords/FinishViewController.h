@@ -1,5 +1,5 @@
 //
-//  MyprofileViewController.h
+//  FinishViewController.h
 //  Drawords
 //
 //  Created by hjc on 16/6/2.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MyprofileViewController : UIViewController<UIScrollViewDelegate>
+@interface FinishViewController : UIViewController
 
 @end

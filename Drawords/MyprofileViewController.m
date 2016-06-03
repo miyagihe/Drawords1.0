@@ -21,8 +21,24 @@
     self.view.backgroundColor = HJCBACKGROUNDCOLOR;
     
     [self setUpNavi];
+    [self setUpInterface];
     
 }
+-(void)setUpInterface
+{
+    UIScrollView * contentScrollView = [[UIScrollView alloc]init];
+    
+    contentScrollView.frame = [UIScreen mainScreen].bounds;
+    
+    contentScrollView.backgroundColor = [UIColor redColor];
+    contentScrollView.scrollEnabled = YES;
+    [contentScrollView setScrollEnabled:YES];
+    contentScrollView.contentSize = CGSizeMake(100, 100);
+    contentScrollView.delegate = self;
+    
+    [self.view addSubview:contentScrollView];
+}
+
 -(void)setUpNavi
 {
     
@@ -39,24 +55,15 @@
        NSForegroundColorAttributeName:HJCWORDCOLOR}];
 
 }
+
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    NSLog(@"asdf");
+}
 -(void)BckToSettings
 {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

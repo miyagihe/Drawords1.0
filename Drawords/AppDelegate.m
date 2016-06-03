@@ -21,7 +21,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-//    [NSThread sleepForTimeInterval:1.5];
+    [NSThread sleepForTimeInterval:1.5];
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     UINavigationController * navi = [[UINavigationController alloc]initWithRootViewController:[[HomeViewController alloc ]init]];
     GeneralSettingsViewController * settingsMenu = [[GeneralSettingsViewController alloc]init];

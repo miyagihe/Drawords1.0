@@ -39,15 +39,15 @@
     [self.view addSubview:upContainerView];
     
     UIView * divider = [[UIView alloc]init];
-    divider.frame = CGRectMake(upContainerView.width/2, 10, 2, upContainerView.height-20);
+    divider.frame = CGRectMake(upContainerView.width/2-20, 10, 2, upContainerView.height-20);
     divider.backgroundColor = HJCWORDCOLOR;
     [upContainerView addSubview:divider];
     
     UIButton * totalDays = [[UIButton alloc]init];
     [totalDays setTitle:@"12341" forState:UIControlStateNormal];
     totalDays.titleLabel.font = [ UIFont systemFontOfSize:32];
-    totalDays.frame = CGRectMake(30, 30,100, 50);
-    totalDays.layer.cornerRadius = 5;
+    totalDays.frame = CGRectMake(totalDays.x, 30,100, 50);
+    totalDays.x=divider.x/2-totalDays.width/2;
     [totalDays setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [upContainerView addSubview:totalDays];
     
@@ -62,9 +62,9 @@
     HJCButton * totalQuantity = [[HJCButton alloc]init];
     totalQuantity.quantity.text = @"12345";
     totalQuantity.quantity.textAlignment = NSTextAlignmentRight;
-    totalQuantity.quantity.font = [UIFont systemFontOfSize:20];
+    totalQuantity.quantity.font = [UIFont systemFontOfSize:18];
     totalQuantity.quantity.textColor =[UIColor colorWithRed:230.0/255 green:180.0/255 blue:80.0/255 alpha:1];
-    totalQuantity.Qdescription.text = @"/累计学习单词数";
+    totalQuantity.Qdescription.text = @"/已学习单词数";
     totalQuantity.Qdescription.font = [UIFont systemFontOfSize:12];
     totalQuantity.Qdescription.textColor = HJCWORDCOLOR;
     totalQuantity.y = totalDays.y;
@@ -77,7 +77,7 @@
     HJCButton * quantiryInHand = [[HJCButton alloc]init];
     quantiryInHand.quantity.text = @"12";
     quantiryInHand.quantity.textAlignment = NSTextAlignmentRight;
-    quantiryInHand.quantity.font = [UIFont systemFontOfSize:20];
+    quantiryInHand.quantity.font = [UIFont systemFontOfSize:18];
     quantiryInHand.quantity.textColor =[UIColor colorWithRed:230.0/255 green:180.0/255 blue:80.0/255 alpha:1];
     quantiryInHand.Qdescription.text = @"/已掌握单词数";
     quantiryInHand.Qdescription.font = [UIFont systemFontOfSize:12];
@@ -96,7 +96,7 @@
     
     UIButton * todayQuantity = [[UIButton alloc]init];
     [todayQuantity setTitle:@"999" forState:UIControlStateNormal];
-    todayQuantity.titleLabel.font = [ UIFont systemFontOfSize:32];
+    todayQuantity.titleLabel.font = [ UIFont systemFontOfSize:32 weight:5];
     todayQuantity.frame = CGRectMake(30, 30,80, 50);
     todayQuantity.layer.cornerRadius = 5;
     [todayQuantity setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
@@ -111,7 +111,7 @@
     
     UIButton * newQuantity = [[UIButton alloc]init];
     [newQuantity setTitle:@"100" forState:UIControlStateNormal];
-    newQuantity.titleLabel.font = [ UIFont systemFontOfSize:32];
+    newQuantity.titleLabel.font = [ UIFont systemFontOfSize:32 weight:5];
     newQuantity.frame = CGRectMake(upContainerView.width*0.5-40, 30,80, 50);
     newQuantity.layer.cornerRadius = 5;
     [newQuantity setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
@@ -126,10 +126,11 @@
     
     UIButton * finishedQuantity = [[UIButton alloc]init];
     [finishedQuantity setTitle:@"100" forState:UIControlStateNormal];
-    finishedQuantity.titleLabel.font = [ UIFont systemFontOfSize:32];
+    finishedQuantity.titleLabel.font = [ UIFont systemFontOfSize:32 weight:5];
+    [finishedQuantity setTitleColor:HJCWORDCOLOR forState:UIControlStateNormal];
     finishedQuantity.frame = CGRectMake(downContainerView.width-30-80, 30,80, 50);
     finishedQuantity.layer.cornerRadius = 5;
-    [finishedQuantity setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+//    [finishedQuantity setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [downContainerView addSubview:finishedQuantity];
     
     UILabel * finishedQuantityWords = [[UILabel alloc]init];
@@ -171,7 +172,7 @@
     self.navigationController.navigationBar.translucent = NO;
     
     self.navigationController.navigationBar.barTintColor = HJCBACKGROUNDCOLOR;
-    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:23.0/255 green:44.0/255 blue:60.0/255 alpha:0.7];
+//    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:23.0/255 green:44.0/255 blue:60.0/255 alpha:0.7];
     
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"设置" style:UIBarButtonItemStylePlain target:self action:@selector(moveToSettings)];

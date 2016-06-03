@@ -35,7 +35,6 @@
 -(void)layoutSubviews
 {
     _soundView.frame = CGRectMake(5, 5, self.height-10, self.height-10);
-    
     [self addSubview:_soundView];
     
     _wordLabel.frame = CGRectMake(self.height-10+20, 5, (self.width-_soundView.width)/2, self.height-10);

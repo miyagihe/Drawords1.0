@@ -10,12 +10,12 @@
 #import "Consistant.h"
 #import "UIView+Extension.h"
 #import "WordDisplayButton.h"
+#import "FinishViewController.h"
 
 @interface StudyModeViewController ()
 @property(nonatomic,strong)UIButton * tooEasyBtn;
 @property(nonatomic,strong)UIButton * forgetBtn;
 @property(nonatomic,strong)UIButton * rememberBtn;
-
 
 @end
 
@@ -41,7 +41,6 @@
     wordDisplay.phonogramLabel.text = @"hkjhkjh";
     wordDisplay.wordLabel.text = @"hehehe";
     [self.view addSubview:wordDisplay];
-   
     
     _tooEasyBtn = [[UIButton alloc]init];
     _tooEasyBtn.frame = CGRectMake(progressView.x, self.view.height-250, progressView.width, 40);
@@ -53,6 +52,7 @@
     _rememberBtn.frame = CGRectMake(progressView.x, CGRectGetMaxY(_tooEasyBtn.frame)+5, progressView.width, 40);
     _rememberBtn.backgroundColor = HJCWORDCOLOR;
     [_rememberBtn setTitle:@"记得" forState:UIControlStateNormal];
+    [_rememberBtn addTarget:self action:@selector(showFinishView) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_rememberBtn];
     
     _forgetBtn = [[UIButton alloc]init];
@@ -60,9 +60,15 @@
                                  40);
     _forgetBtn.backgroundColor = [UIColor colorWithRed:230.0/255 green:180.0/255 blue:80.0/255 alpha:1];
     [_forgetBtn setTitle:@"忘记了" forState:UIControlStateNormal];
-    
     [_forgetBtn addTarget:self action:@selector(showReminder) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_forgetBtn];
+}
+-(void)showFinishView
+{
+    FinishViewController * finishView = [[FinishViewController alloc]init];
+    [self.navigationController pushViewController:finishView animated:YES];
+    
+    
 }
 -(void)showReminder
 {
@@ -84,20 +90,14 @@
     [[UINavigationBar appearance] setShadowImage:[[UIImage alloc] init]];
     self.navigationController.navigationBar.barStyle = UIBarStyleBlackTranslucent;
     self.navigationController.navigationBar.translucent = NO;
-    
     self.navigationController.navigationBar.barTintColor = HJCBACKGROUNDCOLOR;
     self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:23.0/255 green:44.0/255 blue:60.0/255 alpha:0.7];
-    
-    
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"tabbar_home_selected"] style:UIBarButtonItemStylePlain target:self action:@selector(moveToTodayPlan)];
     UIBarButtonItem * leftBarBtn = self.navigationItem.leftBarButtonItem;
     leftBarBtn.tintColor = HJCWORDCOLOR;
-    
-    
 }
 -(void)moveToTodayPlan
 {
     [self.navigationController popToRootViewControllerAnimated:YES];
-    
 }
 @end
