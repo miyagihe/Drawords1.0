@@ -1,37 +1,30 @@
 //
-//  StudyPlanViewController.m
+//  LanChooseViewController.m
 //  Drawords
 //
-//  Created by hjc on 16/6/1.
+//  Created by hjc on 16/6/4.
 //  Copyright © 2016年 hjc. All rights reserved.
 //
 
-#import "StudyPlanViewController.h"
-#import "Consistant.h"
-#import "UIView+Extension.h"
-#import "MBProgressHUD+MJ.h"
 #import "LanChooseViewController.h"
-#import "BookChooseViewController.h"
+#import "Consistant.h"
 
-@interface StudyPlanViewController ()
+@interface LanChooseViewController ()
 @property(nonatomic,strong)UITableView * menuTableView;
-@property(nonatomic,strong)UISwitch * soundSwitch;
-@property(nonatomic,strong)UISwitch * nightSwitch;
-
-
 
 @end
 
-@implementation StudyPlanViewController
+@implementation LanChooseViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
+    self.view.backgroundColor = HJCBACKGROUNDCOLOR;
     [self setUpNavi];
-    
     [self setTableView];
-    
 }
+
+
 -(void)setTableView
 {
     _menuTableView = [[UITableView alloc]initWithFrame:[UIScreen mainScreen].bounds style:UITableViewStylePlain];
@@ -43,7 +36,7 @@
     _menuTableView.scrollEnabled = NO;
     _menuTableView.separatorColor = HJCWORDCOLOR;
     [self.view addSubview:_menuTableView];
-
+    
 }
 -(void)setUpNavi
 {
@@ -51,11 +44,11 @@
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
     
     self.view.backgroundColor  = HJCBACKGROUNDCOLOR;
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"设置" style:UIBarButtonItemStyleDone target:self action:@selector(BckToSettings)];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"学习规划" style:UIBarButtonItemStyleDone target:self action:@selector(backTO)];
     self.navigationController.navigationBar.barTintColor = HJCBACKGROUNDCOLOR;
     self.navigationItem.leftBarButtonItem.tintColor = HJCWORDCOLOR;
     self.navigationController.navigationBar.barStyle = UIBarStyleBlackTranslucent;
-    [self.navigationItem setTitle:@"学习规划"];
+    [self.navigationItem setTitle:@"语种选择"];
     [self.navigationController.navigationBar setTitleTextAttributes:
      @{NSFontAttributeName:[UIFont systemFontOfSize:19],
        NSForegroundColorAttributeName:HJCWORDCOLOR}];
@@ -64,19 +57,19 @@
 {
     return UIStatusBarStyleLightContent;
 }
--(void)BckToSettings
+-(void)backTO
 {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     NSLog(@"%s",__func__);
-
+    
     return 1;
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     NSLog(@"%s",__func__);
-
+    
     return 4;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -86,26 +79,25 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:ID];
     }
-    _soundSwitch = [[UISwitch alloc]init];
-    _nightSwitch = [[UISwitch alloc]init];
+
     switch (indexPath.row)
     {
         case 0:
-            cell.textLabel.text = @"语种选择";
+            cell.textLabel.text = @"英语";
             cell.imageView.image = [UIImage imageNamed:@"app"];
             break;
             
         case 1:
-            cell.textLabel.text = @"单词书选择";
+            cell.textLabel.text = @"德语";
             cell.imageView.image = [UIImage imageNamed:@"album"];
             break;
             
         case 2:
-            cell.textLabel.text = @"每日单词书设定";
+            cell.textLabel.text = @"西班牙语";
             cell.imageView.image = [UIImage imageNamed:@"app"];
             break;
         case 3:
-            cell.textLabel.text = @"再认次数设定";
+            cell.textLabel.text = @"法语";
             cell.imageView.image = [UIImage imageNamed:@"album"];
             break;
     }
@@ -120,19 +112,16 @@
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.row == 0) {
-        LanChooseViewController*lanChoose = [[LanChooseViewController alloc]init];
-        [self.navigationController pushViewController:lanChoose animated:YES];
-    }
-    if(indexPath.row == 1){
-        BookChooseViewController * bookChoose = [[BookChooseViewController alloc]init];
-        [self.navigationController pushViewController:bookChoose animated:YES];
-    }
+    UIAlertController * alert = [UIAlertController alertControllerWithTitle:nil message:@"确定？"  preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction * confirmBtn = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        [self.navigationController popViewControllerAnimated:YES];
+    }];
     
-        
+    [alert addAction:confirmBtn];
+    [self presentViewController:alert animated:YES completion:nil];
     
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
-
+          [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
 }
 
 @end

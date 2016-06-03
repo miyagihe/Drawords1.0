@@ -11,7 +11,7 @@
 #import "MBProgressHUD+MJ.h"
 
 @interface SoftWareViewController ()
-@property ( nonatomic,strong)UITableView * planTableView;
+@property ( nonatomic,strong)UITableView * menuTableView;
 @property(nonatomic,strong)UISwitch * soundSwitch;
 @property(nonatomic,strong)UISwitch * nightSwitch;
 @end
@@ -29,15 +29,15 @@
 }
 -(void)setTableView
 {
-    _planTableView = [[UITableView alloc]initWithFrame:[UIScreen mainScreen].bounds style:UITableViewStylePlain];
-    _planTableView.delegate = self;
-    _planTableView.dataSource = self;
-    _planTableView.backgroundColor = HJCBACKGROUNDCOLOR;
-    self.planTableView = _planTableView;
-    _planTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
-    _planTableView.scrollEnabled = NO;
-    _planTableView.separatorColor = HJCWORDCOLOR;
-    [self.view addSubview:_planTableView];
+    _menuTableView = [[UITableView alloc]initWithFrame:[UIScreen mainScreen].bounds style:UITableViewStylePlain];
+    _menuTableView.delegate = self;
+    _menuTableView.dataSource = self;
+    _menuTableView.backgroundColor = HJCBACKGROUNDCOLOR;
+    self.menuTableView = _menuTableView;
+    _menuTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+    _menuTableView.scrollEnabled = NO;
+    _menuTableView.separatorColor = HJCWORDCOLOR;
+    [self.view addSubview:_menuTableView];
     
 }
 -(void)setUpNavi

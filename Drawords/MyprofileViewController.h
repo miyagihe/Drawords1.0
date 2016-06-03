@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MyprofileViewController : UIViewController<UIScrollViewDelegate>
+@interface MyprofileViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 
 @end

@@ -34,10 +34,11 @@
 		2E5E45431D0067EE00FF318D /* HJCButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E45421D0067EE00FF318D /* HJCButton.m */; };
 		2E5E454B1D00833800FF318D /* FinishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E45491D00833800FF318D /* FinishViewController.m */; };
 		2E5E454C1D00833800FF318D /* FinishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E5E454A1D00833800FF318D /* FinishViewController.xib */; };
-		2E5E45521D00A28300FF318D /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E45511D00A28300FF318D /* TableViewController.m */; };
 		2E5E45591D018F0E00FF318D /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E45551D018F0E00FF318D /* MBProgressHUD+MJ.m */; };
 		2E5E455A1D018F0E00FF318D /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2E5E45561D018F0E00FF318D /* MBProgressHUD.bundle */; };
 		2E5E455B1D018F0E00FF318D /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E45581D018F0E00FF318D /* MBProgressHUD.m */; };
+		2E5E45611D01E76F00FF318D /* LanChooseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E45601D01E76F00FF318D /* LanChooseViewController.m */; };
+		2E5E45641D01F1FF00FF318D /* BookChooseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E45631D01F1FF00FF318D /* BookChooseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,13 +112,15 @@
 		2E5E45481D00833800FF318D /* FinishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinishViewController.h; sourceTree = "<group>"; };
 		2E5E45491D00833800FF318D /* FinishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinishViewController.m; sourceTree = "<group>"; };
 		2E5E454A1D00833800FF318D /* FinishViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FinishViewController.xib; sourceTree = "<group>"; };
-		2E5E45501D00A28300FF318D /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
-		2E5E45511D00A28300FF318D /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		2E5E45541D018F0E00FF318D /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
 		2E5E45551D018F0E00FF318D /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
 		2E5E45561D018F0E00FF318D /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
 		2E5E45571D018F0E00FF318D /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		2E5E45581D018F0E00FF318D /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		2E5E455F1D01E76F00FF318D /* LanChooseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanChooseViewController.h; sourceTree = "<group>"; };
+		2E5E45601D01E76F00FF318D /* LanChooseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanChooseViewController.m; sourceTree = "<group>"; };
+		2E5E45621D01F1FF00FF318D /* BookChooseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookChooseViewController.h; sourceTree = "<group>"; };
+		2E5E45631D01F1FF00FF318D /* BookChooseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookChooseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -312,8 +315,10 @@
 			children = (
 				2E5E452A1CFF24B000FF318D /* StudyPlanViewController.h */,
 				2E5E452B1CFF24B000FF318D /* StudyPlanViewController.m */,
-				2E5E45501D00A28300FF318D /* TableViewController.h */,
-				2E5E45511D00A28300FF318D /* TableViewController.m */,
+				2E5E455F1D01E76F00FF318D /* LanChooseViewController.h */,
+				2E5E45601D01E76F00FF318D /* LanChooseViewController.m */,
+				2E5E45621D01F1FF00FF318D /* BookChooseViewController.h */,
+				2E5E45631D01F1FF00FF318D /* BookChooseViewController.m */,
 			);
 			name = StudyPlan;
 			sourceTree = "<group>";
@@ -518,16 +523,17 @@
 				2E5E44F01CFE7D5700FF318D /* HomeViewController.m in Sources */,
 				2E5E45401D00492800FF318D /* RemindModeViewController.m in Sources */,
 				2E5E45391D00161E00FF318D /* StudyModeViewController.m in Sources */,
-				2E5E45521D00A28300FF318D /* TableViewController.m in Sources */,
 				2E5E45001CFE9C5E00FF318D /* RECommonFunctions.m in Sources */,
 				2E5E45051CFEAC5000FF318D /* GeneralSettingsViewController.m in Sources */,
 				2E5E45321CFF3F7800FF318D /* MyprofileViewController.m in Sources */,
+				2E5E45611D01E76F00FF318D /* LanChooseViewController.m in Sources */,
 				2E5E451A1CFED08900FF318D /* SuggestionViewController.m in Sources */,
 				2E5E45431D0067EE00FF318D /* HJCButton.m in Sources */,
 				2E5E454B1D00833800FF318D /* FinishViewController.m in Sources */,
 				2E5E45591D018F0E00FF318D /* MBProgressHUD+MJ.m in Sources */,
 				2E5E45021CFE9C5E00FF318D /* UIViewController+RESideMenu.m in Sources */,
 				2E5E45161CFED05E00FF318D /* AccountSettingViewController.m in Sources */,
+				2E5E45641D01F1FF00FF318D /* BookChooseViewController.m in Sources */,
 				2E5E451E1CFED0A600FF318D /* AboutViewController.m in Sources */,
 				2E5E45131CFEB51500FF318D /* SoftWareViewController.m in Sources */,
 			);
