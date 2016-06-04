@@ -8,6 +8,10 @@
 
 #import "AccountSettingViewController.h"
 #import "Consistant.h"
+#import "PsdModiViewController.h"
+#import "EmailModiViewController.h"
+#import "NameModiViewController.h"
+
 
 @interface AccountSettingViewController ()
 @property ( nonatomic,strong)UITableView * menuTableView;
@@ -109,26 +113,20 @@
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    switch (indexPath.row) {
-        case 0:
-            NSLog(@"adfasd");
-            break;
-            
-        case 1:
-            NSLog(@"adfasd");
-            
-            break;
-            
-        case 2:
-            NSLog(@"adfasd");
-            
-            break;
-        case 3:
-            NSLog(@"adfasd");
-            
-            break;
-            
+   
+    if (indexPath.row == 0) {
+        PsdModiViewController *psdModi=[[PsdModiViewController alloc]init];
+        [self.navigationController pushViewController:psdModi animated:YES];
     }
+    if (indexPath.row == 1) {
+        EmailModiViewController * emailModi = [[EmailModiViewController alloc]init];
+        [self.navigationController pushViewController:emailModi animated:YES];
+    }
+    if (indexPath.row == 2) {
+        NameModiViewController * nameModi = [[NameModiViewController alloc]init];
+        [self.navigationController pushViewController:nameModi animated:YES];
+    }
+    
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 
 }

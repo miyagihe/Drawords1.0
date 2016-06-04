@@ -39,6 +39,11 @@
 		2E5E455B1D018F0E00FF318D /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E45581D018F0E00FF318D /* MBProgressHUD.m */; };
 		2E5E45611D01E76F00FF318D /* LanChooseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E45601D01E76F00FF318D /* LanChooseViewController.m */; };
 		2E5E45641D01F1FF00FF318D /* BookChooseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E45631D01F1FF00FF318D /* BookChooseViewController.m */; };
+		2E5E45671D028AC400FF318D /* DailyQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E45661D028AC400FF318D /* DailyQViewController.m */; };
+		2E5E456A1D028D3B00FF318D /* ReCountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E45691D028D3B00FF318D /* ReCountViewController.m */; };
+		2E5E456D1D028F8700FF318D /* PsdModiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E456C1D028F8700FF318D /* PsdModiViewController.m */; };
+		2E5E45701D028FAA00FF318D /* EmailModiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E456F1D028FAA00FF318D /* EmailModiViewController.m */; };
+		2E5E45731D028FC000FF318D /* NameModiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E45721D028FC000FF318D /* NameModiViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +126,16 @@
 		2E5E45601D01E76F00FF318D /* LanChooseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanChooseViewController.m; sourceTree = "<group>"; };
 		2E5E45621D01F1FF00FF318D /* BookChooseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookChooseViewController.h; sourceTree = "<group>"; };
 		2E5E45631D01F1FF00FF318D /* BookChooseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookChooseViewController.m; sourceTree = "<group>"; };
+		2E5E45651D028AC400FF318D /* DailyQViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DailyQViewController.h; sourceTree = "<group>"; };
+		2E5E45661D028AC400FF318D /* DailyQViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DailyQViewController.m; sourceTree = "<group>"; };
+		2E5E45681D028D3B00FF318D /* ReCountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReCountViewController.h; sourceTree = "<group>"; };
+		2E5E45691D028D3B00FF318D /* ReCountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReCountViewController.m; sourceTree = "<group>"; };
+		2E5E456B1D028F8700FF318D /* PsdModiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PsdModiViewController.h; sourceTree = "<group>"; };
+		2E5E456C1D028F8700FF318D /* PsdModiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PsdModiViewController.m; sourceTree = "<group>"; };
+		2E5E456E1D028FAA00FF318D /* EmailModiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailModiViewController.h; sourceTree = "<group>"; };
+		2E5E456F1D028FAA00FF318D /* EmailModiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailModiViewController.m; sourceTree = "<group>"; };
+		2E5E45711D028FC000FF318D /* NameModiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NameModiViewController.h; sourceTree = "<group>"; };
+		2E5E45721D028FC000FF318D /* NameModiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NameModiViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -288,6 +303,12 @@
 			children = (
 				2E5E45141CFED05E00FF318D /* AccountSettingViewController.h */,
 				2E5E45151CFED05E00FF318D /* AccountSettingViewController.m */,
+				2E5E456B1D028F8700FF318D /* PsdModiViewController.h */,
+				2E5E456C1D028F8700FF318D /* PsdModiViewController.m */,
+				2E5E456E1D028FAA00FF318D /* EmailModiViewController.h */,
+				2E5E456F1D028FAA00FF318D /* EmailModiViewController.m */,
+				2E5E45711D028FC000FF318D /* NameModiViewController.h */,
+				2E5E45721D028FC000FF318D /* NameModiViewController.m */,
 			);
 			name = AccountSettings;
 			sourceTree = "<group>";
@@ -319,6 +340,10 @@
 				2E5E45601D01E76F00FF318D /* LanChooseViewController.m */,
 				2E5E45621D01F1FF00FF318D /* BookChooseViewController.h */,
 				2E5E45631D01F1FF00FF318D /* BookChooseViewController.m */,
+				2E5E45651D028AC400FF318D /* DailyQViewController.h */,
+				2E5E45661D028AC400FF318D /* DailyQViewController.m */,
+				2E5E45681D028D3B00FF318D /* ReCountViewController.h */,
+				2E5E45691D028D3B00FF318D /* ReCountViewController.m */,
 			);
 			name = StudyPlan;
 			sourceTree = "<group>";
@@ -516,9 +541,11 @@
 				2E5E44F31CFE7F8B00FF318D /* Consistant.m in Sources */,
 				2E5E44BD1CFE7D1700FF318D /* AppDelegate.m in Sources */,
 				2E5E44BA1CFE7D1700FF318D /* main.m in Sources */,
+				2E5E456D1D028F8700FF318D /* PsdModiViewController.m in Sources */,
 				2E5E45361CFFCD2000FF318D /* UIView+Extension.m in Sources */,
 				2E5E44C61CFE7D1700FF318D /* Drawords.xcdatamodeld in Sources */,
 				2E5E455B1D018F0E00FF318D /* MBProgressHUD.m in Sources */,
+				2E5E456A1D028D3B00FF318D /* ReCountViewController.m in Sources */,
 				2E5E452C1CFF24B000FF318D /* StudyPlanViewController.m in Sources */,
 				2E5E44F01CFE7D5700FF318D /* HomeViewController.m in Sources */,
 				2E5E45401D00492800FF318D /* RemindModeViewController.m in Sources */,
@@ -531,11 +558,14 @@
 				2E5E45431D0067EE00FF318D /* HJCButton.m in Sources */,
 				2E5E454B1D00833800FF318D /* FinishViewController.m in Sources */,
 				2E5E45591D018F0E00FF318D /* MBProgressHUD+MJ.m in Sources */,
+				2E5E45731D028FC000FF318D /* NameModiViewController.m in Sources */,
 				2E5E45021CFE9C5E00FF318D /* UIViewController+RESideMenu.m in Sources */,
 				2E5E45161CFED05E00FF318D /* AccountSettingViewController.m in Sources */,
+				2E5E45671D028AC400FF318D /* DailyQViewController.m in Sources */,
 				2E5E45641D01F1FF00FF318D /* BookChooseViewController.m in Sources */,
 				2E5E451E1CFED0A600FF318D /* AboutViewController.m in Sources */,
 				2E5E45131CFEB51500FF318D /* SoftWareViewController.m in Sources */,
+				2E5E45701D028FAA00FF318D /* EmailModiViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
