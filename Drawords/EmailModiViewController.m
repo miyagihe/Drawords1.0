@@ -8,6 +8,7 @@
 
 #import "EmailModiViewController.h"
 #import "Consistant.h"
+#import "MBProgressHUD+MJ.h"
 #import "UIView+Extension.h"
 
 @interface EmailModiViewController ()
@@ -54,7 +55,9 @@
     presentPsd.height = 40;
     presentPsd.backgroundColor = [UIColor grayColor];
     presentPsd.placeholder = @"请输入密码";
-    
+    presentPsd.textAlignment = NSTextAlignmentCenter;
+
+    [presentPsd setValue:[UIColor whiteColor] forKeyPath:@"_placeholderLabel.textColor"];
     [self.view addSubview:presentPsd];
     
     UITextField * newPsd = [[UITextField alloc]init];
@@ -64,6 +67,9 @@
     newPsd.height = 40;
     newPsd.backgroundColor = [UIColor grayColor];
     newPsd.placeholder = @"请输入新邮箱";
+    newPsd.textAlignment = NSTextAlignmentCenter;
+
+    [newPsd setValue:[UIColor whiteColor] forKeyPath:@"_placeholderLabel.textColor"];
     [self.view addSubview:newPsd];
     
     
@@ -72,8 +78,23 @@
     confirmBtn.backgroundColor = HJCWORDCOLOR;
     [confirmBtn setTitle:@"确认修改" forState:UIControlStateNormal];
     [confirmBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [confirmBtn setTitleColor:[UIColor grayColor] forState:UIControlStateHighlighted];
+    [confirmBtn addTarget:self action:@selector(confirmSave) forControlEvents:UIControlEventTouchUpInside];
+
     [self.view addSubview:confirmBtn];
     
+}
+-(void)confirmSave
+{
+    [MBProgressHUD showMessage:@"修改中"];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [MBProgressHUD hideHUD];
+        [MBProgressHUD showSuccess:@"修改完成"];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [self.navigationController popViewControllerAnimated:YES];
+            
+        });
+    });
 }
 
 @end

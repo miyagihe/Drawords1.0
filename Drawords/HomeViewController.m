@@ -13,8 +13,11 @@
 #import "UIView+Extension.h"
 #import "StudyModeViewController.h"
 #import "HJCButton.h"
+#import "GDataXMLNode.h"
 @interface HomeViewController ()
-
+@property(nonatomic,strong)UIButton * todayQuantity;
+@property(nonatomic,strong)UIButton * unknownQuantity;
+@property(nonatomic,strong)UIButton * finishedQuantity;
 @end
 
 @implementation HomeViewController
@@ -29,6 +32,23 @@
     [self setUpNavi];
     
     [self setUpUpContentView];
+    
+    [self loadWords];
+    
+}
+-(void)loadWords
+{
+    NSString *xmlPath = [[NSBundle mainBundle] pathForResource:@"Words"ofType:@"xml"];
+    NSString *xmlString = [NSString stringWithContentsOfFile:xmlPath encoding:NSUTF8StringEncoding error:nil];
+    GDataXMLDocument *xmlDoc = [[GDataXMLDocument alloc] initWithXMLString:xmlString options:0 error:nil];
+    GDataXMLElement *xmlRoot = [xmlDoc rootElement];
+    _wordslistArray = [xmlRoot children];
+    [_todayQuantity setTitle:[NSString stringWithFormat:@"%lu",(unsigned long)_wordslistArray.count] forState:UIControlStateNormal];
+    
+    [_unknownQuantity setTitle:@"20" forState:UIControlStateNormal];
+    
+    [_finishedQuantity setTitle:@"0" forState:UIControlStateNormal];
+    
 }
 -(void)setUpUpContentView
 {
@@ -94,50 +114,49 @@
     downContainerView.layer.cornerRadius = 5;
     [self.view addSubview:downContainerView];
     
-    UIButton * todayQuantity = [[UIButton alloc]init];
-    [todayQuantity setTitle:@"999" forState:UIControlStateNormal];
-    todayQuantity.titleLabel.font = [ UIFont systemFontOfSize:32 weight:5];
-    todayQuantity.frame = CGRectMake(30, 30,80, 50);
-    todayQuantity.layer.cornerRadius = 5;
-    [todayQuantity setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [downContainerView addSubview:todayQuantity];
+    _todayQuantity = [[UIButton alloc]init];
+    [_todayQuantity setTitle:@"999" forState:UIControlStateNormal];
+    _todayQuantity.titleLabel.font = [ UIFont systemFontOfSize:32 weight:5];
+    _todayQuantity.frame = CGRectMake(30, 30,80, 50);
+    _todayQuantity.layer.cornerRadius = 5;
+    [_todayQuantity setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [downContainerView addSubview:_todayQuantity];
     
     UILabel * todayQuantityWords = [[UILabel alloc]init];
     todayQuantityWords.textAlignment = NSTextAlignmentCenter;
     todayQuantityWords.text = @"今日单词";
     todayQuantityWords.textColor = HJCWORDCOLOR;
-    todayQuantityWords.frame = CGRectMake(todayQuantity.x, todayQuantity.y+todayQuantity.height, 80, 30);
+    todayQuantityWords.frame = CGRectMake(_todayQuantity.x, _todayQuantity.y+_todayQuantity.height, 80, 30);
     [downContainerView addSubview:todayQuantityWords];
     
-    UIButton * newQuantity = [[UIButton alloc]init];
-    [newQuantity setTitle:@"100" forState:UIControlStateNormal];
-    newQuantity.titleLabel.font = [ UIFont systemFontOfSize:32 weight:5];
-    newQuantity.frame = CGRectMake(upContainerView.width*0.5-40, 30,80, 50);
-    newQuantity.layer.cornerRadius = 5;
-    [newQuantity setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [downContainerView addSubview:newQuantity];
+    _unknownQuantity = [[UIButton alloc]init];
+    [_unknownQuantity setTitle:@"100" forState:UIControlStateNormal];
+    _unknownQuantity.titleLabel.font = [ UIFont systemFontOfSize:32 weight:5];
+    _unknownQuantity.frame = CGRectMake(upContainerView.width*0.5-40, 30,80, 50);
+    _unknownQuantity.layer.cornerRadius = 5;
+    [_unknownQuantity setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [downContainerView addSubview:_unknownQuantity];
     
-    UILabel * newQuantityWords = [[UILabel alloc]init];
-    newQuantityWords.textAlignment = NSTextAlignmentCenter;
-    newQuantityWords.text = @"今日新词";
-    newQuantityWords.textColor = HJCWORDCOLOR;
-    newQuantityWords.frame = CGRectMake(newQuantity.x, newQuantity.y+newQuantity.height, 80, 30);
-    [downContainerView addSubview:newQuantityWords];
+    UILabel * unknownQuantityWords = [[UILabel alloc]init];
+    unknownQuantityWords.textAlignment = NSTextAlignmentCenter;
+    unknownQuantityWords.text = @"今日新词";
+    unknownQuantityWords.textColor = HJCWORDCOLOR;
+    unknownQuantityWords.frame = CGRectMake(_unknownQuantity.x, _unknownQuantity.y+_unknownQuantity.height, 80, 30);
+    [downContainerView addSubview:unknownQuantityWords];
     
-    UIButton * finishedQuantity = [[UIButton alloc]init];
-    [finishedQuantity setTitle:@"100" forState:UIControlStateNormal];
-    finishedQuantity.titleLabel.font = [ UIFont systemFontOfSize:32 weight:5];
-    [finishedQuantity setTitleColor:HJCWORDCOLOR forState:UIControlStateNormal];
-    finishedQuantity.frame = CGRectMake(downContainerView.width-30-80, 30,80, 50);
-    finishedQuantity.layer.cornerRadius = 5;
-//    [finishedQuantity setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [downContainerView addSubview:finishedQuantity];
+    _finishedQuantity = [[UIButton alloc]init];
+    [_finishedQuantity setTitle:@"100" forState:UIControlStateNormal];
+    _finishedQuantity.titleLabel.font = [ UIFont systemFontOfSize:32 weight:5];
+    [_finishedQuantity setTitleColor:HJCWORDCOLOR forState:UIControlStateNormal];
+    _finishedQuantity.frame = CGRectMake(downContainerView.width-30-80, 30,80, 50);
+    _finishedQuantity.layer.cornerRadius = 5;
+    [downContainerView addSubview:_finishedQuantity];
     
     UILabel * finishedQuantityWords = [[UILabel alloc]init];
     finishedQuantityWords.textAlignment = NSTextAlignmentCenter;
     finishedQuantityWords.text = @"已完成";
     finishedQuantityWords.textColor = HJCWORDCOLOR;
-    finishedQuantityWords.frame = CGRectMake(finishedQuantity.x, finishedQuantity.y+finishedQuantity.height, 80, 30);
+    finishedQuantityWords.frame = CGRectMake(_finishedQuantity.x, _finishedQuantity.y+_finishedQuantity.height, 80, 30);
     [downContainerView addSubview:finishedQuantityWords];
     
     
@@ -147,7 +166,7 @@
     goBtn.layer.cornerRadius = 40;
     [goBtn setTitle:@"GO" forState:UIControlStateNormal];
     [goBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [goBtn setTitleColor:[UIColor grayColor] forState:UIControlStateSelected];
+    [goBtn setTitleColor:[UIColor grayColor] forState:UIControlStateHighlighted];
     goBtn.titleLabel.font = [UIFont systemFontOfSize:30];
     [goBtn addTarget:self action:@selector(goToStudy) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:goBtn];

@@ -44,6 +44,10 @@
 		2E5E456D1D028F8700FF318D /* PsdModiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E456C1D028F8700FF318D /* PsdModiViewController.m */; };
 		2E5E45701D028FAA00FF318D /* EmailModiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E456F1D028FAA00FF318D /* EmailModiViewController.m */; };
 		2E5E45731D028FC000FF318D /* NameModiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E45721D028FC000FF318D /* NameModiViewController.m */; };
+		2E5E45821D040A1500FF318D /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E5E45811D040A1500FF318D /* libxml2.tbd */; };
+		2E5E45861D040E4D00FF318D /* Words.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2E5E45851D040E4D00FF318D /* Words.xml */; };
+		2E5E45881D0411DB00FF318D /* Words.xml in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2E5E45851D040E4D00FF318D /* Words.xml */; };
+		2EDA9D161D043DC500220224 /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDA9D151D043DC400220224 /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +66,19 @@
 			remoteInfo = Drawords;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2E5E45871D0411C600FF318D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				2E5E45881D0411DB00FF318D /* Words.xml in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2E5E44B51CFE7D1700FF318D /* Drawords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drawords.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,6 +153,10 @@
 		2E5E456F1D028FAA00FF318D /* EmailModiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailModiViewController.m; sourceTree = "<group>"; };
 		2E5E45711D028FC000FF318D /* NameModiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NameModiViewController.h; sourceTree = "<group>"; };
 		2E5E45721D028FC000FF318D /* NameModiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NameModiViewController.m; sourceTree = "<group>"; };
+		2E5E45811D040A1500FF318D /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		2E5E45851D040E4D00FF318D /* Words.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Words.xml; path = ../Words.xml; sourceTree = "<group>"; };
+		2EDA9D141D043DC400220224 /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
+		2EDA9D151D043DC400220224 /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +164,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E5E45821D040A1500FF318D /* libxml2.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +188,9 @@
 		2E5E44AC1CFE7D1700FF318D = {
 			isa = PBXGroup;
 			children = (
+				2EDA9D131D043DC400220224 /* GDataXML */,
+				2E5E45851D040E4D00FF318D /* Words.xml */,
+				2E5E45811D040A1500FF318D /* libxml2.tbd */,
 				2E5E45531D018F0E00FF318D /* MBProgressHUD */,
 				2E5E45261CFF18ED00FF318D /* Images.xcassets */,
 				2E5E44F91CFE9C5E00FF318D /* RESideMenu */,
@@ -401,6 +426,16 @@
 			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
+		2EDA9D131D043DC400220224 /* GDataXML */ = {
+			isa = PBXGroup;
+			children = (
+				2EDA9D141D043DC400220224 /* GDataXMLNode.h */,
+				2EDA9D151D043DC400220224 /* GDataXMLNode.m */,
+			);
+			name = GDataXML;
+			path = "../xml test/GDataXML";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -411,6 +446,7 @@
 				2E5E44B11CFE7D1700FF318D /* Sources */,
 				2E5E44B21CFE7D1700FF318D /* Frameworks */,
 				2E5E44B31CFE7D1700FF318D /* Resources */,
+				2E5E45871D0411C600FF318D /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -512,6 +548,7 @@
 				2E5E455A1D018F0E00FF318D /* MBProgressHUD.bundle in Resources */,
 				2E5E44CB1CFE7D1700FF318D /* LaunchScreen.storyboard in Resources */,
 				2E5E44C81CFE7D1700FF318D /* Assets.xcassets in Resources */,
+				2E5E45861D040E4D00FF318D /* Words.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,6 +574,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E5E453D1D0029A900FF318D /* WordDisplayButton.m in Sources */,
+				2EDA9D161D043DC500220224 /* GDataXMLNode.m in Sources */,
 				2E5E45011CFE9C5E00FF318D /* RESideMenu.m in Sources */,
 				2E5E44F31CFE7F8B00FF318D /* Consistant.m in Sources */,
 				2E5E44BD1CFE7D1700FF318D /* AppDelegate.m in Sources */,
@@ -701,9 +739,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = YES;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = Drawords/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_BUNDLE_IDENTIFIER = hjc.Drawords;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -787,6 +827,7 @@
 				2E5E44E71CFE7D1700FF318D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E5E44E81CFE7D1700FF318D /* Build configuration list for PBXNativeTarget "DrawordsTests" */ = {
 			isa = XCConfigurationList;
@@ -795,6 +836,7 @@
 				2E5E44EA1CFE7D1700FF318D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E5E44EB1CFE7D1700FF318D /* Build configuration list for PBXNativeTarget "DrawordsUITests" */ = {
 			isa = XCConfigurationList;
@@ -803,6 +845,7 @@
 				2E5E44ED1CFE7D1700FF318D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

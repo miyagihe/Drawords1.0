@@ -10,7 +10,7 @@
 
 @interface WordDisplayButton : UIButton
 @property(nonatomic,strong)UILabel * wordLabel;
-@property(nonatomic,strong)UILabel * phonogramLabel;
+//@property(nonatomic,strong)UILabel * phonogramLabel;
 @property(nonatomic,strong)UIImageView * soundView;
 
 @end
