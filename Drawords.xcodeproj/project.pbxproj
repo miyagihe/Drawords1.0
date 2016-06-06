@@ -47,6 +47,7 @@
 		2E5E45821D040A1500FF318D /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E5E45811D040A1500FF318D /* libxml2.tbd */; };
 		2E5E45861D040E4D00FF318D /* Words.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2E5E45851D040E4D00FF318D /* Words.xml */; };
 		2E5E45881D0411DB00FF318D /* Words.xml in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2E5E45851D040E4D00FF318D /* Words.xml */; };
+		2E6584CE1D052394009AC2D7 /* TodayTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6584CD1D052394009AC2D7 /* TodayTask.m */; };
 		2EDA9D161D043DC500220224 /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDA9D151D043DC400220224 /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
@@ -155,6 +156,10 @@
 		2E5E45721D028FC000FF318D /* NameModiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NameModiViewController.m; sourceTree = "<group>"; };
 		2E5E45811D040A1500FF318D /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		2E5E45851D040E4D00FF318D /* Words.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Words.xml; path = ../Words.xml; sourceTree = "<group>"; };
+		2E6584CC1D052394009AC2D7 /* TodayTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodayTask.h; sourceTree = "<group>"; };
+		2E6584CD1D052394009AC2D7 /* TodayTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodayTask.m; sourceTree = "<group>"; };
+		2E6584D01D052402009AC2D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Base; path = Base.lproj/TodayUnfinished.h; sourceTree = "<group>"; };
+		2E6584D21D052402009AC2D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Base; path = Base.lproj/TodayUnfinished.m; sourceTree = "<group>"; };
 		2EDA9D141D043DC400220224 /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
 		2EDA9D151D043DC400220224 /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -400,6 +405,10 @@
 				2E5E453C1D0029A900FF318D /* WordDisplayButton.m */,
 				2E5E453E1D00492800FF318D /* RemindModeViewController.h */,
 				2E5E453F1D00492800FF318D /* RemindModeViewController.m */,
+				2E6584CC1D052394009AC2D7 /* TodayTask.h */,
+				2E6584CD1D052394009AC2D7 /* TodayTask.m */,
+				2E6584CF1D052402009AC2D7 /* TodayUnfinished.h */,
+				2E6584D11D052402009AC2D7 /* TodayUnfinished.m */,
 			);
 			name = StudyMode;
 			sourceTree = "<group>";
@@ -583,6 +592,7 @@
 				2E5E45361CFFCD2000FF318D /* UIView+Extension.m in Sources */,
 				2E5E44C61CFE7D1700FF318D /* Drawords.xcdatamodeld in Sources */,
 				2E5E455B1D018F0E00FF318D /* MBProgressHUD.m in Sources */,
+				2E6584CE1D052394009AC2D7 /* TodayTask.m in Sources */,
 				2E5E456A1D028D3B00FF318D /* ReCountViewController.m in Sources */,
 				2E5E452C1CFF24B000FF318D /* StudyPlanViewController.m in Sources */,
 				2E5E44F01CFE7D5700FF318D /* HomeViewController.m in Sources */,
@@ -645,6 +655,22 @@
 				2E5E44CA1CFE7D1700FF318D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2E6584CF1D052402009AC2D7 /* TodayUnfinished.h */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E6584D01D052402009AC2D7 /* Base */,
+			);
+			name = TodayUnfinished.h;
+			sourceTree = "<group>";
+		};
+		2E6584D11D052402009AC2D7 /* TodayUnfinished.m */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E6584D21D052402009AC2D7 /* Base */,
+			);
+			name = TodayUnfinished.m;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

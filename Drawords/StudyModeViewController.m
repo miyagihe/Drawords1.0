@@ -12,6 +12,7 @@
 #import "WordDisplayButton.h"
 #import "FinishViewController.h"
 #import "GDataXMLNode.h"
+#import "TodayTask.h"
 #import "HomeViewController.h"
 @interface StudyModeViewController ()
 @property(nonatomic,strong)UIButton * tooEasyBtn;
@@ -23,6 +24,8 @@
 @property(nonatomic,assign)int listNo;
 @property(nonatomic,strong)NSArray* listArray;
 @property(nonatomic,strong)UILabel * interpretationLabel;
+@property(nonatomic,strong)UIView * progressView;
+@property(nonatomic,strong)GDataXMLElement * element;
 
 
 
@@ -32,107 +35,153 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = HJCBACKGROUNDCOLOR;
-    [self setUpNavi];
-    [self setUpInterFace];
     _listNo = 0;
-    [self loadInitialView];
+    self.view.backgroundColor = HJCBACKGROUNDCOLOR;
+    [self setProgressView];
+    [self setUpNavi];
+    [self createButtons];
+    [self loadWordDisplay];
+    [self createDisPlays];
+
     
 }
--(void)loadInitialView
+-(void)setProgressView{
+    _progressView = [[UIView alloc]init];
+    _progressView.frame = CGRectMake(10, 10, self.view.width-20, 5);
+    _progressView.backgroundColor = HJCMENUCOLOR;
+    [self.view addSubview:_progressView];
+}
+-(void)loadWordDisplay
 {
     NSString *xmlPath = [[NSBundle mainBundle] pathForResource:@"Words"ofType:@"xml"];
     NSString *xmlString = [NSString stringWithContentsOfFile:xmlPath encoding:NSUTF8StringEncoding error:nil];
     GDataXMLDocument *xmlDoc = [[GDataXMLDocument alloc] initWithXMLString:xmlString options:0 error:nil];
     GDataXMLElement *xmlRoot = [xmlDoc rootElement];
     _listArray = [xmlRoot children];
-    GDataXMLElement * element = _listArray[_listNo];
-    NSArray * DeWordarray = [element elementsForName:@"DeWord"];
+    _element = _listArray[_listNo];
+    NSArray * DeWordarray = [_element elementsForName:@"DeWord"];
     GDataXMLElement * subelement = DeWordarray[0];
-    _wordDisplay.wordLabel.text = subelement.stringValue;
     
-    NSArray * CnWordarray = [element elementsForName:@"CnWord"];
-    GDataXMLElement * Cnsubelement = CnWordarray[0];
-    _reminderDisplay.text = [NSString stringWithFormat:@"中文直译:%@",Cnsubelement.stringValue];
-    _reminderDisplay.hidden = YES;
-    
-    NSArray * InWordarray = [element elementsForName:@"Interpretation"];
-    GDataXMLElement * Insubelement = InWordarray[0];
-    _interpretationLabel.text = [NSString stringWithFormat:@"%@",[Insubelement.stringValue stringByReplacingOccurrencesOfString:@"\\n" withString:@" \r\n" ]];
-    _interpretationLabel.hidden = YES;
-    _interpretationLabel.numberOfLines = 0;
-
-    
-
-}
--(void)setUpInterFace
-{
-    UIView * progressView = [[UIView alloc]init];
-    progressView.frame = CGRectMake(10, 10, self.view.width-20, 5);
-    progressView.backgroundColor = HJCMENUCOLOR;
-    [self.view addSubview:progressView];
-    
+   
     _wordDisplay = [[WordDisplayButton alloc]init];
-    _wordDisplay.frame = CGRectMake(progressView.x, progressView.y+15, progressView.width, 40);
+    _wordDisplay.frame = CGRectMake(_progressView.x, _progressView.y+15, _progressView.width, 40);
     _wordDisplay.backgroundColor = HJCMENUCOLOR;
     _wordDisplay.soundView.image = [UIImage imageNamed:@"d_haha"];
-    _wordDisplay.wordLabel.text = @"hehehe";
+    _wordDisplay.wordLabel.text = subelement.stringValue;
+    _wordDisplay.wordLabel.textAlignment = NSTextAlignmentCenter;
+
     [self.view addSubview:_wordDisplay];
     
+    [self showButtons];
+}
+-(void)createDisPlays
+{
     _reminderDisplay = [[UILabel alloc]init];
     _reminderDisplay.frame = CGRectMake(_wordDisplay.x, _wordDisplay.y+15+_wordDisplay.height, _wordDisplay.width, 40);
     _reminderDisplay.backgroundColor = HJCMENUCOLOR;
     _reminderDisplay.textAlignment = NSTextAlignmentCenter;
     _reminderDisplay.textColor = HJCWORDCOLOR;
     [self.view addSubview:_reminderDisplay];
-    
+    _reminderDisplay.hidden = YES;
+
     _interpretationLabel = [[UILabel alloc]init];
     _interpretationLabel.frame= CGRectMake(_reminderDisplay.x, _reminderDisplay.y+15+_reminderDisplay.height, _reminderDisplay.width, 80);
     _interpretationLabel.backgroundColor = HJCMENUCOLOR;
-    
     _interpretationLabel.textColor = HJCWORDCOLOR;
     [self.view addSubview:_interpretationLabel];
+    _interpretationLabel.hidden = YES;
+}
+-(void)showDisPlays
+{
+    NSString *xmlPath = [[NSBundle mainBundle] pathForResource:@"Words"ofType:@"xml"];
+    NSString *xmlString = [NSString stringWithContentsOfFile:xmlPath encoding:NSUTF8StringEncoding error:nil];
+    GDataXMLDocument *xmlDoc = [[GDataXMLDocument alloc] initWithXMLString:xmlString options:0 error:nil];
+    GDataXMLElement *xmlRoot = [xmlDoc rootElement];
+    _listArray = [xmlRoot children];
+    _element = _listArray[_listNo];
+
     
+    NSArray * CnWordarray = [_element elementsForName:@"CnWord"];
+    GDataXMLElement * Cnsubelement = CnWordarray[0];
+    _reminderDisplay.text = [NSString stringWithFormat:@"中文直译:%@",Cnsubelement.stringValue];
+
     
-    
+
+
+    NSArray * InWordarray = [_element elementsForName:@"Interpretation"];
+    GDataXMLElement * Insubelement = InWordarray[0];
+    _interpretationLabel.numberOfLines = 0;
+    _interpretationLabel.text = [NSString stringWithFormat:@"%@",[Insubelement.stringValue
+                                                                  stringByReplacingOccurrencesOfString:@"\\n" withString:@" \r\n" ]];
+   
+}
+-(void)createButtons
+{
     _tooEasyBtn = [[UIButton alloc]init];
-    _tooEasyBtn.frame = CGRectMake(progressView.x, self.view.height-250, progressView.width, 40);
+    _tooEasyBtn.frame = CGRectMake(_progressView.x, self.view.height-250, _progressView.width, 40);
     _tooEasyBtn.backgroundColor = [UIColor colorWithRed:153.0/255 green:77.0/255 blue:82.0/255 alpha:1];
     [_tooEasyBtn setTitle:@"很熟悉，不再学习" forState:UIControlStateNormal];
     [self.view addSubview:_tooEasyBtn];
+    _tooEasyBtn.hidden = YES;
     
     _rememberBtn = [[UIButton alloc]init];
-    _rememberBtn.frame = CGRectMake(progressView.x, CGRectGetMaxY(_tooEasyBtn.frame)+5, progressView.width, 40);
+    _rememberBtn.frame = CGRectMake(_progressView.x, CGRectGetMaxY(_tooEasyBtn.frame)+5, _progressView.width, 40);
     _rememberBtn.backgroundColor = HJCWORDCOLOR;
     [_rememberBtn setTitle:@"记得" forState:UIControlStateNormal];
-    [_rememberBtn addTarget:self action:@selector(showFinishView) forControlEvents:UIControlEventTouchUpInside];
+    [_rememberBtn addTarget:self action:@selector(showNextOne) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_rememberBtn];
+    _rememberBtn.hidden = YES;
     
     _forgetBtn = [[UIButton alloc]init];
-    _forgetBtn.frame = CGRectMake(progressView.x, CGRectGetMaxY(_rememberBtn.frame)+5, progressView.width,
-                                 40);
+    _forgetBtn.frame = CGRectMake(_progressView.x, CGRectGetMaxY(_rememberBtn.frame)+5, _progressView.width,
+                                  40);
     _forgetBtn.backgroundColor = [UIColor colorWithRed:230.0/255 green:180.0/255 blue:80.0/255 alpha:1];
     [_forgetBtn setTitle:@"忘记了" forState:UIControlStateNormal];
     [_forgetBtn addTarget:self action:@selector(showReminder) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_forgetBtn];
-    
+    _forgetBtn.hidden = YES;
    
 }
--(void)showFinishView
+-(void)showButtons
 {
-    FinishViewController * finishView = [[FinishViewController alloc]init];
-    [self.navigationController pushViewController:finishView animated:YES];
+    _tooEasyBtn.hidden = NO;
+    _rememberBtn.hidden = NO;
+    _forgetBtn.hidden = NO;
+}
+-(void)showNextOne
+{
+    _listNo++;
+
+    if (_listNo == _listArray.count-1) {
+        FinishViewController * finishView = [[FinishViewController alloc]init];
+        [self.navigationController pushViewController:finishView animated:YES];
+    }
+    else
+    {
+//        _interpretationLabel.hidden = YES;
+//        _reminderDisplay.hidden = YES;
+        
+        [self loadWordDisplay];
+        [self showButtons];
+        _interpretationLabel.hidden = YES;
+        _reminderDisplay.hidden = YES;
+        _rememberBtn.hidden = NO;
+        _forgetBtn.hidden = NO;
+        _tooEasyBtn.hidden = NO;
+    }
 }
 -(void)showReminder
 {
     self.navigationItem.title = @"提醒模式";
-    _tooEasyBtn.frame = _rememberBtn.frame;
-    _forgetBtn.frame = _rememberBtn.frame;
+//    _tooEasyBtn.frame = _rememberBtn.frame;
+//    _forgetBtn.frame = _rememberBtn.frame;
     [_rememberBtn setTitle:@"下一个" forState:UIControlStateNormal];
     _tooEasyBtn.hidden = YES;
     _forgetBtn.hidden = YES;
+    
     _reminderDisplay.hidden = NO;
     _interpretationLabel.hidden = NO;
+    [self showDisPlays];
     
 }
 -(void)setUpNavi
