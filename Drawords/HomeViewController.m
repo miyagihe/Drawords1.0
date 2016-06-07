@@ -38,17 +38,47 @@
 }
 -(void)loadWords
 {
+    
+//        NSArray *storeFilePath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES);
+//        NSString *doucumentsDirectiory = [storeFilePath objectAtIndex:0];
+//        NSString *docPath =[doucumentsDirectiory stringByAppendingPathComponent:@"Words.xml"];
+//        NSDictionary * dict = [[NSDictionary alloc]initWithContentsOfFile:docPath];
+//    NSLog(@"is %@",dict);
+//    
+////        NSFileManager *manager = [NSFileManager defaultManager];
+//
+//    
+////    NSArray *storeFilePath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES);
+////    NSString *doucumentsDirectiory = [storeFilePath objectAtIndex:0];
+////    NSString *docPath =[doucumentsDirectiory stringByAppendingPathComponent:@"Words.xml"];
+////    NSFileManager *manager = [NSFileManager defaultManager];
+////    NSLog(@"%@",NSHomeDirectory());
+////    if ([manager fileExistsAtPath:docPath])
+////    {·
+////        NSLog(@"沙河中已经存在文件");
+////    }
+////    else //若沙盒中没有
+////    {
+////        NSError *error;
+////        NSFileManager *fileManager = [NSFileManager defaultManager];
+////        NSString *bundle = [[NSBundle mainBundle] pathForResource:@"Words" ofType:@"xml"];
+////        [fileManager copyItemAtPath:bundle toPath:docPath error:&error];
+////        NSLog(@"写入没有%d",[fileManager copyItemAtPath:bundle toPath:docPath error:&error]);
+////    }
+    
     NSString *xmlPath = [[NSBundle mainBundle] pathForResource:@"Words"ofType:@"xml"];
     NSString *xmlString = [NSString stringWithContentsOfFile:xmlPath encoding:NSUTF8StringEncoding error:nil];
     GDataXMLDocument *xmlDoc = [[GDataXMLDocument alloc] initWithXMLString:xmlString options:0 error:nil];
     GDataXMLElement *xmlRoot = [xmlDoc rootElement];
     _wordslistArray = [xmlRoot children];
+    _testList = [_wordslistArray mutableCopy];
+//    _testList = @[@2,@3];
+//    NSLog(@"%@",_testList);
+
+    
     [_todayQuantity setTitle:[NSString stringWithFormat:@"%lu",(unsigned long)_wordslistArray.count] forState:UIControlStateNormal];
-    
     [_unknownQuantity setTitle:@"20" forState:UIControlStateNormal];
-    
     [_finishedQuantity setTitle:@"0" forState:UIControlStateNormal];
-    
 }
 -(void)setUpUpContentView
 {

@@ -11,23 +11,20 @@
 #import "UIView+Extension.h"
 #import "WordDisplayButton.h"
 #import "FinishViewController.h"
-#import "GDataXMLNode.h"
-#import "TodayTask.h"
 #import "HomeViewController.h"
+#import "XMLDictionary.h"
 @interface StudyModeViewController ()
+
 @property(nonatomic,strong)UIButton * tooEasyBtn;
 @property(nonatomic,strong)UIButton * forgetBtn;
 @property(nonatomic,strong)UIButton * rememberBtn;
 @property(nonatomic,strong)WordDisplayButton * wordDisplay;
-@property(nonatomic,strong)HomeViewController * homeView;
 @property(nonatomic,strong)UILabel * reminderDisplay;
-@property(nonatomic,assign)int listNo;
-@property(nonatomic,strong)NSArray* listArray;
 @property(nonatomic,strong)UILabel * interpretationLabel;
+@property(nonatomic,assign)int listNo;
+@property(nonatomic,copy)NSArray* listArray;
+@property(nonatomic,strong)NSArray * finishedArray;
 @property(nonatomic,strong)UIView * progressView;
-@property(nonatomic,strong)GDataXMLElement * element;
-
-
 
 @end
 
@@ -36,14 +33,26 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _listNo = 0;
-    self.view.backgroundColor = HJCBACKGROUNDCOLOR;
+    
+    [self loadData];
     [self setProgressView];
     [self setUpNavi];
     [self createButtons];
+    [self createWordDisplay];
     [self loadWordDisplay];
     [self createDisPlays];
-
+}
+-(void)loadData
+{
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Words" ofType:@"xml"];
+    NSDictionary *xmlDoc = [NSDictionary dictionaryWithXMLFile:filePath];
+    _listArray = [xmlDoc objectForKey:@"RECORD"];
+    NSLog(@"%@",[_listArray[0] valueForKey:@"DeWord"]);
+}
+-(void)test
+{
     
+    NSLog(@"%@",[[HomeViewController alloc]init].testList);
 }
 -(void)setProgressView{
     _progressView = [[UIView alloc]init];
@@ -51,27 +60,19 @@
     _progressView.backgroundColor = HJCMENUCOLOR;
     [self.view addSubview:_progressView];
 }
--(void)loadWordDisplay
+-(void)createWordDisplay
 {
-    NSString *xmlPath = [[NSBundle mainBundle] pathForResource:@"Words"ofType:@"xml"];
-    NSString *xmlString = [NSString stringWithContentsOfFile:xmlPath encoding:NSUTF8StringEncoding error:nil];
-    GDataXMLDocument *xmlDoc = [[GDataXMLDocument alloc] initWithXMLString:xmlString options:0 error:nil];
-    GDataXMLElement *xmlRoot = [xmlDoc rootElement];
-    _listArray = [xmlRoot children];
-    _element = _listArray[_listNo];
-    NSArray * DeWordarray = [_element elementsForName:@"DeWord"];
-    GDataXMLElement * subelement = DeWordarray[0];
-    
-   
     _wordDisplay = [[WordDisplayButton alloc]init];
     _wordDisplay.frame = CGRectMake(_progressView.x, _progressView.y+15, _progressView.width, 40);
     _wordDisplay.backgroundColor = HJCMENUCOLOR;
     _wordDisplay.soundView.image = [UIImage imageNamed:@"d_haha"];
-    _wordDisplay.wordLabel.text = subelement.stringValue;
     _wordDisplay.wordLabel.textAlignment = NSTextAlignmentCenter;
-
     [self.view addSubview:_wordDisplay];
-    
+}
+-(void)loadWordDisplay
+{
+    NSLog(@"%s",__func__);
+    _wordDisplay.wordLabel.text = [_listArray[_listNo] valueForKey:@"DeWord"];
     [self showButtons];
 }
 -(void)createDisPlays
@@ -93,27 +94,13 @@
 }
 -(void)showDisPlays
 {
-    NSString *xmlPath = [[NSBundle mainBundle] pathForResource:@"Words"ofType:@"xml"];
-    NSString *xmlString = [NSString stringWithContentsOfFile:xmlPath encoding:NSUTF8StringEncoding error:nil];
-    GDataXMLDocument *xmlDoc = [[GDataXMLDocument alloc] initWithXMLString:xmlString options:0 error:nil];
-    GDataXMLElement *xmlRoot = [xmlDoc rootElement];
-    _listArray = [xmlRoot children];
-    _element = _listArray[_listNo];
-
+    _reminderDisplay.text = [NSString stringWithFormat:@"中文直译:%@",[_listArray[_listNo] valueForKey:@"DeWord"]];
     
-    NSArray * CnWordarray = [_element elementsForName:@"CnWord"];
-    GDataXMLElement * Cnsubelement = CnWordarray[0];
-    _reminderDisplay.text = [NSString stringWithFormat:@"中文直译:%@",Cnsubelement.stringValue];
-
-    
-
-
-    NSArray * InWordarray = [_element elementsForName:@"Interpretation"];
-    GDataXMLElement * Insubelement = InWordarray[0];
-    _interpretationLabel.numberOfLines = 0;
-    _interpretationLabel.text = [NSString stringWithFormat:@"%@",[Insubelement.stringValue
+    _interpretationLabel.text = [NSString stringWithFormat:@"%@",[[_listArray[_listNo] valueForKey:@"Interpretation"]
                                                                   stringByReplacingOccurrencesOfString:@"\\n" withString:@" \r\n" ]];
-   
+    _reminderDisplay.hidden = NO;
+    _interpretationLabel.hidden = NO;
+
 }
 -(void)createButtons
 {
@@ -158,29 +145,23 @@
     }
     else
     {
-//        _interpretationLabel.hidden = YES;
-//        _reminderDisplay.hidden = YES;
-        
         [self loadWordDisplay];
         [self showButtons];
+        [_rememberBtn setTitle:@"记得" forState:UIControlStateNormal];
         _interpretationLabel.hidden = YES;
         _reminderDisplay.hidden = YES;
         _rememberBtn.hidden = NO;
         _forgetBtn.hidden = NO;
         _tooEasyBtn.hidden = NO;
     }
+    
 }
 -(void)showReminder
 {
     self.navigationItem.title = @"提醒模式";
-//    _tooEasyBtn.frame = _rememberBtn.frame;
-//    _forgetBtn.frame = _rememberBtn.frame;
     [_rememberBtn setTitle:@"下一个" forState:UIControlStateNormal];
     _tooEasyBtn.hidden = YES;
     _forgetBtn.hidden = YES;
-    
-    _reminderDisplay.hidden = NO;
-    _interpretationLabel.hidden = NO;
     [self showDisPlays];
     
 }

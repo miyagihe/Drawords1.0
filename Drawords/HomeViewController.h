@@ -10,5 +10,7 @@
 
 @interface HomeViewController : UIViewController
 @property(nonatomic,strong)NSArray *wordslistArray;
+@property(nonatomic,strong)NSArray *testList;
+
 
 @end
