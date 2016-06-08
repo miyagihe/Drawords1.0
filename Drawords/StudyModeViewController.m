@@ -32,7 +32,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _listNo = 0;
+    _listNo = 500;
     
     [self loadData];
     [self setProgressView];
@@ -48,11 +48,6 @@
     NSDictionary *xmlDoc = [NSDictionary dictionaryWithXMLFile:filePath];
     _listArray = [xmlDoc objectForKey:@"RECORD"];
     NSLog(@"%@",[_listArray[0] valueForKey:@"DeWord"]);
-}
--(void)test
-{
-    
-    NSLog(@"%@",[[HomeViewController alloc]init].testList);
 }
 -(void)setProgressView{
     _progressView = [[UIView alloc]init];

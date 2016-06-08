@@ -9,12 +9,10 @@
 #import <Foundation/Foundation.h>
 
 @interface HJCAccount : NSObject
-
 @property(nonatomic,strong)NSMutableArray * totalDaysArray;
-@property(nonatomic,strong)NSMutableArray * leartWordsArray;
-@property(nonatomic,strong)NSMutableArray * masterdWordsArray;
+@property(nonatomic,strong)NSMutableArray * historyWordsArray;
 @property(nonatomic,strong)NSMutableArray * todayWordsArray;
-@property(nonatomic,strong)NSMutableArray * unKnownWordsArray;
-@property(nonatomic,strong)NSMutableArray * unfinishedWordsArray;
-
+@property(nonatomic,strong)NSMutableArray * finishedWordsArray;
+@property(nonatomic,strong)NSMutableDictionary * presentDictionary;
+@property(nonatomic,strong)NSString * presentVName;
 @end

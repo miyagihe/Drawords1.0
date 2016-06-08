@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>TotalDays</key>
+	<string>123</string>
+	<key>HistoryWordsArray</key>
+	<string>0</string>
+	<key>TodayArray</key>
+	<string>100</string>
+	<key>FinishedArray</key>
+	<string>0</string>
+	<key>PresentDictName</key>
+	<string>德语基本词汇</string>
+</dict>
+</plist>

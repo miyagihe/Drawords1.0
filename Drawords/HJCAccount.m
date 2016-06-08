@@ -7,19 +7,44 @@
 //
 
 #import "HJCAccount.h"
+#import "XMLDictionary.h"
 
 @implementation HJCAccount
 -(NSMutableArray *)totalDaysArray
 {
+    if (!_totalDaysArray) {
+        _totalDaysArray = [[NSMutableArray alloc]init];
+    }
     return _totalDaysArray;
 }
--(NSMutableArray *)leartWordsArray
+-(NSMutableArray *)historyWordsArray
 {
-    
-     return _leartWordsArray;
+    if (!_historyWordsArray) {
+        _historyWordsArray = [[NSMutableArray alloc]init];
+    }
+    return _historyWordsArray;
 }
--(NSMutableArray *)masterdWordsArray
+-(NSMutableArray *)todayWordsArray{
+    if (!_todayWordsArray) {
+        _todayWordsArray = [[NSMutableArray alloc]init];
+    }
+    return _todayWordsArray;
+}
+-(NSMutableArray *)finishedWordsArray
 {
-    return _masterdWordsArray;
+    if(!_finishedWordsArray)
+    {
+        _finishedWordsArray = [[NSMutableArray alloc]init];
+    }
+    return _finishedWordsArray;
+}
+-(NSMutableDictionary*)presentDictionary
+{
+    if (!_presentDictionary) {
+        _presentDictionary = [[NSMutableDictionary alloc]init];
+        NSString *presentDictPath = [[NSBundle mainBundle] pathForResource:@"Words" ofType:@"xml"];
+        _presentDictionary = [[NSMutableDictionary dictionaryWithXMLFile:presentDictPath] mutableCopy];
+    }
+    return _presentDictionary;
 }
 @end

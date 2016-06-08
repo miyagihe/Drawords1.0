@@ -11,9 +11,9 @@
 #import "UIView+Extension.h"
 
 @interface FinishViewController ()
-@property (strong, nonatomic) IBOutlet UILabel *FinishLabel;
-@property (strong, nonatomic) IBOutlet UIButton *BackToHomeBtn;
-- (IBAction)BackToHomeAction:(UIButton *)sender;
+@property (strong, nonatomic) UILabel *FinishLabel;
+@property (strong, nonatomic) UIButton *BackToHomeBtn;
+
 
 @end
 
@@ -21,23 +21,35 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor =HJCBACKGROUNDCOLOR;
     [self setUpNavi];
     [self setInterface];
 }
 -(void)setInterface
 {
-    _FinishLabel.y = self.view.height-300;
+    self.view.backgroundColor =HJCBACKGROUNDCOLOR;
+    
+    _FinishLabel = [[UILabel alloc]init];
+    _FinishLabel.y = 180;
     _FinishLabel.width = 200;
     _FinishLabel.height = 50;
+    _FinishLabel.x = self.view.width/2-_FinishLabel.width/2;
+    _FinishLabel.text = @"今日计划已完成";
+    _FinishLabel.font = [UIFont systemFontOfSize:25];
+    _FinishLabel.textAlignment = NSTextAlignmentCenter;
+    _FinishLabel.textColor = HJCWORDCOLOR;
+    [self.view addSubview:_FinishLabel];
     
-//    _BackToHomeBtn = [[UIButton alloc]init];
+    _BackToHomeBtn = [[UIButton alloc]init];
     _BackToHomeBtn.layer.cornerRadius = 5;
-    _BackToHomeBtn.y = _FinishLabel.y+_FinishLabel.height+100;
+    _BackToHomeBtn.y = _FinishLabel.y+_FinishLabel.height+200;
     _BackToHomeBtn.width = 300;
     _BackToHomeBtn.height = 50;
-    
-    
+    _BackToHomeBtn.x = self.view.width/2-_BackToHomeBtn.width/2;
+    [_BackToHomeBtn setTitle:@"返回首页" forState:normal];
+    [_BackToHomeBtn addTarget:self action:@selector(BackToHomeAction) forControlEvents:UIControlEventTouchUpInside];
+    [_BackToHomeBtn setTitleColor:[UIColor grayColor] forState:UIControlStateHighlighted];
+    _BackToHomeBtn.backgroundColor = HJCWORDCOLOR;
+    [self.view addSubview:_BackToHomeBtn];
 }
 -(void)setUpNavi
 {
@@ -51,20 +63,27 @@
     self.navigationController.navigationBar.translucent = NO;
     self.navigationController.navigationBar.barTintColor = HJCBACKGROUNDCOLOR;
     self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:23.0/255 green:44.0/255 blue:60.0/255 alpha:0.7];
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"tabbar_home_selected"] style:UIBarButtonItemStylePlain target:self action:@selector(moveToTodayPlan)];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"tabbar_home_selected"] style:UIBarButtonItemStylePlain target:self action:@selector(BackToHomeAction:)];
     UIBarButtonItem * leftBarBtn = self.navigationItem.leftBarButtonItem;
     leftBarBtn.tintColor = HJCWORDCOLOR;
-}
--(void)moveToTodayPlan
-{
-    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
 
-- (IBAction)BackToHomeAction:(UIButton *)sender {
+- (void)BackToHomeAction{
+    
+    NSArray *UserAccountPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES);
+    NSString *doucumentsDirectiory = [UserAccountPath objectAtIndex:0];
+    NSString*plistPath =[doucumentsDirectiory stringByAppendingPathComponent:@"UserAccount.plist"];
+    NSDictionary*userAccountDict = [NSMutableDictionary dictionaryWithContentsOfFile:plistPath];
+    
+    NSString * day =[userAccountDict valueForKey:@"TotalDays"];
+    int intDAY = [day intValue]+1;
+    NSString *stringInt = [NSString stringWithFormat:@"%d",intDAY];
+    [userAccountDict setValue:stringInt forKey:@"TotalDays"];
+    [userAccountDict writeToFile:plistPath atomically:YES];
     [self.navigationController popToRootViewControllerAnimated:YES];
     
 }

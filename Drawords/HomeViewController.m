@@ -13,10 +13,15 @@
 #import "UIView+Extension.h"
 #import "StudyModeViewController.h"
 #import "HJCButton.h"
+#import "XMLDictionary.h"
+#import "HJCAccount.h"
 @interface HomeViewController ()
-@property(nonatomic,strong)UIButton * todayQuantity;
-@property(nonatomic,strong)UIButton * unknownQuantity;
-@property(nonatomic,strong)UIButton * finishedQuantity;
+@property(nonatomic,strong)UIButton * historyBtn;
+@property(nonatomic,strong)UIButton * TodayBtn;
+@property(nonatomic,strong)UIButton * finishedBtn;
+@property(nonatomic,strong)NSMutableArray * todayArray;
+@property(nonatomic,strong)NSMutableArray * presentVocalbulary;
+@property(nonatomic,strong)UIButton * totalDaysBtn;
 @end
 
 @implementation HomeViewController
@@ -25,113 +30,103 @@
 {
     return UIStatusBarStyleLightContent;
 }
+
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
     
     [self setUpNavi];
     
     [self setUpUpContentView];
     
-    [self loadWords];
-
+    [self writeUserAccountPlistToSandBox];
+    
     NSLog(@"%@",NSHomeDirectory());
+}
+-(void)viewDidAppear:(BOOL)animated{
+    [self loadWords];
+}
+-(void)writeUserAccountPlistToSandBox
+{
+    NSArray *storeFilePath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES);
+    NSString *doucumentsDirectiory = [storeFilePath objectAtIndex:0];
+    NSString *plistPath =[doucumentsDirectiory stringByAppendingPathComponent:@"UserAccount.plist"];
+    NSFileManager *file = [NSFileManager defaultManager];
+    if ([file fileExistsAtPath:plistPath])
+    {
+        NSLog(@"exists");
+    }
+    else //若沙盒中没有
+    {
+        NSError *error;
+        NSFileManager *fileManager = [NSFileManager defaultManager];
+        NSString *bundle = [[NSBundle mainBundle] pathForResource:@"UserAccount" ofType:@"plist"];
+        [fileManager copyItemAtPath:bundle toPath:plistPath error:&error];
+    }
 }
 -(void)loadWords
 {
-    
-//        NSArray *storeFilePath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES);
-//        NSString *doucumentsDirectiory = [storeFilePath objectAtIndex:0];
-//        NSString *docPath =[doucumentsDirectiory stringByAppendingPathComponent:@"Words.xml"];
-//        NSDictionary * dict = [[NSDictionary alloc]initWithContentsOfFile:docPath];
-//    NSLog(@"is %@",dict);
-//    
-////        NSFileManager *manager = [NSFileManager defaultManager];
-//
-//    
-////    NSArray *storeFilePath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES);
-////    NSString *doucumentsDirectiory = [storeFilePath objectAtIndex:0];
-////    NSString *docPath =[doucumentsDirectiory stringByAppendingPathComponent:@"Words.xml"];
-////    NSFileManager *manager = [NSFileManager defaultManager];
-////    NSLog(@"%@",NSHomeDirectory());
-////    if ([manager fileExistsAtPath:docPath])
-////    {·
-////        NSLog(@"沙河中已经存在文件");
-////    }
-////    else //若沙盒中没有
-////    {
-////        NSError *error;
-////        NSFileManager *fileManager = [NSFileManager defaultManager];
-////        NSString *bundle = [[NSBundle mainBundle] pathForResource:@"Words" ofType:@"xml"];
-////        [fileManager copyItemAtPath:bundle toPath:docPath error:&error];
-////        NSLog(@"写入没有%d",[fileManager copyItemAtPath:bundle toPath:docPath error:&error]);
-////    }
-    
-       _testList = [_wordslistArray mutableCopy];
-//    _testList = @[@2,@3];
-//    NSLog(@"%@",_testList);
+    NSArray *UserAccountPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES);
+    NSString *doucumentsDirectiory = [UserAccountPath objectAtIndex:0];
+    NSString*plistPath =[doucumentsDirectiory stringByAppendingPathComponent:@"UserAccount.plist"];
+    NSDictionary*userAccountDict = [NSMutableDictionary dictionaryWithContentsOfFile:plistPath];
 
     
-    [_todayQuantity setTitle:[NSString stringWithFormat:@"%lu",(unsigned long)_wordslistArray.count] forState:UIControlStateNormal];
-    [_unknownQuantity setTitle:@"20" forState:UIControlStateNormal];
-    [_finishedQuantity setTitle:@"0" forState:UIControlStateNormal];
+    [_totalDaysBtn setTitle:[NSString stringWithFormat:@"%@",[userAccountDict valueForKey:@"TotalDays"]] forState:UIControlStateNormal];
+    [_TodayBtn setTitle:[NSString stringWithFormat:@"%@",[userAccountDict valueForKey:@"TotalDays"]] forState:UIControlStateNormal];
+    [_finishedBtn setTitle:[NSString stringWithFormat:@"%@",[userAccountDict valueForKey:@"TotalDays"]] forState:UIControlStateNormal];
+    [_historyBtn setTitle:[NSString stringWithFormat:@"%@",[userAccountDict valueForKey:@"TotalDays"]] forState:UIControlStateNormal];
+    
+    HJCAccount * account = [[HJCAccount alloc]init];
+    NSLog(@"%lu",(unsigned long)account.finishedWordsArray.count);
 }
 -(void)setUpUpContentView
 {
+    //上容器
     UIView * upContainerView = [[UIView alloc]init];
     upContainerView.backgroundColor = HJCMENUCOLOR;
     upContainerView.frame = CGRectMake(10,self.navigationController.navigationBar.bounds.size.height-30, self.view.bounds.size.width-20, 150);
     upContainerView.layer.cornerRadius = 5;
     [self.view addSubview:upContainerView];
-    
+    //分割线
     UIView * divider = [[UIView alloc]init];
     divider.frame = CGRectMake(upContainerView.width/2-20, 10, 2, upContainerView.height-20);
     divider.backgroundColor = HJCWORDCOLOR;
     [upContainerView addSubview:divider];
-    
-    UIButton * totalDays = [[UIButton alloc]init];
-    [totalDays setTitle:@"12341" forState:UIControlStateNormal];
-    totalDays.titleLabel.font = [ UIFont systemFontOfSize:32];
-    totalDays.frame = CGRectMake(totalDays.x, 30,100, 50);
-    totalDays.x=divider.x/2-totalDays.width/2;
-    [totalDays setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [upContainerView addSubview:totalDays];
+    //历史天数
+    _totalDaysBtn = [[UIButton alloc]init];
+    [_totalDaysBtn setTitle:@"12341" forState:UIControlStateNormal];
+    _totalDaysBtn.titleLabel.font = [ UIFont systemFontOfSize:32];
+    _totalDaysBtn.frame = CGRectMake(_totalDaysBtn.x, 30,100, 50);
+    _totalDaysBtn.x=divider.x/2-_totalDaysBtn.width/2;
+    [_totalDaysBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [upContainerView addSubview:_totalDaysBtn];
     
     UILabel * totalDaysWord = [[UILabel alloc]init];
     totalDaysWord.textAlignment = NSTextAlignmentCenter;
     totalDaysWord.text = @"学习天数";
     totalDaysWord.textColor = HJCWORDCOLOR;
-    totalDaysWord.frame = CGRectMake(totalDays.x, totalDays.y+totalDays.height, 100, 30);
+    totalDaysWord.frame = CGRectMake(_totalDaysBtn.x, _totalDaysBtn.y+_totalDaysBtn.height, 100, 30);
     [upContainerView addSubview:totalDaysWord];
     
-    //累计学习单词数
-    HJCButton * totalQuantity = [[HJCButton alloc]init];
-    totalQuantity.quantity.text = @"12345";
-    totalQuantity.quantity.textAlignment = NSTextAlignmentRight;
-    totalQuantity.quantity.font = [UIFont systemFontOfSize:18];
-    totalQuantity.quantity.textColor =[UIColor colorWithRed:230.0/255 green:180.0/255 blue:80.0/255 alpha:1];
-    totalQuantity.Qdescription.text = @"/已学习单词数";
-    totalQuantity.Qdescription.font = [UIFont systemFontOfSize:12];
-    totalQuantity.Qdescription.textColor = HJCWORDCOLOR;
-    totalQuantity.y = totalDays.y;
-    totalQuantity.width = upContainerView.width-CGRectGetMaxX(divider.frame)-20;
-    totalQuantity.height = 40;
-    totalQuantity.x= CGRectGetMaxX(divider.frame)+(upContainerView.width-CGRectGetMaxX(divider.frame))/2-totalQuantity.width/2;
-    [upContainerView addSubview:totalQuantity];
+    //正在学习的单词书
+    UIButton * presentVBtn = [[UIButton alloc]init];
+    [presentVBtn setTitle:@"正在学习单词书" forState:UIControlStateNormal];
+    presentVBtn.y = _totalDaysBtn.y;
+    presentVBtn.width = upContainerView.width-CGRectGetMaxX(divider.frame)-20;
+    presentVBtn.height = 40;
+    presentVBtn.x= CGRectGetMaxX(divider.frame)+(upContainerView.width-CGRectGetMaxX(divider.frame))/2-presentVBtn.width/2;
+    [upContainerView addSubview:presentVBtn];
     
-    //掌握单词数
-    HJCButton * quantiryInHand = [[HJCButton alloc]init];
-    quantiryInHand.quantity.text = @"12";
-    quantiryInHand.quantity.textAlignment = NSTextAlignmentRight;
-    quantiryInHand.quantity.font = [UIFont systemFontOfSize:18];
-    quantiryInHand.quantity.textColor =[UIColor colorWithRed:230.0/255 green:180.0/255 blue:80.0/255 alpha:1];
-    quantiryInHand.Qdescription.text = @"/已掌握单词数";
-    quantiryInHand.Qdescription.font = [UIFont systemFontOfSize:12];
-    quantiryInHand.Qdescription.textColor = HJCWORDCOLOR;
-    quantiryInHand.y = totalDays.y+40;
-    quantiryInHand.width = upContainerView.width-CGRectGetMaxX(divider.frame)-20;
-    quantiryInHand.height = 40;
-    quantiryInHand.x= CGRectGetMaxX(divider.frame)+(upContainerView.width-CGRectGetMaxX(divider.frame))/2-totalQuantity.width/2;
-    [upContainerView addSubview:quantiryInHand];
+
+    UIButton * presentVDesBtn = [[UIButton alloc]init];
+    [presentVDesBtn setTitle:@"德语基础词汇" forState:UIControlStateNormal];
+    [presentVDesBtn setTitleColor:HJCWORDCOLOR forState:UIControlStateNormal];
+    presentVDesBtn.y = _totalDaysBtn.y+40;
+    presentVDesBtn.width = upContainerView.width-CGRectGetMaxX(divider.frame)-20;
+    presentVDesBtn.height = 40;
+    presentVDesBtn.x= CGRectGetMaxX(divider.frame)+(upContainerView.width-CGRectGetMaxX(divider.frame))/2-presentVBtn.width/2;
+    [upContainerView addSubview:presentVDesBtn];
     
     UIView * downContainerView = [[UIView alloc]init];
     downContainerView.frame = CGRectMake(upContainerView.x, CGRectGetMaxY(upContainerView.frame)+30, upContainerView.width, upContainerView.height);
@@ -139,52 +134,58 @@
     downContainerView.layer.cornerRadius = 5;
     [self.view addSubview:downContainerView];
     
-    _todayQuantity = [[UIButton alloc]init];
-    [_todayQuantity setTitle:@"999" forState:UIControlStateNormal];
-    _todayQuantity.titleLabel.font = [ UIFont systemFontOfSize:32 weight:5];
-    _todayQuantity.frame = CGRectMake(30, 30,80, 50);
-    _todayQuantity.layer.cornerRadius = 5;
-    [_todayQuantity setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [downContainerView addSubview:_todayQuantity];
     
-    UILabel * todayQuantityWords = [[UILabel alloc]init];
-    todayQuantityWords.textAlignment = NSTextAlignmentCenter;
-    todayQuantityWords.text = @"今日单词";
-    todayQuantityWords.textColor = HJCWORDCOLOR;
-    todayQuantityWords.frame = CGRectMake(_todayQuantity.x, _todayQuantity.y+_todayQuantity.height, 80, 30);
-    [downContainerView addSubview:todayQuantityWords];
+    //历史学习数
+    _historyBtn = [[UIButton alloc]init];
+    [_historyBtn setTitle:@"999" forState:UIControlStateNormal];
+    _historyBtn.titleLabel.font = [ UIFont systemFontOfSize:32 weight:5];
+    _historyBtn.frame = CGRectMake(30, 30,80, 50);
+    _historyBtn.layer.cornerRadius = 5;
+    [_historyBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [downContainerView addSubview:_historyBtn];
     
-    _unknownQuantity = [[UIButton alloc]init];
-    [_unknownQuantity setTitle:@"100" forState:UIControlStateNormal];
-    _unknownQuantity.titleLabel.font = [ UIFont systemFontOfSize:32 weight:5];
-    _unknownQuantity.frame = CGRectMake(upContainerView.width*0.5-40, 30,80, 50);
-    _unknownQuantity.layer.cornerRadius = 5;
-    [_unknownQuantity setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [downContainerView addSubview:_unknownQuantity];
+    UILabel * historyBtnWords = [[UILabel alloc]init];
+    historyBtnWords.textAlignment = NSTextAlignmentCenter;
+    historyBtnWords.text = @"历史学习";
+    historyBtnWords.textColor = HJCWORDCOLOR;
+    historyBtnWords.frame = CGRectMake(_historyBtn.x, _historyBtn.y+_historyBtn.height, 80, 30);
+    [downContainerView addSubview:historyBtnWords];
     
-    UILabel * unknownQuantityWords = [[UILabel alloc]init];
-    unknownQuantityWords.textAlignment = NSTextAlignmentCenter;
-    unknownQuantityWords.text = @"今日新词";
-    unknownQuantityWords.textColor = HJCWORDCOLOR;
-    unknownQuantityWords.frame = CGRectMake(_unknownQuantity.x, _unknownQuantity.y+_unknownQuantity.height, 80, 30);
-    [downContainerView addSubview:unknownQuantityWords];
+    //今日任务
+    _TodayBtn = [[UIButton alloc]init];
+    [_TodayBtn setTitle:@"100" forState:UIControlStateNormal];
+    _TodayBtn.titleLabel.font = [ UIFont systemFontOfSize:32 weight:5];
+    _TodayBtn.frame = CGRectMake(upContainerView.width*0.5-40, 30,80, 50);
+    _TodayBtn.layer.cornerRadius = 5;
+    [_TodayBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [downContainerView addSubview:_TodayBtn];
     
-    _finishedQuantity = [[UIButton alloc]init];
-    [_finishedQuantity setTitle:@"100" forState:UIControlStateNormal];
-    _finishedQuantity.titleLabel.font = [ UIFont systemFontOfSize:32 weight:5];
-    [_finishedQuantity setTitleColor:HJCWORDCOLOR forState:UIControlStateNormal];
-    _finishedQuantity.frame = CGRectMake(downContainerView.width-30-80, 30,80, 50);
-    _finishedQuantity.layer.cornerRadius = 5;
-    [downContainerView addSubview:_finishedQuantity];
-    
-    UILabel * finishedQuantityWords = [[UILabel alloc]init];
-    finishedQuantityWords.textAlignment = NSTextAlignmentCenter;
-    finishedQuantityWords.text = @"已完成";
-    finishedQuantityWords.textColor = HJCWORDCOLOR;
-    finishedQuantityWords.frame = CGRectMake(_finishedQuantity.x, _finishedQuantity.y+_finishedQuantity.height, 80, 30);
-    [downContainerView addSubview:finishedQuantityWords];
+    UILabel * TodayBtnWords = [[UILabel alloc]init];
+    TodayBtnWords.textAlignment = NSTextAlignmentCenter;
+    TodayBtnWords.text = @"今日计划";
+    TodayBtnWords.textColor = HJCWORDCOLOR;
+    TodayBtnWords.frame = CGRectMake(_TodayBtn.x, _TodayBtn.y+_TodayBtn.height, 80, 30);
+    [downContainerView addSubview:TodayBtnWords];
     
     
+    //今日完成数
+    _finishedBtn = [[UIButton alloc]init];
+    [_finishedBtn setTitle:@"100" forState:UIControlStateNormal];
+    _finishedBtn.titleLabel.font = [ UIFont systemFontOfSize:32 weight:5];
+    [_finishedBtn setTitleColor:HJCWORDCOLOR forState:UIControlStateNormal];
+    _finishedBtn.frame = CGRectMake(downContainerView.width-30-80, 30,80, 50);
+    _finishedBtn.layer.cornerRadius = 5;
+    [downContainerView addSubview:_finishedBtn];
+    
+    UILabel * finishedBtnWords = [[UILabel alloc]init];
+    finishedBtnWords.textAlignment = NSTextAlignmentCenter;
+    finishedBtnWords.text = @"今日完成";
+    finishedBtnWords.textColor = HJCWORDCOLOR;
+    finishedBtnWords.frame = CGRectMake(_finishedBtn.x, _finishedBtn.y+_finishedBtn.height, 80, 30);
+    [downContainerView addSubview:finishedBtnWords];
+    
+    
+    //GO
     UIButton * goBtn = [[UIButton alloc]init];
     goBtn.backgroundColor = HJCWORDCOLOR;
     goBtn.frame = CGRectMake(self.view.width/2-40,(CGRectGetMaxY(downContainerView.frame)+(self.view.height-CGRectGetMaxY(downContainerView.frame))/2)-80, 80, 80);

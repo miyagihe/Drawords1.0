@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E0C12681D084C31004ECD58 /* UserAccount.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E0C12671D084C31004ECD58 /* UserAccount.plist */; };
 		2E5E44BA1CFE7D1700FF318D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E44B91CFE7D1700FF318D /* main.m */; };
 		2E5E44BD1CFE7D1700FF318D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E44BC1CFE7D1700FF318D /* AppDelegate.m */; };
 		2E5E44C61CFE7D1700FF318D /* Drawords.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E44C41CFE7D1700FF318D /* Drawords.xcdatamodeld */; };
@@ -32,7 +33,6 @@
 		2E5E453D1D0029A900FF318D /* WordDisplayButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E453C1D0029A900FF318D /* WordDisplayButton.m */; };
 		2E5E45431D0067EE00FF318D /* HJCButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E45421D0067EE00FF318D /* HJCButton.m */; };
 		2E5E454B1D00833800FF318D /* FinishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E45491D00833800FF318D /* FinishViewController.m */; };
-		2E5E454C1D00833800FF318D /* FinishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E5E454A1D00833800FF318D /* FinishViewController.xib */; };
 		2E5E45591D018F0E00FF318D /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E45551D018F0E00FF318D /* MBProgressHUD+MJ.m */; };
 		2E5E455A1D018F0E00FF318D /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2E5E45561D018F0E00FF318D /* MBProgressHUD.bundle */; };
 		2E5E455B1D018F0E00FF318D /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E45581D018F0E00FF318D /* MBProgressHUD.m */; };
@@ -82,6 +82,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2E0C12671D084C31004ECD58 /* UserAccount.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UserAccount.plist; sourceTree = "<group>"; };
 		2E5E44B51CFE7D1700FF318D /* Drawords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drawords.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E5E44B91CFE7D1700FF318D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2E5E44BB1CFE7D1700FF318D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -132,7 +133,6 @@
 		2E5E45421D0067EE00FF318D /* HJCButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJCButton.m; sourceTree = "<group>"; };
 		2E5E45481D00833800FF318D /* FinishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinishViewController.h; sourceTree = "<group>"; };
 		2E5E45491D00833800FF318D /* FinishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinishViewController.m; sourceTree = "<group>"; };
-		2E5E454A1D00833800FF318D /* FinishViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FinishViewController.xib; sourceTree = "<group>"; };
 		2E5E45541D018F0E00FF318D /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
 		2E5E45551D018F0E00FF318D /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
 		2E5E45561D018F0E00FF318D /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
@@ -186,6 +186,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E0C12691D084E2E004ECD58 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
 		2E5E44AC1CFE7D1700FF318D = {
 			isa = PBXGroup;
 			children = (
@@ -306,12 +313,14 @@
 		2E5E450C1CFEB32300FF318D /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				2E0C12691D084E2E004ECD58 /* model */,
 				2E5E44EE1CFE7D5700FF318D /* HomeViewController.h */,
 				2E5E44EF1CFE7D5700FF318D /* HomeViewController.m */,
 				2E5E45411D0067EE00FF318D /* HJCButton.h */,
 				2E5E45421D0067EE00FF318D /* HJCButton.m */,
 				2E6585181D06622D009AC2D7 /* HJCAccount.h */,
 				2E6585191D06622D009AC2D7 /* HJCAccount.m */,
+				2E0C12671D084C31004ECD58 /* UserAccount.plist */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -410,7 +419,6 @@
 			children = (
 				2E5E45481D00833800FF318D /* FinishViewController.h */,
 				2E5E45491D00833800FF318D /* FinishViewController.m */,
-				2E5E454A1D00833800FF318D /* FinishViewController.xib */,
 			);
 			name = FinishView;
 			sourceTree = "<group>";
@@ -563,13 +571,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E5E45271CFF18ED00FF318D /* Images.xcassets in Resources */,
-				2E5E454C1D00833800FF318D /* FinishViewController.xib in Resources */,
 				2E5E455A1D018F0E00FF318D /* MBProgressHUD.bundle in Resources */,
 				2E5E44CB1CFE7D1700FF318D /* LaunchScreen.storyboard in Resources */,
 				2EC50C011D073E0200A1D655 /* SoftwareSettings.plist in Resources */,
 				2E5E44C81CFE7D1700FF318D /* Assets.xcassets in Resources */,
 				2E5E45861D040E4D00FF318D /* Words.xml in Resources */,
 				2E65857B1D06B037009AC2D7 /* Settings.bundle in Resources */,
+				2E0C12681D084C31004ECD58 /* UserAccount.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
