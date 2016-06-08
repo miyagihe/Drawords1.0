@@ -17,10 +17,10 @@
 
 @interface StudyPlanViewController ()
 @property(nonatomic,strong)UITableView * menuTableView;
-@property(nonatomic,strong)UISwitch * soundSwitch;
-@property(nonatomic,strong)UISwitch * nightSwitch;
-
-
+@property(nonatomic,strong)UILabel * lanLabel;
+@property(nonatomic,strong)UILabel * bookLabel;
+@property(nonatomic,strong)UILabel * dailyLabel;
+@property(nonatomic,strong)UILabel * reconLabel;
 
 @end
 
@@ -88,27 +88,53 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:ID];
     }
-    _soundSwitch = [[UISwitch alloc]init];
-    _nightSwitch = [[UISwitch alloc]init];
+    _lanLabel = [[UILabel alloc]init];
+    _lanLabel.backgroundColor = HJCWORDCOLOR;
+    _lanLabel.frame = CGRectMake(5, 5, 100, cell.height);
+    _lanLabel.textAlignment = NSTextAlignmentRight;
+
+    _bookLabel = [[UILabel alloc]init];
+    _bookLabel.backgroundColor = HJCWORDCOLOR;
+    _bookLabel.frame = CGRectMake(5, 5, 100, cell.height);
+    _bookLabel.textAlignment = NSTextAlignmentRight;
+    
+    _dailyLabel = [[UILabel alloc]init];
+    _dailyLabel.backgroundColor = HJCWORDCOLOR;
+    _dailyLabel.frame = CGRectMake(5, 5, 120, cell.height);
+    _dailyLabel.textAlignment = NSTextAlignmentRight;
+    
+    _reconLabel = [[UILabel alloc]init];
+    _reconLabel.backgroundColor = HJCWORDCOLOR;
+    _reconLabel.frame = CGRectMake(5, 5, 100, cell.height);
+    _reconLabel.textAlignment = NSTextAlignmentRight;
     switch (indexPath.row)
     {
         case 0:
             cell.textLabel.text = @"语种选择";
             cell.imageView.image = [UIImage imageNamed:@"app"];
+            _lanLabel.text = @"当前:德语";
+            cell.accessoryView = _lanLabel;
             break;
             
         case 1:
             cell.textLabel.text = @"单词书选择";
             cell.imageView.image = [UIImage imageNamed:@"album"];
+            _bookLabel.text = @"当前:德语A1";
+            cell.accessoryView = _bookLabel;
             break;
             
         case 2:
             cell.textLabel.text = @"每日单词书设定";
             cell.imageView.image = [UIImage imageNamed:@"app"];
+            _dailyLabel.text = @"当前:100";
+            cell.accessoryView = _dailyLabel;
             break;
+            
         case 3:
             cell.textLabel.text = @"再认次数设定";
             cell.imageView.image = [UIImage imageNamed:@"album"];
+            _reconLabel.text = @"当前:3";
+            cell.accessoryView = _reconLabel;
             break;
     }
     cell.separatorInset = UIEdgeInsetsZero;

@@ -7,7 +7,6 @@
 //
 
 #import "HJCAccount.h"
-#import "GDataXMLNode.h"
 
 @implementation HJCAccount
 -(NSMutableArray *)totalDaysArray
@@ -17,12 +16,7 @@
 -(NSMutableArray *)leartWordsArray
 {
     
-    NSString *xmlPath = [[NSBundle mainBundle] pathForResource:@"Words"ofType:@"xml"];
-    NSString *xmlString = [NSString stringWithContentsOfFile:xmlPath encoding:NSUTF8StringEncoding error:nil];
-    GDataXMLDocument *xmlDoc = [[GDataXMLDocument alloc] initWithXMLString:xmlString options:0 error:nil];
-    GDataXMLElement *xmlRoot = [xmlDoc rootElement];
-    _leartWordsArray = [[xmlRoot children] mutableCopy];
-    return _leartWordsArray;
+     return _leartWordsArray;
 }
 -(NSMutableArray *)masterdWordsArray
 {

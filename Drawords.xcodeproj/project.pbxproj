@@ -47,6 +47,8 @@
 		2E5E45881D0411DB00FF318D /* Words.xml in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2E5E45851D040E4D00FF318D /* Words.xml */; };
 		2E65851A1D06622D009AC2D7 /* HJCAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6585191D06622D009AC2D7 /* HJCAccount.m */; };
 		2E6585761D069FA6009AC2D7 /* XMLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6585751D069FA6009AC2D7 /* XMLDictionary.m */; };
+		2E65857B1D06B037009AC2D7 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2E65857A1D06B037009AC2D7 /* Settings.bundle */; };
+		2EC50C011D073E0200A1D655 /* SoftwareSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2EC50C001D073E0200A1D655 /* SoftwareSettings.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -155,6 +157,8 @@
 		2E6585191D06622D009AC2D7 /* HJCAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJCAccount.m; sourceTree = "<group>"; };
 		2E6585741D069FA6009AC2D7 /* XMLDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLDictionary.h; sourceTree = "<group>"; };
 		2E6585751D069FA6009AC2D7 /* XMLDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDictionary.m; sourceTree = "<group>"; };
+		2E65857A1D06B037009AC2D7 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		2EC50C001D073E0200A1D655 /* SoftwareSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SoftwareSettings.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,8 +189,10 @@
 		2E5E44AC1CFE7D1700FF318D = {
 			isa = PBXGroup;
 			children = (
+				2E65857A1D06B037009AC2D7 /* Settings.bundle */,
 				2E6585791D06A952009AC2D7 /* words xml */,
 				2E6585781D06A92A009AC2D7 /* LIB */,
+				2E5E450D1CFEB33400FF318D /* cons */,
 				2E5E45261CFF18ED00FF318D /* Images.xcassets */,
 				2E5E452E1CFF331400FF318D /* categary */,
 				2E5E44B71CFE7D1700FF318D /* Drawords */,
@@ -219,7 +225,6 @@
 				2E5E44CC1CFE7D1700FF318D /* Info.plist */,
 				2E5E44C41CFE7D1700FF318D /* Drawords.xcdatamodeld */,
 				2E5E44B81CFE7D1700FF318D /* Supporting Files */,
-				2E5E450D1CFEB33400FF318D /* cons */,
 			);
 			path = Drawords;
 			sourceTree = "<group>";
@@ -284,6 +289,7 @@
 			children = (
 				2E5E45111CFEB51500FF318D /* SoftWareViewController.h */,
 				2E5E45121CFEB51500FF318D /* SoftWareViewController.m */,
+				2EC50C001D073E0200A1D655 /* SoftwareSettings.plist */,
 			);
 			name = SoftwareSettings;
 			sourceTree = "<group>";
@@ -317,6 +323,7 @@
 				2E5E44F21CFE7F8B00FF318D /* Consistant.m */,
 			);
 			name = cons;
+			path = Drawords;
 			sourceTree = "<group>";
 		};
 		2E5E45171CFED06900FF318D /* AccountSettings */ = {
@@ -559,8 +566,10 @@
 				2E5E454C1D00833800FF318D /* FinishViewController.xib in Resources */,
 				2E5E455A1D018F0E00FF318D /* MBProgressHUD.bundle in Resources */,
 				2E5E44CB1CFE7D1700FF318D /* LaunchScreen.storyboard in Resources */,
+				2EC50C011D073E0200A1D655 /* SoftwareSettings.plist in Resources */,
 				2E5E44C81CFE7D1700FF318D /* Assets.xcassets in Resources */,
 				2E5E45861D040E4D00FF318D /* Words.xml in Resources */,
+				2E65857B1D06B037009AC2D7 /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

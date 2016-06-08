@@ -315,7 +315,6 @@
     }];
     
     [self statusBarNeedsAppearanceUpdate];
-    NSLog(@"%f",self.contentViewContainer.bounds.origin.x);
 }
 
 - (void)showRightMenuViewController

@@ -13,7 +13,6 @@
 #import "UIView+Extension.h"
 #import "StudyModeViewController.h"
 #import "HJCButton.h"
-#import "GDataXMLNode.h"
 @interface HomeViewController ()
 @property(nonatomic,strong)UIButton * todayQuantity;
 @property(nonatomic,strong)UIButton * unknownQuantity;
@@ -34,7 +33,8 @@
     [self setUpUpContentView];
     
     [self loadWords];
-    
+
+    NSLog(@"%@",NSHomeDirectory());
 }
 -(void)loadWords
 {
@@ -66,12 +66,7 @@
 ////        NSLog(@"写入没有%d",[fileManager copyItemAtPath:bundle toPath:docPath error:&error]);
 ////    }
     
-    NSString *xmlPath = [[NSBundle mainBundle] pathForResource:@"Words"ofType:@"xml"];
-    NSString *xmlString = [NSString stringWithContentsOfFile:xmlPath encoding:NSUTF8StringEncoding error:nil];
-    GDataXMLDocument *xmlDoc = [[GDataXMLDocument alloc] initWithXMLString:xmlString options:0 error:nil];
-    GDataXMLElement *xmlRoot = [xmlDoc rootElement];
-    _wordslistArray = [xmlRoot children];
-    _testList = [_wordslistArray mutableCopy];
+       _testList = [_wordslistArray mutableCopy];
 //    _testList = @[@2,@3];
 //    NSLog(@"%@",_testList);
 

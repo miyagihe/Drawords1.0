@@ -13,4 +13,8 @@
 @property(nonatomic,strong)NSMutableArray * totalDaysArray;
 @property(nonatomic,strong)NSMutableArray * leartWordsArray;
 @property(nonatomic,strong)NSMutableArray * masterdWordsArray;
+@property(nonatomic,strong)NSMutableArray * todayWordsArray;
+@property(nonatomic,strong)NSMutableArray * unKnownWordsArray;
+@property(nonatomic,strong)NSMutableArray * unfinishedWordsArray;
+
 @end

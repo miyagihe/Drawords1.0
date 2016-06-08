@@ -14,19 +14,37 @@
 @property ( nonatomic,strong)UITableView * menuTableView;
 @property(nonatomic,strong)UISwitch * soundSwitch;
 @property(nonatomic,strong)UISwitch * nightSwitch;
+@property(nonatomic,strong)NSMutableDictionary * settingsDict;
+@property(nonatomic,strong)NSString * plistPath;
 @end
 
 @implementation SoftWareViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     [self setUpNavi];
-    
     [self setTableView];
-    
-   
+    [self writeSettingsPlistToSandBox];
 }
+-(void)writeSettingsPlistToSandBox
+{
+    NSArray *storeFilePath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES);
+    NSString *doucumentsDirectiory = [storeFilePath objectAtIndex:0];
+    NSString *plistPath =[doucumentsDirectiory stringByAppendingPathComponent:@"userSettings.plist"];
+    NSFileManager *file = [NSFileManager defaultManager];
+    if ([file fileExistsAtPath:plistPath])
+    {
+        NSLog(@"exists");
+    }
+    else //若沙盒中没有
+    {
+        NSError *error;
+        NSFileManager *fileManager = [NSFileManager defaultManager];
+        NSString *bundle = [[NSBundle mainBundle] pathForResource:@"SoftwareSettings" ofType:@"plist"];
+        [fileManager copyItemAtPath:bundle toPath:plistPath error:&error];
+    }
+}
+
 -(void)setTableView
 {
     _menuTableView = [[UITableView alloc]initWithFrame:[UIScreen mainScreen].bounds style:UITableViewStylePlain];
@@ -62,47 +80,57 @@
 {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
--(void)scrollViewDidScroll:(UIScrollView *)scrollView{
-    NSLog(@"asdf");
-}
+
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    NSLog(@"%s",__func__);
-    
     return 1;
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    NSLog(@"%s",__func__);
     
     return 4;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    NSLog(@"%s",__func__);
     static NSString *ID = @"cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:ID];
     }
     _soundSwitch = [[UISwitch alloc]init];
+    [_soundSwitch addTarget:self action:@selector(setSwitch) forControlEvents:UIControlEventValueChanged];
     _nightSwitch = [[UISwitch alloc]init];
+    [_nightSwitch addTarget:self action:@selector(setNight) forControlEvents:UIControlEventValueChanged];
+
+    
+    NSArray *storeFilePath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES);
+    NSString *doucumentsDirectiory = [storeFilePath objectAtIndex:0];
+    _plistPath =[doucumentsDirectiory stringByAppendingPathComponent:@"userSettings.plist"];
+    _settingsDict = [NSMutableDictionary dictionaryWithContentsOfFile:_plistPath];
+
     switch (indexPath.row)
     {
         case 0:
             cell.textLabel.text = @"自动发音";
             cell.imageView.image = [UIImage imageNamed:@"app"];
             cell.accessoryView = _soundSwitch;
+            if([[_settingsDict valueForKey:@"AutoSound"] isEqualToString:@"1"]){
+                _soundSwitch.on = YES;
+            }else{
+                _soundSwitch.on = NO;
+            }
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
-            
             break;
-            
         case 1:
             cell.textLabel.text = @"夜间模式";
             cell.imageView.image = [UIImage imageNamed:@"album"];
             cell.accessoryView = _nightSwitch;
+            if([[_settingsDict valueForKey:@"NightMode"] isEqualToString:@"1"]){
+                _nightSwitch.on = YES;
+            }else{
+                _nightSwitch.on = NO;
+            }
+
             cell.selectionStyle = UITableViewCellSelectionStyleNone;
-            
             break;
-            
         case 2:
             cell.textLabel.text = @"清除缓存";
             cell.imageView.image = [UIImage imageNamed:@"app"];
@@ -116,6 +144,41 @@
     cell.backgroundColor = HJCBACKGROUNDCOLOR;
     cell.textLabel.textColor = HJCWORDCOLOR;
     return cell;
+}
+-(void)setSwitch
+{
+    NSLog(@"%s",__func__);
+    NSArray *storeFilePath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES);
+    NSString *doucumentsDirectiory = [storeFilePath objectAtIndex:0];
+    _plistPath =[doucumentsDirectiory stringByAppendingPathComponent:@"userSettings.plist"];
+    _settingsDict = [NSMutableDictionary dictionaryWithContentsOfFile:_plistPath];
+
+    if ([[_settingsDict valueForKey:@"AutoSound"] isEqualToString:@"1"]) {
+        [_settingsDict setValue:@"0" forKey:@"AutoSound"];
+        [_settingsDict writeToFile:_plistPath atomically:YES];
+    }
+    else{
+        [_settingsDict setValue:@"1" forKey:@"AutoSound"];
+        [_settingsDict writeToFile:_plistPath atomically:YES];
+    }
+}
+-(void)setNight
+{
+    NSLog(@"%s",__func__);
+    NSArray *storeFilePath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES);
+    NSString *doucumentsDirectiory = [storeFilePath objectAtIndex:0];
+    _plistPath =[doucumentsDirectiory stringByAppendingPathComponent:@"userSettings.plist"];
+    _settingsDict = [NSMutableDictionary dictionaryWithContentsOfFile:_plistPath];
+    
+    if ([[_settingsDict valueForKey:@"NightMode"] isEqualToString:@"1"]) {
+        [_settingsDict setValue:@"0" forKey:@"NightMode"];
+        [_settingsDict writeToFile:_plistPath atomically:YES];
+    }
+    else{
+        [_settingsDict setValue:@"1" forKey:@"NightMode"];
+        [_settingsDict writeToFile:_plistPath atomically:YES];
+    }
+
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -134,18 +197,11 @@
             });
         }];
         UIAlertAction * cancelBtn = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-            
         }];
-        
         [alert addAction:confirmBtn];
         [alert addAction:cancelBtn];
         [self presentViewController:alert animated:YES completion:nil];
     }
-    
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
-
-
-
-
 @end
