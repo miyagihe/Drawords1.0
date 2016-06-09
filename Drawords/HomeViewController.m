@@ -16,12 +16,16 @@
 #import "XMLDictionary.h"
 #import "HJCAccount.h"
 @interface HomeViewController ()
+
 @property(nonatomic,strong)UIButton * historyBtn;
 @property(nonatomic,strong)UIButton * TodayBtn;
 @property(nonatomic,strong)UIButton * finishedBtn;
 @property(nonatomic,strong)NSMutableArray * todayArray;
 @property(nonatomic,strong)NSMutableArray * presentVocalbulary;
 @property(nonatomic,strong)UIButton * totalDaysBtn;
+@property(nonatomic,strong)NSString *  currentDateString;
+@property(nonatomic,strong)HJCAccount * hjcAccount;
+
 @end
 
 @implementation HomeViewController
@@ -40,11 +44,18 @@
     [self setUpUpContentView];
     
     [self writeUserAccountPlistToSandBox];
-    
+
     NSLog(@"%@",NSHomeDirectory());
 }
--(void)viewDidAppear:(BOOL)animated{
-    [self loadWords];
+-(HJCAccount*)_hjcAccount
+{
+    _hjcAccount = [[HJCAccount alloc]init];
+    return _hjcAccount;
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    [self loadDisplay];
 }
 -(void)writeUserAccountPlistToSandBox
 {
@@ -64,17 +75,16 @@
         [fileManager copyItemAtPath:bundle toPath:plistPath error:&error];
     }
 }
--(void)loadWords
+-(void)loadDisplay
 {
     NSArray *UserAccountPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES);
     NSString *doucumentsDirectiory = [UserAccountPath objectAtIndex:0];
     NSString*plistPath =[doucumentsDirectiory stringByAppendingPathComponent:@"UserAccount.plist"];
     NSDictionary*userAccountDict = [NSMutableDictionary dictionaryWithContentsOfFile:plistPath];
-
     
     [_totalDaysBtn setTitle:[NSString stringWithFormat:@"%@",[userAccountDict valueForKey:@"TotalDays"]] forState:UIControlStateNormal];
+    [_finishedBtn setTitle:[NSString stringWithFormat:@"%lu",(unsigned long)[[HJCAccount alloc]init].finishedWordsArray.count] forState:UIControlStateNormal];
     [_TodayBtn setTitle:[NSString stringWithFormat:@"%@",[userAccountDict valueForKey:@"TotalDays"]] forState:UIControlStateNormal];
-    [_finishedBtn setTitle:[NSString stringWithFormat:@"%@",[userAccountDict valueForKey:@"TotalDays"]] forState:UIControlStateNormal];
     [_historyBtn setTitle:[NSString stringWithFormat:@"%@",[userAccountDict valueForKey:@"TotalDays"]] forState:UIControlStateNormal];
     
     HJCAccount * account = [[HJCAccount alloc]init];
@@ -134,7 +144,6 @@
     downContainerView.layer.cornerRadius = 5;
     [self.view addSubview:downContainerView];
     
-    
     //历史学习数
     _historyBtn = [[UIButton alloc]init];
     [_historyBtn setTitle:@"999" forState:UIControlStateNormal];
@@ -166,7 +175,6 @@
     TodayBtnWords.textColor = HJCWORDCOLOR;
     TodayBtnWords.frame = CGRectMake(_TodayBtn.x, _TodayBtn.y+_TodayBtn.height, 80, 30);
     [downContainerView addSubview:TodayBtnWords];
-    
     
     //今日完成数
     _finishedBtn = [[UIButton alloc]init];

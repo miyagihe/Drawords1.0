@@ -34,7 +34,30 @@
 {
     if(!_finishedWordsArray)
     {
-        _finishedWordsArray = [[NSMutableArray alloc]init];
+        //获取userAccountDict
+        NSArray *UserAccountPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES);
+        NSString *doucumentsDirectiory = [UserAccountPath objectAtIndex:0];
+        NSString*plistPath =[doucumentsDirectiory stringByAppendingPathComponent:@"UserAccount.plist"];
+        NSDictionary*userAccountDict = [NSMutableDictionary dictionaryWithContentsOfFile:plistPath];
+        
+        //获取上一次的dateString
+        NSString * finishCreateDateString = [userAccountDict valueForKey:@"FinishCreateDate"];
+        
+        //launch的dateString
+        NSDate * launchDate = [NSDate date];
+        NSDateFormatter  *dateformatter=[[NSDateFormatter alloc] init];
+        [dateformatter setDateFormat:@"yyyy-MM-dd"];
+        
+        //比较两个string是否一样
+        NSString *  launchDateString=[dateformatter stringFromDate:launchDate];
+        
+        //如果不一样就重新创建数组
+       if(![finishCreateDateString isEqualToString:launchDateString])
+       {
+           _finishedWordsArray = [[NSMutableArray alloc]init];
+           [userAccountDict setValue:launchDateString forKey:@"FinishCreateDate"];
+           [userAccountDict writeToFile:plistPath atomically:YES];
+       }
     }
     return _finishedWordsArray;
 }

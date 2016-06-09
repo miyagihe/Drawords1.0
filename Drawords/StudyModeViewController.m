@@ -13,11 +13,13 @@
 #import "FinishViewController.h"
 #import "HomeViewController.h"
 #import "XMLDictionary.h"
+#import "HJCAccount.h"
 @interface StudyModeViewController ()
 
 @property(nonatomic,strong)UIButton * tooEasyBtn;
 @property(nonatomic,strong)UIButton * forgetBtn;
 @property(nonatomic,strong)UIButton * rememberBtn;
+@property(nonatomic,strong)UIButton * nextBtn;
 @property(nonatomic,strong)WordDisplayButton * wordDisplay;
 @property(nonatomic,strong)UILabel * reminderDisplay;
 @property(nonatomic,strong)UILabel * interpretationLabel;
@@ -25,14 +27,14 @@
 @property(nonatomic,copy)NSArray* listArray;
 @property(nonatomic,strong)NSArray * finishedArray;
 @property(nonatomic,strong)UIView * progressView;
-
+@property(nonatomic,strong)HJCAccount * hjcAccount;
 @end
 
 @implementation StudyModeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _listNo = 500;
+    _listNo =505;
     
     [self loadData];
     [self setProgressView];
@@ -42,12 +44,26 @@
     [self loadWordDisplay];
     [self createDisPlays];
 }
+-(HJCAccount *)hjcAccount
+{
+    if (!_hjcAccount) {
+        _hjcAccount = [[HJCAccount alloc]init];
+    }
+    return _hjcAccount;
+}
 -(void)loadData
 {
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Words" ofType:@"xml"];
     NSDictionary *xmlDoc = [NSDictionary dictionaryWithXMLFile:filePath];
     _listArray = [xmlDoc objectForKey:@"RECORD"];
-    NSLog(@"%@",[_listArray[0] valueForKey:@"DeWord"]);
+//    for (NSDictionary * dict in _listArray) {
+//        [_hjcAccount.finishedWordsArray addObject:dict];
+//    }
+//    _hjcAccount = [[HJCAccount alloc]init];
+//    _hjcAccount.finishedWordsArray = _listArray.mutableCopy;
+    NSLog(@"hhhhhhh%@",_hjcAccount.finishedWordsArray);
+    NSLog(@"%@",_listArray);
+//    NSLog(@"%@",[_listArray[0] valueForKey:@"DeWord"]);
 }
 -(void)setProgressView{
     _progressView = [[UIView alloc]init];
@@ -66,7 +82,7 @@
 }
 -(void)loadWordDisplay
 {
-    NSLog(@"%s",__func__);
+//    NSLog(@"%s",__func__);
     _wordDisplay.wordLabel.text = [_listArray[_listNo] valueForKey:@"DeWord"];
     [self showButtons];
 }
@@ -90,7 +106,6 @@
 -(void)showDisPlays
 {
     _reminderDisplay.text = [NSString stringWithFormat:@"中文直译:%@",[_listArray[_listNo] valueForKey:@"DeWord"]];
-    
     _interpretationLabel.text = [NSString stringWithFormat:@"%@",[[_listArray[_listNo] valueForKey:@"Interpretation"]
                                                                   stringByReplacingOccurrencesOfString:@"\\n" withString:@" \r\n" ]];
     _reminderDisplay.hidden = NO;
@@ -110,15 +125,25 @@
     _rememberBtn.frame = CGRectMake(_progressView.x, CGRectGetMaxY(_tooEasyBtn.frame)+5, _progressView.width, 40);
     _rememberBtn.backgroundColor = HJCWORDCOLOR;
     [_rememberBtn setTitle:@"记得" forState:UIControlStateNormal];
-    [_rememberBtn addTarget:self action:@selector(showNextOne) forControlEvents:UIControlEventTouchUpInside];
+        [_rememberBtn addTarget:self action:@selector(showNextOne) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_rememberBtn];
     _rememberBtn.hidden = YES;
+    
+    _nextBtn = [[UIButton alloc]init];
+    _nextBtn.frame = CGRectMake(_progressView.x, CGRectGetMaxY(_tooEasyBtn.frame)+5, _progressView.width, 40);
+    _nextBtn.backgroundColor = [UIColor greenColor];
+    [_nextBtn setTitle:@"下一个" forState:UIControlStateNormal];
+    [_nextBtn addTarget:self action:@selector(contiueNext) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:_nextBtn];
+    _nextBtn.hidden = YES;
+
     
     _forgetBtn = [[UIButton alloc]init];
     _forgetBtn.frame = CGRectMake(_progressView.x, CGRectGetMaxY(_rememberBtn.frame)+5, _progressView.width,
                                   40);
     _forgetBtn.backgroundColor = [UIColor colorWithRed:230.0/255 green:180.0/255 blue:80.0/255 alpha:1];
     [_forgetBtn setTitle:@"忘记了" forState:UIControlStateNormal];
+    
     [_forgetBtn addTarget:self action:@selector(showReminder) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_forgetBtn];
     _forgetBtn.hidden = YES;
@@ -128,13 +153,15 @@
 {
     _tooEasyBtn.hidden = NO;
     _rememberBtn.hidden = NO;
+    _nextBtn.hidden = YES;
     _forgetBtn.hidden = NO;
 }
 -(void)showNextOne
 {
+    NSLog(@"%s",__func__);
     _listNo++;
 
-    if (_listNo == _listArray.count-1) {
+    if (_listNo == _listArray.count) {
         FinishViewController * finishView = [[FinishViewController alloc]init];
         [self.navigationController pushViewController:finishView animated:YES];
     }
@@ -142,23 +169,41 @@
     {
         [self loadWordDisplay];
         [self showButtons];
-        [_rememberBtn setTitle:@"记得" forState:UIControlStateNormal];
         _interpretationLabel.hidden = YES;
         _reminderDisplay.hidden = YES;
         _rememberBtn.hidden = NO;
         _forgetBtn.hidden = NO;
         _tooEasyBtn.hidden = NO;
     }
-    
+
+    NSLog(@"加入一次");
 }
 -(void)showReminder
 {
+    _rememberBtn.hidden = NO;
     self.navigationItem.title = @"提醒模式";
-    [_rememberBtn setTitle:@"下一个" forState:UIControlStateNormal];
+    _nextBtn.hidden = NO;
+    [_nextBtn addTarget:self action:@selector(contiueNext) forControlEvents:UIControlEventTouchUpInside];
     _tooEasyBtn.hidden = YES;
     _forgetBtn.hidden = YES;
     [self showDisPlays];
-    
+}
+-(void)contiueNext
+{
+    NSLog(@"%s",__func__);
+ 
+    _listNo++;
+    if (_listNo == _listArray.count) {
+        FinishViewController * finishView = [[FinishViewController alloc]init];
+        [self.navigationController pushViewController:finishView animated:YES];
+    }
+    else
+    {
+        [self loadWordDisplay];
+        [self showButtons];
+        _interpretationLabel.hidden = YES;
+        _reminderDisplay.hidden = YES;
+    }
 }
 -(void)setUpNavi
 {
