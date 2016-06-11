@@ -40,10 +40,31 @@
     [super viewDidLoad];
     [self writeUserAccountPlistToSandBox];
 
+    [self writeSettingsPlistToSandBox];
     [self setUpNavi];
     [self setUpUpContentView];
     NSLog(@"%@",NSHomeDirectory());
 }
+-(void)writeSettingsPlistToSandBox
+{
+    NSLog(@"%s",__func__);
+    NSArray *storeFilePath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES);
+    NSString *doucumentsDirectiory = [storeFilePath objectAtIndex:0];
+    NSString *plistPath =[doucumentsDirectiory stringByAppendingPathComponent:@"userSettings.plist"];
+    NSFileManager *file = [NSFileManager defaultManager];
+    if ([file fileExistsAtPath:plistPath])
+    {
+        NSLog(@"exists");
+    }
+    else //若沙盒中没有
+    {
+        NSError *error;
+        NSFileManager *fileManager = [NSFileManager defaultManager];
+        NSString *bundle = [[NSBundle mainBundle] pathForResource:@"SoftwareSettings" ofType:@"plist"];
+        [fileManager copyItemAtPath:bundle toPath:plistPath error:&error];
+    }
+}
+
 -(void)viewWillAppear:(BOOL)animated
 {
     [self loadData];
@@ -82,7 +103,6 @@
     NSString *xmlFilePath = [[NSBundle mainBundle] pathForResource:@"Words" ofType:@"xml"];
     NSDictionary *xmlDoc = [NSDictionary dictionaryWithXMLFile:xmlFilePath];
     
-    
     //获取上一次的dateString
     NSString * finishCreateDateString = [userAccountDict valueForKey:@"FinishCreateDate"];
     
@@ -116,17 +136,21 @@
         _soFarFinishedArray = [NSMutableArray arrayWithContentsOfFile:soFarFinishedArrayPath];
         [_soFarFinishedArray writeToFile:soFarFinishedArrayPath atomically:YES];
     }
-
     //未完成列表
     if (!_unFinishedArray)
     {
         _unFinishedArray = [[NSMutableArray alloc]init];
         NSRange range = NSMakeRange(0, DailyTaskCount);
         _unFinishedArray = [[_unfinishedVocabularyArray subarrayWithRange:range] mutableCopy];
-        NSString*unfinishedPlistPath =[doucumentsDirectiory stringByAppendingPathComponent:@"Unfinished.plist"];
+        [_unFinishedArray writeToFile:unfinishedPlistPath atomically:YES];
+
+        _originalUnFinishedArray = [_unFinishedArray copy];
+
+        NSString* originalUnFinishedArrayPath=[doucumentsDirectiory stringByAppendingPathComponent:@"OriginalUnFinishedArray.plist"];
+        [_originalUnFinishedArray writeToFile:originalUnFinishedArrayPath atomically:YES];
+
         [userAccountDict setValue:launchDateString forKey:@"FinishCreateDate"];
         [userAccountDict writeToFile:plistPath atomically:YES];
-        [_unFinishedArray writeToFile:unfinishedPlistPath atomically:YES];
     }
     else
     {
@@ -134,22 +158,23 @@
         {
             NSRange range = NSMakeRange(0, DailyTaskCount);
             _unFinishedArray = [[_unfinishedVocabularyArray subarrayWithRange:range] mutableCopy];
-            _originalUnFinishedArray = [_unFinishedArray copy];
-            NSString* originalUnFinishedArrayPath=[doucumentsDirectiory stringByAppendingPathComponent:@"OriginalUnFinishedArray.plist"];
+            [_unFinishedArray writeToFile:unfinishedPlistPath atomically:YES];
 
+
+            _originalUnFinishedArray = [_unFinishedArray copy];
+            
+            NSString* originalUnFinishedArrayPath=[doucumentsDirectiory stringByAppendingPathComponent:@"OriginalUnFinishedArray.plist"];
             [_originalUnFinishedArray writeToFile:originalUnFinishedArrayPath atomically:YES];
-            
-            
-            
-            NSString*unfinishedPlistPath =[doucumentsDirectiory stringByAppendingPathComponent:@"Unfinished.plist"];
+          
             [userAccountDict setValue:launchDateString forKey:@"FinishCreateDate"];
             [userAccountDict writeToFile:plistPath atomically:YES];
-            [_unFinishedArray writeToFile:unfinishedPlistPath atomically:YES];
         }
         else
         {
-            NSString*unfinishedPlistPath =[doucumentsDirectiory stringByAppendingPathComponent:@"Unfinished.plist"];
+            NSString*unfinishedPlistPath =[doucumentsDirectiory stringByAppendingPathComponent:@"UnfinishedArray.plist"];
             _unFinishedArray = [NSMutableArray arrayWithContentsOfFile:unfinishedPlistPath];
+            [_unFinishedArray writeToFile:unfinishedPlistPath atomically:YES];
+
         }
     }
 }
@@ -161,8 +186,7 @@
     NSString*plistPath =[doucumentsDirectiory stringByAppendingPathComponent:@"UserAccount.plist"];
     NSDictionary*userAccountDict = [NSMutableDictionary dictionaryWithContentsOfFile:plistPath];
     NSInteger DailyTaskCount = [[userAccountDict valueForKey:@"DailyTaskCount"] intValue];
-    NSString*unfinishedPlistPath =[doucumentsDirectiory stringByAppendingPathComponent:@"Unfinished.plist"];
-    _unFinishedArray = [NSMutableArray arrayWithContentsOfFile:unfinishedPlistPath];
+    
     //获取上一次的dateString
     NSString * finishCreateDateString = [userAccountDict valueForKey:@"FinishCreateDate"];
     
@@ -181,14 +205,17 @@
         [_TodayBtn setTitle:[NSString stringWithFormat:@"%ld",(long)_originalUnFinishedArray.count]  forState:UIControlStateNormal];
     }
     //已完成按钮
+    NSString*unfinishedPlistPath =[doucumentsDirectiory stringByAppendingPathComponent:@"Unfinished.plist"];
+    _unFinishedArray = [NSMutableArray arrayWithContentsOfFile:unfinishedPlistPath];
     [_finishedBtn setTitle:[NSString stringWithFormat:@"%lu",_originalUnFinishedArray.count-_unFinishedArray.count] forState:UIControlStateNormal];
     NSLog(@"%lu",DailyTaskCount-_unFinishedArray.count);
 
     //至今学习
     
-    NSString* soFarFinishedArrayPath = [doucumentsDirectiory stringByAppendingPathComponent:@"SoFarFinishedArray"];
+    NSString* soFarFinishedArrayPath = [doucumentsDirectiory stringByAppendingPathComponent:@"SoFarFinishedArray.plist"];
     _soFarFinishedArray = [NSMutableArray arrayWithContentsOfFile:soFarFinishedArrayPath];
 
+    NSLog(@"so far is %lu",(unsigned long)_soFarFinishedArray.count);
     [_historyBtn setTitle:[NSString stringWithFormat:@"%lu",(unsigned long)_soFarFinishedArray.count] forState:UIControlStateNormal];
     if(_unFinishedArray.count == 0){
         _goBtn.enabled = NO;

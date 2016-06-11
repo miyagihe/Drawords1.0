@@ -197,7 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				2E65857A1D06B037009AC2D7 /* Settings.bundle */,
-				2E6585791D06A952009AC2D7 /* words xml */,
+				2E6585791D06A952009AC2D7 /* Resource */,
 				2E6585781D06A92A009AC2D7 /* LIB */,
 				2E5E450D1CFEB33400FF318D /* cons */,
 				2E5E45261CFF18ED00FF318D /* Images.xcassets */,
@@ -296,7 +296,6 @@
 			children = (
 				2E5E45111CFEB51500FF318D /* SoftWareViewController.h */,
 				2E5E45121CFEB51500FF318D /* SoftWareViewController.m */,
-				2EC50C001D073E0200A1D655 /* SoftwareSettings.plist */,
 			);
 			name = SoftwareSettings;
 			sourceTree = "<group>";
@@ -320,7 +319,6 @@
 				2E5E45421D0067EE00FF318D /* HJCButton.m */,
 				2E6585181D06622D009AC2D7 /* HJCAccount.h */,
 				2E6585191D06622D009AC2D7 /* HJCAccount.m */,
-				2ED115301D0C0BCC006E568D /* UserAccount.plist */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -454,12 +452,14 @@
 			name = LIB;
 			sourceTree = "<group>";
 		};
-		2E6585791D06A952009AC2D7 /* words xml */ = {
+		2E6585791D06A952009AC2D7 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				2ED115301D0C0BCC006E568D /* UserAccount.plist */,
+				2EC50C001D073E0200A1D655 /* SoftwareSettings.plist */,
 				2E5E45851D040E4D00FF318D /* Words.xml */,
 			);
-			name = "words xml";
+			name = Resource;
 			path = Drawords;
 			sourceTree = "<group>";
 		};

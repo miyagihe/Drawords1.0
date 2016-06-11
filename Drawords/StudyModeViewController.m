@@ -161,11 +161,6 @@
     
     if(_unFinishedArray.count>0)
     {
-        NSString* unfinishedVocabularyArrayPath=[doucumentsDirectiory stringByAppendingPathComponent:@"UnfinishedVocabulary.plist"];
-        _unfinishedVocabularyArray = [NSMutableArray arrayWithContentsOfFile:unfinishedVocabularyArrayPath];
-        int x = arc4random() % _unFinishedArray.count;
-        [_unfinishedVocabularyArray removeObject:_unFinishedArray[x]];
-        [_unfinishedVocabularyArray writeToFile:unfinishedVocabularyArrayPath atomically:YES];
         
         NSString* soFarFinishedArrayPath = [doucumentsDirectiory stringByAppendingPathComponent:@"SoFarFinishedArray.plist"];
         _soFarFinishedArray = [NSMutableArray arrayWithContentsOfFile:soFarFinishedArrayPath];
@@ -173,8 +168,17 @@
         [_soFarFinishedArray addObject:_unFinishedArray[_listNo]];
         [_soFarFinishedArray writeToFile:soFarFinishedArrayPath atomically:YES];
 
-    }
+        NSString* unfinishedVocabularyArrayPath=[doucumentsDirectiory stringByAppendingPathComponent:@"UnfinishedVocabulary.plist"];
+        _unfinishedVocabularyArray = [NSMutableArray arrayWithContentsOfFile:unfinishedVocabularyArrayPath];
+        int x = arc4random() % _unFinishedArray.count;
+        [_unfinishedVocabularyArray removeObject:_unFinishedArray[x]];
+        [_unfinishedVocabularyArray writeToFile:unfinishedVocabularyArrayPath atomically:YES];
+        
 
+    }
+    
+   
+    
     if ( _unFinishedArray.count == 0)
     {
         FinishViewController * finishView = [[FinishViewController alloc]init];
