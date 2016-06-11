@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2E0C12681D084C31004ECD58 /* UserAccount.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E0C12671D084C31004ECD58 /* UserAccount.plist */; };
 		2E5E44BA1CFE7D1700FF318D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E44B91CFE7D1700FF318D /* main.m */; };
 		2E5E44BD1CFE7D1700FF318D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E44BC1CFE7D1700FF318D /* AppDelegate.m */; };
 		2E5E44C61CFE7D1700FF318D /* Drawords.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E44C41CFE7D1700FF318D /* Drawords.xcdatamodeld */; };
@@ -49,6 +48,7 @@
 		2E6585761D069FA6009AC2D7 /* XMLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6585751D069FA6009AC2D7 /* XMLDictionary.m */; };
 		2E65857B1D06B037009AC2D7 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2E65857A1D06B037009AC2D7 /* Settings.bundle */; };
 		2EC50C011D073E0200A1D655 /* SoftwareSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2EC50C001D073E0200A1D655 /* SoftwareSettings.plist */; };
+		2ED115311D0C0BCC006E568D /* UserAccount.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2ED115301D0C0BCC006E568D /* UserAccount.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,7 +82,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2E0C12671D084C31004ECD58 /* UserAccount.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UserAccount.plist; sourceTree = "<group>"; };
 		2E5E44B51CFE7D1700FF318D /* Drawords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Drawords.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E5E44B91CFE7D1700FF318D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2E5E44BB1CFE7D1700FF318D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -159,6 +158,7 @@
 		2E6585751D069FA6009AC2D7 /* XMLDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDictionary.m; sourceTree = "<group>"; };
 		2E65857A1D06B037009AC2D7 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		2EC50C001D073E0200A1D655 /* SoftwareSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SoftwareSettings.plist; sourceTree = "<group>"; };
+		2ED115301D0C0BCC006E568D /* UserAccount.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UserAccount.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -320,7 +320,7 @@
 				2E5E45421D0067EE00FF318D /* HJCButton.m */,
 				2E6585181D06622D009AC2D7 /* HJCAccount.h */,
 				2E6585191D06622D009AC2D7 /* HJCAccount.m */,
-				2E0C12671D084C31004ECD58 /* UserAccount.plist */,
+				2ED115301D0C0BCC006E568D /* UserAccount.plist */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -577,7 +577,7 @@
 				2E5E44C81CFE7D1700FF318D /* Assets.xcassets in Resources */,
 				2E5E45861D040E4D00FF318D /* Words.xml in Resources */,
 				2E65857B1D06B037009AC2D7 /* Settings.bundle in Resources */,
-				2E0C12681D084C31004ECD58 /* UserAccount.plist in Resources */,
+				2ED115311D0C0BCC006E568D /* UserAccount.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -34,6 +34,11 @@
     [self setTableView];
     
 }
+-(void)viewWillAppear:(BOOL)animated
+{
+
+    [_menuTableView reloadData];
+}
 -(void)setTableView
 {
     _menuTableView = [[UITableView alloc]initWithFrame:[UIScreen mainScreen].bounds style:UITableViewStylePlain];
@@ -79,7 +84,7 @@
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     NSLog(@"%s",__func__);
 
-    return 4;
+    return 3;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     NSLog(@"%s",__func__);
@@ -88,55 +93,51 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:ID];
     }
-    _lanLabel = [[UILabel alloc]init];
-    _lanLabel.backgroundColor = HJCWORDCOLOR;
-    _lanLabel.frame = CGRectMake(5, 5, 100, cell.height);
-    _lanLabel.textAlignment = NSTextAlignmentRight;
+ 
+    if (indexPath.row == 0) {
+        _lanLabel = [[UILabel alloc]init];
+        _lanLabel.frame = CGRectMake(5, 5, 100, cell.height);
+        _lanLabel.textAlignment = NSTextAlignmentRight;
+        _lanLabel.textColor = HJCWORDCOLOR;
 
-    _bookLabel = [[UILabel alloc]init];
-    _bookLabel.backgroundColor = HJCWORDCOLOR;
-    _bookLabel.frame = CGRectMake(5, 5, 100, cell.height);
-    _bookLabel.textAlignment = NSTextAlignmentRight;
-    
-    _dailyLabel = [[UILabel alloc]init];
-    _dailyLabel.backgroundColor = HJCWORDCOLOR;
-    _dailyLabel.frame = CGRectMake(5, 5, 120, cell.height);
-    _dailyLabel.textAlignment = NSTextAlignmentRight;
-    
-    _reconLabel = [[UILabel alloc]init];
-    _reconLabel.backgroundColor = HJCWORDCOLOR;
-    _reconLabel.frame = CGRectMake(5, 5, 100, cell.height);
-    _reconLabel.textAlignment = NSTextAlignmentRight;
-    switch (indexPath.row)
-    {
-        case 0:
-            cell.textLabel.text = @"语种选择";
-            cell.imageView.image = [UIImage imageNamed:@"app"];
-            _lanLabel.text = @"当前:德语";
-            cell.accessoryView = _lanLabel;
-            break;
-            
-        case 1:
-            cell.textLabel.text = @"单词书选择";
-            cell.imageView.image = [UIImage imageNamed:@"album"];
-            _bookLabel.text = @"当前:德语A1";
-            cell.accessoryView = _bookLabel;
-            break;
-            
-        case 2:
-            cell.textLabel.text = @"每日单词书设定";
-            cell.imageView.image = [UIImage imageNamed:@"app"];
-            _dailyLabel.text = @"当前:100";
-            cell.accessoryView = _dailyLabel;
-            break;
-            
-        case 3:
-            cell.textLabel.text = @"再认次数设定";
-            cell.imageView.image = [UIImage imageNamed:@"album"];
-            _reconLabel.text = @"当前:3";
-            cell.accessoryView = _reconLabel;
-            break;
+        cell.textLabel.text = @"语种选择";
+        cell.imageView.image = [UIImage imageNamed:@"app"];
+        _lanLabel.text = @"当前:德语";
+        cell.accessoryView = _lanLabel;
     }
+    
+    
+    if (indexPath.row == 1) {
+        _bookLabel = [[UILabel alloc]init];
+        _bookLabel.frame = CGRectMake(5, 5, 100, cell.height);
+        _bookLabel.textAlignment = NSTextAlignmentRight;
+        _bookLabel.textColor = HJCWORDCOLOR;
+        
+        cell.textLabel.text = @"单词书选择";
+        cell.imageView.image = [UIImage imageNamed:@"album"];
+        _bookLabel.text = @"当前:德语A1";
+        cell.accessoryView = _bookLabel;
+
+    }
+            
+    if (indexPath.row == 2) {
+        _dailyLabel = [[UILabel alloc]init];
+        _dailyLabel.frame = CGRectMake(5, 5, 120, cell.height);
+        _dailyLabel.textAlignment = NSTextAlignmentRight;
+
+        _dailyLabel.textColor = HJCWORDCOLOR;
+        cell.textLabel.text = @"每日单词量";
+        cell.imageView.image = [UIImage imageNamed:@"app"];
+        NSArray *UserAccountPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES);
+        NSString *doucumentsDirectiory = [UserAccountPath objectAtIndex:0];
+        NSString*plistPath =[doucumentsDirectiory stringByAppendingPathComponent:@"UserAccount.plist"];
+        NSDictionary*userAccountDict = [NSMutableDictionary dictionaryWithContentsOfFile:plistPath];
+        
+        _dailyLabel.text = [NSString stringWithFormat:@"已选择:%@",[userAccountDict valueForKey:@"DailyTaskCount"]];
+        cell.accessoryView = _dailyLabel;
+
+    }
+    
     cell.separatorInset = UIEdgeInsetsZero;
     cell.backgroundColor = HJCBACKGROUNDCOLOR;
     cell.textLabel.textColor = HJCWORDCOLOR;

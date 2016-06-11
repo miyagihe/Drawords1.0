@@ -29,15 +29,13 @@
 @property(nonatomic,strong)NSMutableArray * testArray;
 @property(nonatomic,strong)HomeViewController * home;
 @property(nonatomic,strong)NSMutableArray * unfinishedVocabularyArray;
+@property(nonatomic,strong)NSMutableArray * soFarFinishedArray;
 @end
 
 
 @implementation StudyModeViewController
 
--(void)viewWillAppear:(BOOL)animated
-{
-    
-}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self loadData];
@@ -58,7 +56,6 @@
     NSString* unfinishedVocabularyArrayPath=[doucumentsDirectiory stringByAppendingPathComponent:@"UnfinishedVocabulary.plist"];
     _unfinishedVocabularyArray = [NSMutableArray arrayWithContentsOfFile:unfinishedVocabularyArrayPath];
     NSLog(@"%lu",(unsigned long)_unfinishedVocabularyArray.count);
-//    NSLog(@"%@",_unFinishedArray);
 }
 -(void)setProgressView{
     _progressView = [[UIView alloc]init];
@@ -77,7 +74,7 @@
 }
 -(void)loadWordDisplay
 {
-    _wordDisplay.wordLabel.text = [_unFinishedArray[_listNo] valueForKey:@"DeWord"];
+    _wordDisplay.wordLabel.text = [_unFinishedArray[arc4random() % _unFinishedArray.count] valueForKey:@"DeWord"];
     [self showButtons];
 }
 -(void)createDisPlays
@@ -133,7 +130,6 @@
     [self.view addSubview:_nextBtn];
     _nextBtn.hidden = YES;
 
-    
     _forgetBtn = [[UIButton alloc]init];
     _forgetBtn.frame = CGRectMake(_progressView.x, CGRectGetMaxY(_rememberBtn.frame)+5, _progressView.width,
                                   40);
@@ -155,11 +151,32 @@
 -(void)showNextOne
 {
     NSLog(@"%s",__func__);
-    _listNo =arc4random() % _unFinishedArray.count;
     
-    if ( _unFinishedArray.count-1 == 0)
+    NSArray *UserAccountPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES);
+    NSString *doucumentsDirectiory = [UserAccountPath objectAtIndex:0];
+    NSString*unfinishedPlistPath =[doucumentsDirectiory stringByAppendingPathComponent:@"Unfinished.plist"];
+    _unFinishedArray = [NSMutableArray arrayWithContentsOfFile:unfinishedPlistPath];
+    [_unFinishedArray removeObject:_unFinishedArray[arc4random() % _unFinishedArray.count]];
+    [_unFinishedArray writeToFile:unfinishedPlistPath atomically:YES];
+    
+    if(_unFinishedArray.count>0)
     {
-        NSLog(@"%@",[_unFinishedArray[_listNo] valueForKey:@"Id"]);
+        NSString* unfinishedVocabularyArrayPath=[doucumentsDirectiory stringByAppendingPathComponent:@"UnfinishedVocabulary.plist"];
+        _unfinishedVocabularyArray = [NSMutableArray arrayWithContentsOfFile:unfinishedVocabularyArrayPath];
+        int x = arc4random() % _unFinishedArray.count;
+        [_unfinishedVocabularyArray removeObject:_unFinishedArray[x]];
+        [_unfinishedVocabularyArray writeToFile:unfinishedVocabularyArrayPath atomically:YES];
+        
+        NSString* soFarFinishedArrayPath = [doucumentsDirectiory stringByAppendingPathComponent:@"SoFarFinishedArray.plist"];
+        _soFarFinishedArray = [NSMutableArray arrayWithContentsOfFile:soFarFinishedArrayPath];
+        
+        [_soFarFinishedArray addObject:_unFinishedArray[_listNo]];
+        [_soFarFinishedArray writeToFile:soFarFinishedArrayPath atomically:YES];
+
+    }
+
+    if ( _unFinishedArray.count == 0)
+    {
         FinishViewController * finishView = [[FinishViewController alloc]init];
         [self.navigationController pushViewController:finishView animated:YES];
     }
@@ -173,20 +190,10 @@
         _forgetBtn.hidden = NO;
         _tooEasyBtn.hidden = NO;
     }
-    NSArray *UserAccountPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES);
-    NSString *doucumentsDirectiory = [UserAccountPath objectAtIndex:0];
-    NSString*unfinishedPlistPath =[doucumentsDirectiory stringByAppendingPathComponent:@"Unfinished.plist"];
-    _unFinishedArray = [NSMutableArray arrayWithContentsOfFile:unfinishedPlistPath];
-    [_unFinishedArray removeObject:_unFinishedArray[_listNo]];
-    [_unFinishedArray writeToFile:unfinishedPlistPath atomically:YES];
     
-    NSString* unfinishedVocabularyArrayPath=[doucumentsDirectiory stringByAppendingPathComponent:@"UnfinishedVocabulary.plist"];
-    _unfinishedVocabularyArray = [NSMutableArray arrayWithContentsOfFile:unfinishedVocabularyArrayPath];
-
-    [_unfinishedVocabularyArray removeObject:_unFinishedArray[_listNo]];
-    [_unfinishedVocabularyArray writeToFile:unfinishedVocabularyArrayPath atomically:YES];
-    
+   
     NSLog(@"今日剩余%lu个，NO IS %d,总表还剩%lu个",(unsigned long)_unFinishedArray.count,_listNo,_unfinishedVocabularyArray.count);
+    NSLog(@"至今已学习%lu个",_soFarFinishedArray.count);
 }
 -(void)showReminder
 {
@@ -203,7 +210,7 @@
     NSLog(@"%s",__func__);
      _listNo =arc4random() % _unFinishedArray.count;
 
-    if (_unFinishedArray.count-1 == 0)
+    if (_unFinishedArray.count == 0)
     {
         NSLog(@"%@",[_unFinishedArray[_listNo] valueForKey:@"Id"]);
         FinishViewController * finishView = [[FinishViewController alloc]init];

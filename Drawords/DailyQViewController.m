@@ -11,6 +11,7 @@
 
 @interface DailyQViewController ()
 @property(nonatomic,strong)UITableView * menuTableView;
+@property(nonatomic,strong)    NSString*planSettingPath;
 
 @end
 
@@ -69,7 +70,7 @@
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     NSLog(@"%s",__func__);
     
-    return 4;
+    return 5;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     NSLog(@"%s",__func__);
@@ -81,18 +82,21 @@
     switch (indexPath.row)
     {
         case 0:
-            cell.textLabel.text = @"100";
+            cell.textLabel.text = @"50";
             break;
             
         case 1:
-            cell.textLabel.text = @"200";
+            cell.textLabel.text = @"100";
             break;
             
         case 2:
-            cell.textLabel.text = @"300";
+            cell.textLabel.text = @"150";
             break;
         case 3:
-            cell.textLabel.text = @"400";
+            cell.textLabel.text = @"200";
+            break;
+        case 4:
+            cell.textLabel.text = @"自定义";
             break;
     }
     cell.separatorInset = UIEdgeInsetsZero;
@@ -103,6 +107,64 @@
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 60;
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSArray *UserAccountPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES);
+    NSString *doucumentsDirectiory = [UserAccountPath objectAtIndex:0];
+    NSString*plistPath =[doucumentsDirectiory stringByAppendingPathComponent:@"UserAccount.plist"];
+    NSDictionary*userAccountDict = [NSMutableDictionary dictionaryWithContentsOfFile:plistPath];
+    if (indexPath.row == 0)
+    {
+        UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"已设置为:50" message:@"修改后的任务单词量将在第二天生效,若选择错误可重新设置"  preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction * confirmBtn = [UIAlertAction actionWithTitle:@"明白" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            [userAccountDict setValue:@"50" forKey:@"DailyTaskCount"];
+            [userAccountDict writeToFile:plistPath atomically:YES];
+            [self.navigationController popViewControllerAnimated:YES];
+        }];
+        
+        [alert addAction:confirmBtn];
+        [self presentViewController:alert animated:YES completion:nil];
+    }
+    if (indexPath.row == 1)
+    {
+        UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"已设置为:100" message:@"修改后的任务单词量将在第二天生效,若选择错误可重新设置"  preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction * confirmBtn = [UIAlertAction actionWithTitle:@"明白" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            [userAccountDict setValue:@"100" forKey:@"DailyTaskCount"];
+            [userAccountDict writeToFile:plistPath atomically:YES];
+            [self.navigationController popViewControllerAnimated:YES];
+        }];
+        
+        [alert addAction:confirmBtn];
+        [self presentViewController:alert animated:YES completion:nil];
+
+    }
+    if (indexPath.row == 2)
+    {
+        UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"已设置为:150" message:@"修改后的任务单词量将在第二天生效,若选择错误可重新设置"  preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction * confirmBtn = [UIAlertAction actionWithTitle:@"明白" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            [userAccountDict setValue:@"150" forKey:@"DailyTaskCount"];
+            [userAccountDict writeToFile:plistPath atomically:YES];
+            [self.navigationController popViewControllerAnimated:YES];
+        }];
+        
+        [alert addAction:confirmBtn];
+        [self presentViewController:alert animated:YES completion:nil];
+
+    }
+    if (indexPath.row == 3)
+    {
+        UIAlertController * alert = [UIAlertController alertControllerWithTitle:@"已设置为:200" message:@"修改后的任务单词量将在第二天生效,若选择错误可重新设置,若选择错误可重新设置"  preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction * confirmBtn = [UIAlertAction actionWithTitle:@"明白" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            [userAccountDict setValue:@"200" forKey:@"DailyTaskCount"];
+            [userAccountDict writeToFile:plistPath atomically:YES];
+            [self.navigationController popViewControllerAnimated:YES];
+        }];
+        [alert addAction:confirmBtn];
+        [self presentViewController:alert animated:YES completion:nil];
+    }
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 @end

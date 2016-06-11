@@ -22,12 +22,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self writeSettingsPlistToSandBox];
+
     [self setUpNavi];
     [self setTableView];
-    [self writeSettingsPlistToSandBox];
 }
 -(void)writeSettingsPlistToSandBox
 {
+    NSLog(@"%s",__func__);
     NSArray *storeFilePath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES);
     NSString *doucumentsDirectiory = [storeFilePath objectAtIndex:0];
     NSString *plistPath =[doucumentsDirectiory stringByAppendingPathComponent:@"userSettings.plist"];

@@ -4,15 +4,13 @@
 <dict>
 	<key>DailyTaskCount</key>
 	<string>100</string>
-	<key>TotalDays</key>
-	<string>123</string>
-	<key>HistoryWordsArray</key>
-	<string>0</string>
-	<key>TodayArray</key>
-	<string>100</string>
-	<key>FinishedArray</key>
-	<string>0</string>
+	<key>FinishCreateDate</key>
+	<string>2016-06-11</string>
+	<key>HistoryWordsCount</key>
+	<string></string>
 	<key>PresentDictName</key>
 	<string>德语基本词汇</string>
+	<key>TotalDays</key>
+	<string>46</string>
 </dict>
 </plist>

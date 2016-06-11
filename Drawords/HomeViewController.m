@@ -25,6 +25,8 @@
 @property(nonatomic,strong)UIButton * goBtn;
 @property(nonatomic,strong)NSMutableArray*unFinishedArray;
 @property(nonatomic,strong)NSMutableArray*unfinishedVocabularyArray;
+@property(nonatomic,strong)NSArray * originalUnFinishedArray;
+@property(nonatomic,strong)NSMutableArray* soFarFinishedArray;
 
 @end
 
@@ -36,9 +38,10 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self writeUserAccountPlistToSandBox];
+
     [self setUpNavi];
     [self setUpUpContentView];
-    [self writeUserAccountPlistToSandBox];
     NSLog(@"%@",NSHomeDirectory());
 }
 -(void)viewWillAppear:(BOOL)animated
@@ -78,16 +81,8 @@
     
     NSString *xmlFilePath = [[NSBundle mainBundle] pathForResource:@"Words" ofType:@"xml"];
     NSDictionary *xmlDoc = [NSDictionary dictionaryWithXMLFile:xmlFilePath];
-    if (!_unfinishedVocabularyArray) {
-        _unfinishedVocabularyArray = [xmlDoc objectForKey:@"RECORD"];
-        NSString* unfinishedVocabularyArrayPath=[doucumentsDirectiory stringByAppendingPathComponent:@"UnfinishedVocabulary.plist"];
-        [_unfinishedVocabularyArray writeToFile:unfinishedVocabularyArrayPath atomically:YES];
-    }
-    else
-    {
-        NSString* unfinishedVocabularyArrayPath=[doucumentsDirectiory stringByAppendingPathComponent:@"UnfinishedVocabulary.plist"];
-        _unfinishedVocabularyArray = [NSMutableArray arrayWithContentsOfFile:unfinishedVocabularyArrayPath];
-    }
+    
+    
     //获取上一次的dateString
     NSString * finishCreateDateString = [userAccountDict valueForKey:@"FinishCreateDate"];
     
@@ -95,11 +90,34 @@
     NSDate * launchDate = [NSDate date];
     NSDateFormatter  *dateformatter=[[NSDateFormatter alloc] init];
     [dateformatter setDateFormat:@"yyyy-MM-dd"];
-    
-    //比较两个string是否一样
     NSString * launchDateString=[dateformatter stringFromDate:launchDate];
     NSLog(@"%@",launchDateString);
     
+    //单词书中剩余单词数
+    if ([finishCreateDateString isEqualToString:@""])
+    {
+        _unfinishedVocabularyArray = [NSMutableArray arrayWithCapacity:0];
+        _unfinishedVocabularyArray = [xmlDoc objectForKey:@"RECORD"];
+        NSString* unfinishedVocabularyArrayPath=[doucumentsDirectiory stringByAppendingPathComponent:@"UnfinishedVocabulary.plist"];
+        [_unfinishedVocabularyArray writeToFile:unfinishedVocabularyArrayPath atomically:YES];
+        
+        //历史完成单词
+        NSString* soFarFinishedArrayPath = [doucumentsDirectiory stringByAppendingPathComponent:@"SoFarFinishedArray.plist"];
+        _soFarFinishedArray = [NSMutableArray arrayWithCapacity:0];
+        [_soFarFinishedArray writeToFile:soFarFinishedArrayPath atomically:YES];
+    }
+    else
+    {
+        NSString* unfinishedVocabularyArrayPath=[doucumentsDirectiory stringByAppendingPathComponent:@"UnfinishedVocabulary.plist"];
+        _unfinishedVocabularyArray = [NSMutableArray arrayWithContentsOfFile:unfinishedVocabularyArrayPath];
+        [_unfinishedVocabularyArray writeToFile:unfinishedVocabularyArrayPath atomically:YES];
+
+        NSString* soFarFinishedArrayPath = [doucumentsDirectiory stringByAppendingPathComponent:@"SoFarFinishedArray.plist"];
+        _soFarFinishedArray = [NSMutableArray arrayWithContentsOfFile:soFarFinishedArrayPath];
+        [_soFarFinishedArray writeToFile:soFarFinishedArrayPath atomically:YES];
+    }
+
+    //未完成列表
     if (!_unFinishedArray)
     {
         _unFinishedArray = [[NSMutableArray alloc]init];
@@ -116,6 +134,13 @@
         {
             NSRange range = NSMakeRange(0, DailyTaskCount);
             _unFinishedArray = [[_unfinishedVocabularyArray subarrayWithRange:range] mutableCopy];
+            _originalUnFinishedArray = [_unFinishedArray copy];
+            NSString* originalUnFinishedArrayPath=[doucumentsDirectiory stringByAppendingPathComponent:@"OriginalUnFinishedArray.plist"];
+
+            [_originalUnFinishedArray writeToFile:originalUnFinishedArrayPath atomically:YES];
+            
+            
+            
             NSString*unfinishedPlistPath =[doucumentsDirectiory stringByAppendingPathComponent:@"Unfinished.plist"];
             [userAccountDict setValue:launchDateString forKey:@"FinishCreateDate"];
             [userAccountDict writeToFile:plistPath atomically:YES];
@@ -138,16 +163,40 @@
     NSInteger DailyTaskCount = [[userAccountDict valueForKey:@"DailyTaskCount"] intValue];
     NSString*unfinishedPlistPath =[doucumentsDirectiory stringByAppendingPathComponent:@"Unfinished.plist"];
     _unFinishedArray = [NSMutableArray arrayWithContentsOfFile:unfinishedPlistPath];
+    //获取上一次的dateString
+    NSString * finishCreateDateString = [userAccountDict valueForKey:@"FinishCreateDate"];
     
-    [_totalDaysBtn setTitle:[NSString stringWithFormat:@"%@",[userAccountDict valueForKey:@"TotalDays"]] forState:UIControlStateNormal];
-    [_finishedBtn setTitle:[NSString stringWithFormat:@"%lu",DailyTaskCount-_unFinishedArray.count] forState:UIControlStateNormal];
+    //launch的dateString
+    NSDate * launchDate = [NSDate date];
+    NSDateFormatter  *dateformatter=[[NSDateFormatter alloc] init];
+    [dateformatter setDateFormat:@"yyyy-MM-dd"];
+    NSString * launchDateString=[dateformatter stringFromDate:launchDate];
+    
+    //今日任务数
+    if (![launchDateString isEqualToString:finishCreateDateString]) {
+        [_TodayBtn setTitle:[NSString stringWithFormat:@"%@",[userAccountDict valueForKey:@"DailyTaskCount"]] forState:UIControlStateNormal];
+    }else{
+        NSString* originalUnFinishedArrayPath=[doucumentsDirectiory stringByAppendingPathComponent:@"OriginalUnFinishedArray.plist"];
+        _originalUnFinishedArray = [NSArray arrayWithContentsOfFile:originalUnFinishedArrayPath];
+        [_TodayBtn setTitle:[NSString stringWithFormat:@"%ld",(long)_originalUnFinishedArray.count]  forState:UIControlStateNormal];
+    }
+    //已完成按钮
+    [_finishedBtn setTitle:[NSString stringWithFormat:@"%lu",_originalUnFinishedArray.count-_unFinishedArray.count] forState:UIControlStateNormal];
     NSLog(@"%lu",DailyTaskCount-_unFinishedArray.count);
-    [_TodayBtn setTitle:[NSString stringWithFormat:@"%@",[userAccountDict valueForKey:@"DailyTaskCount"]] forState:UIControlStateNormal];
-    [_historyBtn setTitle:[NSString stringWithFormat:@"%@",[userAccountDict valueForKey:@"TotalDays"]] forState:UIControlStateNormal];
+
+    //至今学习
+    
+    NSString* soFarFinishedArrayPath = [doucumentsDirectiory stringByAppendingPathComponent:@"SoFarFinishedArray"];
+    _soFarFinishedArray = [NSMutableArray arrayWithContentsOfFile:soFarFinishedArrayPath];
+
+    [_historyBtn setTitle:[NSString stringWithFormat:@"%lu",(unsigned long)_soFarFinishedArray.count] forState:UIControlStateNormal];
     if(_unFinishedArray.count == 0){
         _goBtn.enabled = NO;
         [_goBtn setTitle:@"完成" forState:UIControlStateNormal];
     }
+    //打卡天数
+    [_totalDaysBtn setTitle:[NSString stringWithFormat:@"%@",[userAccountDict valueForKey:@"TotalDays"]] forState:UIControlStateNormal];
+
 }
 -(void)setUpUpContentView
 {
