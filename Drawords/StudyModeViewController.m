@@ -13,7 +13,6 @@
 #import "FinishViewController.h"
 #import "HomeViewController.h"
 #import "XMLDictionary.h"
-#import "HJCAccount.h"
 @interface StudyModeViewController ()
 
 @property(nonatomic,strong)UIButton * tooEasyBtn;
@@ -24,18 +23,23 @@
 @property(nonatomic,strong)UILabel * reminderDisplay;
 @property(nonatomic,strong)UILabel * interpretationLabel;
 @property(nonatomic,assign)int listNo;
-@property(nonatomic,copy)NSArray* listArray;
-@property(nonatomic,strong)NSArray * finishedArray;
+@property(nonatomic,strong)NSMutableArray * unFinishedArray;
 @property(nonatomic,strong)UIView * progressView;
-@property(nonatomic,strong)HJCAccount * hjcAccount;
+@property(nonatomic,assign)NSInteger DailyTaskCount;
+@property(nonatomic,strong)NSMutableArray * testArray;
+@property(nonatomic,strong)HomeViewController * home;
+@property(nonatomic,strong)NSMutableArray * unfinishedVocabularyArray;
 @end
+
 
 @implementation StudyModeViewController
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _listNo =505;
-    
     [self loadData];
     [self setProgressView];
     [self setUpNavi];
@@ -44,26 +48,17 @@
     [self loadWordDisplay];
     [self createDisPlays];
 }
--(HJCAccount *)hjcAccount
-{
-    if (!_hjcAccount) {
-        _hjcAccount = [[HJCAccount alloc]init];
-    }
-    return _hjcAccount;
-}
 -(void)loadData
 {
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Words" ofType:@"xml"];
-    NSDictionary *xmlDoc = [NSDictionary dictionaryWithXMLFile:filePath];
-    _listArray = [xmlDoc objectForKey:@"RECORD"];
-//    for (NSDictionary * dict in _listArray) {
-//        [_hjcAccount.finishedWordsArray addObject:dict];
-//    }
-//    _hjcAccount = [[HJCAccount alloc]init];
-//    _hjcAccount.finishedWordsArray = _listArray.mutableCopy;
-    NSLog(@"hhhhhhh%@",_hjcAccount.finishedWordsArray);
-    NSLog(@"%@",_listArray);
-//    NSLog(@"%@",[_listArray[0] valueForKey:@"DeWord"]);
+    NSArray *UserAccountPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES);
+    NSString *doucumentsDirectiory = [UserAccountPath objectAtIndex:0];
+    NSString*unfinishedPlistPath =[doucumentsDirectiory stringByAppendingPathComponent:@"Unfinished.plist"];
+    _unFinishedArray = [NSMutableArray arrayWithContentsOfFile:unfinishedPlistPath];
+    
+    NSString* unfinishedVocabularyArrayPath=[doucumentsDirectiory stringByAppendingPathComponent:@"UnfinishedVocabulary.plist"];
+    _unfinishedVocabularyArray = [NSMutableArray arrayWithContentsOfFile:unfinishedVocabularyArrayPath];
+    NSLog(@"%lu",(unsigned long)_unfinishedVocabularyArray.count);
+//    NSLog(@"%@",_unFinishedArray);
 }
 -(void)setProgressView{
     _progressView = [[UIView alloc]init];
@@ -82,8 +77,7 @@
 }
 -(void)loadWordDisplay
 {
-//    NSLog(@"%s",__func__);
-    _wordDisplay.wordLabel.text = [_listArray[_listNo] valueForKey:@"DeWord"];
+    _wordDisplay.wordLabel.text = [_unFinishedArray[_listNo] valueForKey:@"DeWord"];
     [self showButtons];
 }
 -(void)createDisPlays
@@ -97,16 +91,18 @@
     _reminderDisplay.hidden = YES;
 
     _interpretationLabel = [[UILabel alloc]init];
-    _interpretationLabel.frame= CGRectMake(_reminderDisplay.x, _reminderDisplay.y+15+_reminderDisplay.height, _reminderDisplay.width, 80);
+    _interpretationLabel.frame= CGRectMake(_reminderDisplay.x, _reminderDisplay.y+15+_reminderDisplay.height, _reminderDisplay.width, 100);
     _interpretationLabel.backgroundColor = HJCMENUCOLOR;
     _interpretationLabel.textColor = HJCWORDCOLOR;
+    _interpretationLabel.textAlignment= NSTextAlignmentCenter;
     [self.view addSubview:_interpretationLabel];
     _interpretationLabel.hidden = YES;
 }
 -(void)showDisPlays
 {
-    _reminderDisplay.text = [NSString stringWithFormat:@"中文直译:%@",[_listArray[_listNo] valueForKey:@"DeWord"]];
-    _interpretationLabel.text = [NSString stringWithFormat:@"%@",[[_listArray[_listNo] valueForKey:@"Interpretation"]
+    _reminderDisplay.text = [NSString stringWithFormat:@"中文直译:%@",[_unFinishedArray[_listNo] valueForKey:@"CnWord"]];
+    _interpretationLabel.numberOfLines = 0;
+    _interpretationLabel.text = [NSString stringWithFormat:@"%@",[[_unFinishedArray[_listNo] valueForKey:@"Interpretation"]
                                                                   stringByReplacingOccurrencesOfString:@"\\n" withString:@" \r\n" ]];
     _reminderDisplay.hidden = NO;
     _interpretationLabel.hidden = NO;
@@ -159,9 +155,11 @@
 -(void)showNextOne
 {
     NSLog(@"%s",__func__);
-    _listNo++;
-
-    if (_listNo == _listArray.count) {
+    _listNo =arc4random() % _unFinishedArray.count;
+    
+    if ( _unFinishedArray.count-1 == 0)
+    {
+        NSLog(@"%@",[_unFinishedArray[_listNo] valueForKey:@"Id"]);
         FinishViewController * finishView = [[FinishViewController alloc]init];
         [self.navigationController pushViewController:finishView animated:YES];
     }
@@ -175,8 +173,20 @@
         _forgetBtn.hidden = NO;
         _tooEasyBtn.hidden = NO;
     }
+    NSArray *UserAccountPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES);
+    NSString *doucumentsDirectiory = [UserAccountPath objectAtIndex:0];
+    NSString*unfinishedPlistPath =[doucumentsDirectiory stringByAppendingPathComponent:@"Unfinished.plist"];
+    _unFinishedArray = [NSMutableArray arrayWithContentsOfFile:unfinishedPlistPath];
+    [_unFinishedArray removeObject:_unFinishedArray[_listNo]];
+    [_unFinishedArray writeToFile:unfinishedPlistPath atomically:YES];
+    
+    NSString* unfinishedVocabularyArrayPath=[doucumentsDirectiory stringByAppendingPathComponent:@"UnfinishedVocabulary.plist"];
+    _unfinishedVocabularyArray = [NSMutableArray arrayWithContentsOfFile:unfinishedVocabularyArrayPath];
 
-    NSLog(@"加入一次");
+    [_unfinishedVocabularyArray removeObject:_unFinishedArray[_listNo]];
+    [_unfinishedVocabularyArray writeToFile:unfinishedVocabularyArrayPath atomically:YES];
+    
+    NSLog(@"今日剩余%lu个，NO IS %d,总表还剩%lu个",(unsigned long)_unFinishedArray.count,_listNo,_unfinishedVocabularyArray.count);
 }
 -(void)showReminder
 {
@@ -191,9 +201,11 @@
 -(void)contiueNext
 {
     NSLog(@"%s",__func__);
- 
-    _listNo++;
-    if (_listNo == _listArray.count) {
+     _listNo =arc4random() % _unFinishedArray.count;
+
+    if (_unFinishedArray.count-1 == 0)
+    {
+        NSLog(@"%@",[_unFinishedArray[_listNo] valueForKey:@"Id"]);
         FinishViewController * finishView = [[FinishViewController alloc]init];
         [self.navigationController pushViewController:finishView animated:YES];
     }
@@ -221,6 +233,7 @@
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"tabbar_home_selected"] style:UIBarButtonItemStylePlain target:self action:@selector(moveToTodayPlan)];
     UIBarButtonItem * leftBarBtn = self.navigationItem.leftBarButtonItem;
     leftBarBtn.tintColor = HJCWORDCOLOR;
+    
 }
 -(void)moveToTodayPlan
 {

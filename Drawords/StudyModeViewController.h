@@ -10,4 +10,7 @@
 
 @interface StudyModeViewController : UIViewController
 
+@property(nonatomic,strong)NSMutableArray* listArray;
+
+
 @end
