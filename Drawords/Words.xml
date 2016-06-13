@@ -1,0 +1,4083 @@
+<?xml version="1.0"?>
+<RECORDS>
+<RECORD>
+	<Id>1</Id>
+	<CategoryId>9</CategoryId>
+	<DeWord>eins</DeWord>
+	<CnWord>一</CnWord>
+	<Interpretation>Ⅰ Num.&lt;基数词&gt;一\nⅡ Pron.&lt;不定代词&gt;一个，一种，一位</Interpretation>
+	<AudioFile>1</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>2</Id>
+	<CategoryId>9</CategoryId>
+	<DeWord>zwei</DeWord>
+	<CnWord>二</CnWord>
+	<Interpretation>Num.&lt;基数词&gt;二</Interpretation>
+	<AudioFile>2</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>3</Id>
+	<CategoryId>9</CategoryId>
+	<DeWord>drei</DeWord>
+	<CnWord>三</CnWord>
+	<Interpretation>Num.&lt;基数词&gt;三，三个</Interpretation>
+	<AudioFile>3</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>4</Id>
+	<CategoryId>9</CategoryId>
+	<DeWord>vier</DeWord>
+	<CnWord>四</CnWord>
+	<Interpretation>Num.&lt;基数词&gt;四</Interpretation>
+	<AudioFile>4</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>5</Id>
+	<CategoryId>9</CategoryId>
+	<DeWord>fünf</DeWord>
+	<CnWord>五</CnWord>
+	<Interpretation>Num.&lt;基数词&gt;五</Interpretation>
+	<AudioFile>5</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>6</Id>
+	<CategoryId>9</CategoryId>
+	<DeWord>sechs</DeWord>
+	<CnWord>六</CnWord>
+	<Interpretation>Num.&lt;基数词&gt;六</Interpretation>
+	<AudioFile>6</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>7</Id>
+	<CategoryId>9</CategoryId>
+	<DeWord>sieben</DeWord>
+	<CnWord>七</CnWord>
+	<Interpretation>Ⅰ Num.&lt;基数词&gt;七\nⅡ V.t. ①筛，滤 ②挑选，淘汰</Interpretation>
+	<AudioFile>7</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>8</Id>
+	<CategoryId>9</CategoryId>
+	<DeWord>acht</DeWord>
+	<CnWord>八</CnWord>
+	<Interpretation>Num.&lt;基数词&gt;八</Interpretation>
+	<AudioFile>8</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>9</Id>
+	<CategoryId>9</CategoryId>
+	<DeWord>neun</DeWord>
+	<CnWord>九</CnWord>
+	<Interpretation>Num.&lt;基数词&gt;九</Interpretation>
+	<AudioFile>9</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>10</Id>
+	<CategoryId>9</CategoryId>
+	<DeWord>zehn</DeWord>
+	<CnWord>十</CnWord>
+	<Interpretation>Num.&lt;基数词&gt;十</Interpretation>
+	<AudioFile>10</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>21</Id>
+	<CategoryId>1</CategoryId>
+	<DeWord>der Großvater</DeWord>
+	<CnWord>祖父，外祖父</CnWord>
+	<Interpretation>m.-s,¨ 祖父，外祖父</Interpretation>
+	<AudioFile>21</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>22</Id>
+	<CategoryId>1</CategoryId>
+	<DeWord>die Großmutter</DeWord>
+	<CnWord>祖母，外祖母</CnWord>
+	<Interpretation>f.-,¨ 祖母，外祖母</Interpretation>
+	<AudioFile>22</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>23</Id>
+	<CategoryId>1</CategoryId>
+	<DeWord>der Vater</DeWord>
+	<CnWord>爸爸，父亲</CnWord>
+	<Interpretation>m.-s,¨\nⅠ zählb. ①父亲 ②养父，继父 ③家长；长者，元老 ④创始人，创立人，鼻祖 ⑤&lt;复数&gt;祖辈，祖先 ⑥配种公畜，配种雄性动物\nⅡ unz. ①【宗】主，天父，上帝 ②【宗】(天主教作为称呼)神父</Interpretation>
+	<AudioFile>23</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>24</Id>
+	<CategoryId>1</CategoryId>
+	<DeWord>die Mutter</DeWord>
+	<CnWord>妈妈，母亲</CnWord>
+	<Interpretation>f.-,¨ 母亲，妈妈</Interpretation>
+	<AudioFile>24</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>25</Id>
+	<CategoryId>1</CategoryId>
+	<DeWord>der Sohn</DeWord>
+	<CnWord>儿子</CnWord>
+	<Interpretation>m.-(e)s,¨e 儿子</Interpretation>
+	<AudioFile>25</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>26</Id>
+	<CategoryId>1</CategoryId>
+	<DeWord>die Tochter</DeWord>
+	<CnWord>女儿</CnWord>
+	<Interpretation>f.-,¨ ①女儿 ②&lt;Tochtergesellschaft 的简称&gt;子公司，分公司</Interpretation>
+	<AudioFile>26</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>27</Id>
+	<CategoryId>1</CategoryId>
+	<DeWord>der Bruder</DeWord>
+	<CnWord>哥哥，弟弟，兄弟</CnWord>
+	<Interpretation>m.-s,¨ ①兄弟，哥哥，弟弟 ②【转】知心朋友，弟兄</Interpretation>
+	<AudioFile>27</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>28</Id>
+	<CategoryId>1</CategoryId>
+	<DeWord>die Schwester</DeWord>
+	<CnWord>姐姐，妹妹，姐妹</CnWord>
+	<Interpretation>f.-,-n ①姐，妹，姐妹 ②女护士 ③修女</Interpretation>
+	<AudioFile>28</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>29</Id>
+	<CategoryId>1</CategoryId>
+	<DeWord>der Onkel</DeWord>
+	<CnWord>叔叔，伯父，叔父，舅父，姑父</CnWord>
+	<Interpretation>m.-s,-/-s 叔叔，伯父，叔父，舅父，姑父</Interpretation>
+	<AudioFile>29</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>30</Id>
+	<CategoryId>1</CategoryId>
+	<DeWord>die Tante</DeWord>
+	<CnWord>阿姨，婶婶，舅妈，姨妈，姑妈</CnWord>
+	<Interpretation>f.-,-n 阿姨，婶婶，舅妈，姨妈，姑妈</Interpretation>
+	<AudioFile>30</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>31</Id>
+	<CategoryId>1</CategoryId>
+	<DeWord>der Neffe</DeWord>
+	<CnWord>侄子，外甥</CnWord>
+	<Interpretation>m.-n,-n 侄子，外甥</Interpretation>
+	<AudioFile>31</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>32</Id>
+	<CategoryId>1</CategoryId>
+	<DeWord>die Nichte</DeWord>
+	<CnWord>侄女，外甥女</CnWord>
+	<Interpretation>f.-,-n 侄女，外甥女</Interpretation>
+	<AudioFile>32</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>33</Id>
+	<CategoryId>3</CategoryId>
+	<DeWord>der Apfel</DeWord>
+	<CnWord>苹果，苹果树</CnWord>
+	<Interpretation>m. -s,¨ ①苹果 ②【口】苹果树 ③&lt;复&gt;【婉】乳房</Interpretation>
+	<AudioFile>33</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>34</Id>
+	<CategoryId>3</CategoryId>
+	<DeWord>die Birne</DeWord>
+	<CnWord>梨，梨树</CnWord>
+	<Interpretation>f.-,-n ①梨子 ②梨树 ③电灯泡</Interpretation>
+	<AudioFile>34</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>35</Id>
+	<CategoryId>3</CategoryId>
+	<DeWord>die Ananas</DeWord>
+	<CnWord>菠萝，凤梨</CnWord>
+	<Interpretation>f.-,-/-se 菠萝，凤梨</Interpretation>
+	<AudioFile>35</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>36</Id>
+	<CategoryId>3</CategoryId>
+	<DeWord>die Kirsche</DeWord>
+	<CnWord>樱桃，樱桃树</CnWord>
+	<Interpretation>f.-,-n ①樱桃 ②樱桃树</Interpretation>
+	<AudioFile>36</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>37</Id>
+	<CategoryId>3</CategoryId>
+	<DeWord>die Apfelsine</DeWord>
+	<CnWord>甜橙</CnWord>
+	<Interpretation>f.-,-n 甜橙</Interpretation>
+	<AudioFile>37</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>38</Id>
+	<CategoryId>3</CategoryId>
+	<DeWord>die Wassermelone</DeWord>
+	<CnWord>西瓜</CnWord>
+	<Interpretation>f.-,-n 西瓜</Interpretation>
+	<AudioFile>38</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>39</Id>
+	<CategoryId>3</CategoryId>
+	<DeWord>die Kiwi</DeWord>
+	<CnWord>猕猴桃</CnWord>
+	<Interpretation>f.-,-s 猕猴桃</Interpretation>
+	<AudioFile>39</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>40</Id>
+	<CategoryId>3</CategoryId>
+	<DeWord>der Pfirsich</DeWord>
+	<CnWord>桃子</CnWord>
+	<Interpretation>m.-s,-e ①桃(树) ②桃子</Interpretation>
+	<AudioFile>40</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>41</Id>
+	<CategoryId>3</CategoryId>
+	<DeWord>die Banane</DeWord>
+	<CnWord>香蕉</CnWord>
+	<Interpretation>f.-,-n ①芭蕉(属) ②香蕉 ③【口，谑】(双旋翼)直升飞机</Interpretation>
+	<AudioFile>41</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>42</Id>
+	<CategoryId>3</CategoryId>
+	<DeWord>die Zitrone</DeWord>
+	<CnWord>柠檬</CnWord>
+	<Interpretation>f.-,-n ①柠檬 ②柠檬树</Interpretation>
+	<AudioFile>42</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>43</Id>
+	<CategoryId>3</CategoryId>
+	<DeWord>die Erdbeere</DeWord>
+	<CnWord>草莓</CnWord>
+	<Interpretation>f.-,-n 草莓</Interpretation>
+	<AudioFile>43</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>44</Id>
+	<CategoryId>3</CategoryId>
+	<DeWord>die Mango</DeWord>
+	<CnWord>芒果</CnWord>
+	<Interpretation>f.-,-s/nen [葡]芒果</Interpretation>
+	<AudioFile>44</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>45</Id>
+	<CategoryId>3</CategoryId>
+	<DeWord>die Traube</DeWord>
+	<CnWord>葡萄</CnWord>
+	<Interpretation>f.-,-n ①【植】&lt;Weintraube的简称&gt;葡萄 ②【植】总状花序 ③【转】一串，一群，一堆</Interpretation>
+	<AudioFile>45</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>46</Id>
+	<CategoryId>3</CategoryId>
+	<DeWord>die Pflaume</DeWord>
+	<CnWord>李子</CnWord>
+	<Interpretation>f.-,-n ①李子 ②【口】=Pflaumenbaum ③【俗，贬】性格软弱的人，笨蛋，饭桶 ④【粗】外阴</Interpretation>
+	<AudioFile>46</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>47</Id>
+	<CategoryId>3</CategoryId>
+	<DeWord>die Litschi</DeWord>
+	<CnWord>荔枝</CnWord>
+	<Interpretation>f.-,-s ［汉］荔枝</Interpretation>
+	<AudioFile>47</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>48</Id>
+	<CategoryId>4</CategoryId>
+	<DeWord>die Gurke</DeWord>
+	<CnWord>黄瓜</CnWord>
+	<Interpretation>f.-,-n ①黄瓜 ②【俗，谑】(大而难看的)黄瓜鼻子 ③【俗，谑】怪人，滑稽的人</Interpretation>
+	<AudioFile>48</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>49</Id>
+	<CategoryId>4</CategoryId>
+	<DeWord>der Kürbis</DeWord>
+	<CnWord>南瓜</CnWord>
+	<Interpretation>m.-ses,-se ①【植】南瓜；南瓜属 ②【转，俗】头，脑袋瓜</Interpretation>
+	<AudioFile>49</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>50</Id>
+	<CategoryId>4</CategoryId>
+	<DeWord>die Zwiebel</DeWord>
+	<CnWord>洋葱</CnWord>
+	<Interpretation>f.-,-n ①洋葱 ②(郁金香、水仙花等的)球茎，鳞茎</Interpretation>
+	<AudioFile>50</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>51</Id>
+	<CategoryId>4</CategoryId>
+	<DeWord>die Möhre</DeWord>
+	<CnWord>胡萝卜</CnWord>
+	<Interpretation>f.-,-n 【植】胡萝卜</Interpretation>
+	<AudioFile>51</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>52</Id>
+	<CategoryId>4</CategoryId>
+	<DeWord>die Erbse</DeWord>
+	<CnWord>豌豆</CnWord>
+	<Interpretation>f.-,-n 【植】豌豆</Interpretation>
+	<AudioFile>52</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>53</Id>
+	<CategoryId>4</CategoryId>
+	<DeWord>der Salat</DeWord>
+	<CnWord>生菜</CnWord>
+	<Interpretation>m.-(e)s,-e\nⅠ unz. 生菜\nⅡ zählb. 色拉</Interpretation>
+	<AudioFile>53</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>54</Id>
+	<CategoryId>4</CategoryId>
+	<DeWord>der Mais</DeWord>
+	<CnWord>玉米</CnWord>
+	<Interpretation>m.-es,unz. 玉米，蜀黍</Interpretation>
+	<AudioFile>54</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>55</Id>
+	<CategoryId>4</CategoryId>
+	<DeWord>der Kohl</DeWord>
+	<CnWord>卷心菜，圆白菜</CnWord>
+	<Interpretation>m.-(e)s,-e 【植】卷心菜，圆白菜</Interpretation>
+	<AudioFile>55</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>56</Id>
+	<CategoryId>4</CategoryId>
+	<DeWord>der Knoblauch</DeWord>
+	<CnWord>大蒜，蒜头</CnWord>
+	<Interpretation>m.-(e)s,unz. 大蒜，蒜头</Interpretation>
+	<AudioFile>56</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>57</Id>
+	<CategoryId>4</CategoryId>
+	<DeWord>die Petersilie</DeWord>
+	<CnWord>香菜，皱叶欧芹</CnWord>
+	<Interpretation>f.-,unz. 【植】香菜，皱叶欧芹</Interpretation>
+	<AudioFile>57</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>58</Id>
+	<CategoryId>4</CategoryId>
+	<DeWord>der Chili</DeWord>
+	<CnWord>小尖辣椒</CnWord>
+	<Interpretation>m.-s,-s 小尖辣椒</Interpretation>
+	<AudioFile>58</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>59</Id>
+	<CategoryId>4</CategoryId>
+	<DeWord>die Aubergine</DeWord>
+	<CnWord>茄子</CnWord>
+	<Interpretation>f.-,-n [法]茄子</Interpretation>
+	<AudioFile>59</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>60</Id>
+	<CategoryId>4</CategoryId>
+	<DeWord>die Kartoffel</DeWord>
+	<CnWord>马铃薯，土豆</CnWord>
+	<Interpretation>f.-,-n ①马铃薯，土豆 ②【俗，谑】大怀表，大挂表 ③【俗，谑】大鼻子 ④【俗，谑】袜子上的大洞</Interpretation>
+	<AudioFile>60</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>61</Id>
+	<CategoryId>4</CategoryId>
+	<DeWord>der Chinakohl</DeWord>
+	<CnWord>大白菜</CnWord>
+	<Interpretation>m.-(e)s,unz. 大白菜</Interpretation>
+	<AudioFile>61</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>62</Id>
+	<CategoryId>4</CategoryId>
+	<DeWord>die Tomate</DeWord>
+	<CnWord>西红柿，番茄</CnWord>
+	<Interpretation>f.-,-n 【植】西红柿，番茄</Interpretation>
+	<AudioFile>62</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>63</Id>
+	<CategoryId>5</CategoryId>
+	<DeWord>rot</DeWord>
+	<CnWord>红色的</CnWord>
+	<Interpretation>Adj. 红色的</Interpretation>
+	<AudioFile>63</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>64</Id>
+	<CategoryId>5</CategoryId>
+	<DeWord>orange</DeWord>
+	<CnWord>橙色的，橘黄色的</CnWord>
+	<Interpretation>Adj. 橙色的，橘黄色的</Interpretation>
+	<AudioFile>64</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>65</Id>
+	<CategoryId>5</CategoryId>
+	<DeWord>weiß</DeWord>
+	<CnWord>白色的，无色的</CnWord>
+	<Interpretation>Adj. ①白色的，无色的 ②洁白的 ③苍白的</Interpretation>
+	<AudioFile>65</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>66</Id>
+	<CategoryId>5</CategoryId>
+	<DeWord>grau</DeWord>
+	<CnWord>灰色的</CnWord>
+	<Interpretation>Adj. ①灰色的，灰白的，花白的 ②【转】无望的，单调的，萧条的 ③模糊的，朦胧的 ④远古的，遥远的</Interpretation>
+	<AudioFile>66</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>67</Id>
+	<CategoryId>5</CategoryId>
+	<DeWord>gelb</DeWord>
+	<CnWord>黄(色)的</CnWord>
+	<Interpretation>Adj. 黄(色)的</Interpretation>
+	<AudioFile>67</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>68</Id>
+	<CategoryId>5</CategoryId>
+	<DeWord>blau</DeWord>
+	<CnWord>蓝色的，天蓝色的</CnWord>
+	<Interpretation>Adj. ①蓝色的，天蓝色的 ②【转，俗，谑】喝醉的，烂醉的</Interpretation>
+	<AudioFile>68</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>69</Id>
+	<CategoryId>5</CategoryId>
+	<DeWord>grün</DeWord>
+	<CnWord>绿色的，青的</CnWord>
+	<Interpretation>Adj. ①绿色的，青的 ②新鲜的，嫩的 ③生的，未熟的 ④【转】不成熟的</Interpretation>
+	<AudioFile>69</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>70</Id>
+	<CategoryId>5</CategoryId>
+	<DeWord>schwarz</DeWord>
+	<CnWord>黑色的，深色的</CnWord>
+	<Interpretation>Adj. ①黑(色)的 ②深色的，漆黑的，乌黑的，黑油油的 ③黑乎乎的，乌黑的，脏的 ④不详的，不吉利的，倒霉的，不幸的 ⑤【口】非法的，秘密的，黑市的 ⑥阴险的，邪恶的，狠毒的 ⑦【口】天主教的，保守党派的</Interpretation>
+	<AudioFile>70</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>71</Id>
+	<CategoryId>5</CategoryId>
+	<DeWord>lila</DeWord>
+	<CnWord>紫丁香色的，淡紫色的，雪青色的</CnWord>
+	<Interpretation>Adj. &lt;不变化&gt;紫丁香色的，淡紫色的，雪青色的</Interpretation>
+	<AudioFile>71</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>72</Id>
+	<CategoryId>5</CategoryId>
+	<DeWord>rosa</DeWord>
+	<CnWord>粉红色的，淡红色的</CnWord>
+	<Interpretation>Adj. &lt;不变&gt;粉红色的，淡红色的</Interpretation>
+	<AudioFile>72</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>73</Id>
+	<CategoryId>5</CategoryId>
+	<DeWord>silbrig</DeWord>
+	<CnWord>银色的</CnWord>
+	<Interpretation>Adj. ①银色的 ②银铃般的，清脆的</Interpretation>
+	<AudioFile>73</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>74</Id>
+	<CategoryId>5</CategoryId>
+	<DeWord>braun</DeWord>
+	<CnWord>棕色的</CnWord>
+	<Interpretation>Adj. 棕色的，褐色的，栗色的</Interpretation>
+	<AudioFile>74</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>75</Id>
+	<CategoryId>5</CategoryId>
+	<DeWord>golden</DeWord>
+	<CnWord>金色的，金灿灿的</CnWord>
+	<Interpretation>Adj. ①金色的，金灿灿的 ②金的，金制的 ③【转】珍贵的，纯真的，美好的，忠诚的</Interpretation>
+	<AudioFile>75</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>76</Id>
+	<CategoryId>2</CategoryId>
+	<DeWord>der Kopf</DeWord>
+	<CnWord>头，脑袋</CnWord>
+	<Interpretation>m.-(e)s,¨e ①首，头，脑袋 ②头，顶端，上端 ③头脑，才智；思想，意志 ④首领，首脑，头目 ⑤(计数的)个人，人 ⑥信头，报头；标题 ⑦球状植物</Interpretation>
+	<AudioFile>76</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>77</Id>
+	<CategoryId>2</CategoryId>
+	<DeWord>das Gesicht</DeWord>
+	<CnWord>脸</CnWord>
+	<Interpretation>n.-(e)s,-e ①脸，面孔，面容 ②面部表情，神情 ③【转】外貌，外表</Interpretation>
+	<AudioFile>77</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>78</Id>
+	<CategoryId>2</CategoryId>
+	<DeWord>das Ohr</DeWord>
+	<CnWord>耳朵</CnWord>
+	<Interpretation>n.-(e)s,-en ①耳朵 ②【转，口】(书页角上的)折角，卷折</Interpretation>
+	<AudioFile>78</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>79</Id>
+	<CategoryId>2</CategoryId>
+	<DeWord>die Nase</DeWord>
+	<CnWord>鼻子</CnWord>
+	<Interpretation>f.-,-n ①鼻子 ②【口】嗅觉 ③凸出的岩石 ④半岛 ⑤(飞机的)机头，船头，车头</Interpretation>
+	<AudioFile>79</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>80</Id>
+	<CategoryId>2</CategoryId>
+	<DeWord>das Auge</DeWord>
+	<CnWord>眼睛</CnWord>
+	<Interpretation>n.-s,-n ①眼睛 ②视力，目光 ③眼力，鉴别力 ④芽，芽眼</Interpretation>
+	<AudioFile>80</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>81</Id>
+	<CategoryId>2</CategoryId>
+	<DeWord>die Stirn</DeWord>
+	<CnWord>额头</CnWord>
+	<Interpretation>f.-,-en 额，额头，前额</Interpretation>
+	<AudioFile>81</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>82</Id>
+	<CategoryId>2</CategoryId>
+	<DeWord>der Zahn</DeWord>
+	<CnWord>牙齿</CnWord>
+	<Interpretation>m.-(e)s,¨e ①牙，牙齿 ②齿状物 </Interpretation>
+	<AudioFile>82</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>83</Id>
+	<CategoryId>2</CategoryId>
+	<DeWord>der Hals</DeWord>
+	<CnWord>喉咙，脖子</CnWord>
+	<Interpretation>m.-es,¨e ①(人或动物的)脖子，颈项，颈 ②喉咙，咽喉，嗓子 ③【转】(器物的)颈</Interpretation>
+	<AudioFile>83</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>84</Id>
+	<CategoryId>2</CategoryId>
+	<DeWord>das Knie</DeWord>
+	<CnWord>膝盖</CnWord>
+	<Interpretation>n.-s,- ①【解】膝，膝盖 ②【口】(裤子的)膝部 ③【转】弯子，弯头</Interpretation>
+	<AudioFile>84</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>85</Id>
+	<CategoryId>2</CategoryId>
+	<DeWord>der Arm</DeWord>
+	<CnWord>手臂，胳膊</CnWord>
+	<Interpretation>m.-(e)s,-e ①手臂，胳膊，上肢，前肢 ②支流，分支</Interpretation>
+	<AudioFile>85</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>86</Id>
+	<CategoryId>2</CategoryId>
+	<DeWord>die Lippe</DeWord>
+	<CnWord>嘴唇，唇</CnWord>
+	<Interpretation>f.-,-n 嘴唇，唇</Interpretation>
+	<AudioFile>86</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>87</Id>
+	<CategoryId>2</CategoryId>
+	<DeWord>der Mund</DeWord>
+	<CnWord>嘴巴</CnWord>
+	<Interpretation>m.-(e)s,¨er ①嘴，口 ②人 ③【雅】洞口，口</Interpretation>
+	<AudioFile>87</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>88</Id>
+	<CategoryId>2</CategoryId>
+	<DeWord>die Hand</DeWord>
+	<CnWord>手</CnWord>
+	<Interpretation>f.-,¨e\nⅠ zählb. ①手 ②人手，人 ③蹄 ④方面，面，边 ⑤【律】所有者\nⅡ unz. ①一手宽度，一手之长 ②笔迹，字迹，手迹 ③【口，体】(足球犯规)手球</Interpretation>
+	<AudioFile>88</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>89</Id>
+	<CategoryId>2</CategoryId>
+	<DeWord>die Fuß</DeWord>
+	<CnWord>脚</CnWord>
+	<Interpretation>m.-es,¨e\nⅠ zählb. ①脚，足 ②(家具等的)腿，底部，基座 ③山脚，山麓 ④书页的下端 ⑤(诗的)音步\nⅡ unz. 英尺</Interpretation>
+	<AudioFile>89</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>90</Id>
+	<CategoryId>2</CategoryId>
+	<DeWord>die Schulter</DeWord>
+	<CnWord>肩膀</CnWord>
+	<Interpretation>f.-,-n 肩，肩膀</Interpretation>
+	<AudioFile>90</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>91</Id>
+	<CategoryId>6</CategoryId>
+	<DeWord>der Hund</DeWord>
+	<CnWord>狗</CnWord>
+	<Interpretation>m.-(e)s,-e ①狗，犬 ②【俗】人，家伙 ③【骂】狗，畜生</Interpretation>
+	<AudioFile>91</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>92</Id>
+	<CategoryId>6</CategoryId>
+	<DeWord>das Pferd</DeWord>
+	<CnWord>马</CnWord>
+	<Interpretation>n.-(e)s,-e ①马 ②【体】马鞍；跳马 ③(棋中的)马</Interpretation>
+	<AudioFile>92</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>93</Id>
+	<CategoryId>6</CategoryId>
+	<DeWord>die Maus</DeWord>
+	<CnWord>老鼠</CnWord>
+	<Interpretation>f.-,¨e ①(家)鼠，老鼠，耗子 ②【计】(计算机的)鼠标</Interpretation>
+	<AudioFile>93</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>94</Id>
+	<CategoryId>6</CategoryId>
+	<DeWord>das Schwein</DeWord>
+	<CnWord>猪</CnWord>
+	<Interpretation>n.-(e)s,-e ①猪 ②【粗，贬】猪猡，下流坯，脏鬼 ③【口】可怜虫 ④【口】幸运，好运</Interpretation>
+	<AudioFile>94</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>95</Id>
+	<CategoryId>6</CategoryId>
+	<DeWord>der Affe</DeWord>
+	<CnWord>猴子</CnWord>
+	<Interpretation>m.-n,-n ①猴，猿 ②【口，贬】花花公子 ③【口，贬】笨蛋</Interpretation>
+	<AudioFile>95</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>96</Id>
+	<CategoryId>6</CategoryId>
+	<DeWord>der Tiger</DeWord>
+	<CnWord>老虎</CnWord>
+	<Interpretation>m.-s.- 【动】虎</Interpretation>
+	<AudioFile>96</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>97</Id>
+	<CategoryId>6</CategoryId>
+	<DeWord>die Katze</DeWord>
+	<CnWord>猫</CnWord>
+	<Interpretation>f.-,-n ①(雌)猫，猫科 ②【转】(好争吵的)女人 ③【地区】腰包</Interpretation>
+	<AudioFile>97</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>98</Id>
+	<CategoryId>6</CategoryId>
+	<DeWord>der Fuchs</DeWord>
+	<CnWord>狐狸</CnWord>
+	<Interpretation>m.-es,¨e ①狐狸 ②狡猾的人，老狐狸 ③【转，讽】红头发的人</Interpretation>
+	<AudioFile>98</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>99</Id>
+	<CategoryId>6</CategoryId>
+	<DeWord>die Kuh</DeWord>
+	<CnWord>母牛，奶牛</CnWord>
+	<Interpretation>f.-,¨e ①母牛，奶牛；母兽 ②【口，骂】蠢妇</Interpretation>
+	<AudioFile>99</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>100</Id>
+	<CategoryId>6</CategoryId>
+	<DeWord>das Schaf</DeWord>
+	<CnWord>羊，绵羊</CnWord>
+	<Interpretation>n.-(e)s,-e 羊，绵羊</Interpretation>
+	<AudioFile>100</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>101</Id>
+	<CategoryId>6</CategoryId>
+	<DeWord>die Ziege</DeWord>
+	<CnWord>山羊</CnWord>
+	<Interpretation>f.-,-n ①山羊 ②【口，贬】蠢丫头，臭婆娘</Interpretation>
+	<AudioFile>101</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>102</Id>
+	<CategoryId>6</CategoryId>
+	<DeWord>das Huhn</DeWord>
+	<CnWord>鸡，母鸡</CnWord>
+	<Interpretation>n.-(e)s,¨er ①鸡，母鸡 ②【转，俗】人，家伙</Interpretation>
+	<AudioFile>102</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>103</Id>
+	<CategoryId>6</CategoryId>
+	<DeWord>der Hase</DeWord>
+	<CnWord>兔子</CnWord>
+	<Interpretation>m.-n,-n ①兔子 ②胆小鬼</Interpretation>
+	<AudioFile>103</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>104</Id>
+	<CategoryId>6</CategoryId>
+	<DeWord>die Ente</DeWord>
+	<CnWord>鸭</CnWord>
+	<Interpretation>f.-,-n ①鸭 ②【口，贬，谑】(报纸或电台的)未经证实的消息，错误的报道，谣言，假新闻</Interpretation>
+	<AudioFile>104</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>105</Id>
+	<CategoryId>6</CategoryId>
+	<DeWord>der Fisch</DeWord>
+	<CnWord>鱼</CnWord>
+	<Interpretation>m.-(e)s,-e ①鱼 ②【天】双鱼座</Interpretation>
+	<AudioFile>105</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>106</Id>
+	<CategoryId>8</CategoryId>
+	<DeWord>der Morgen</DeWord>
+	<CnWord>早晨</CnWord>
+	<Interpretation>m.-s,- ①早上，早晨，清晨，上午(6点~10点) ②【转，雅】开始，开端，初期</Interpretation>
+	<AudioFile>106</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>107</Id>
+	<CategoryId>8</CategoryId>
+	<DeWord>der Vormittag</DeWord>
+	<CnWord>上午</CnWord>
+	<Interpretation>m.-es,-e 上午</Interpretation>
+	<AudioFile>107</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>108</Id>
+	<CategoryId>8</CategoryId>
+	<DeWord>der Mittag</DeWord>
+	<CnWord>中午</CnWord>
+	<Interpretation>m.-(e)s,-e 中午(12点)</Interpretation>
+	<AudioFile>108</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>109</Id>
+	<CategoryId>8</CategoryId>
+	<DeWord>der Nachmittag</DeWord>
+	<CnWord>下午</CnWord>
+	<Interpretation>m.-s,-e ①下午，午后 ②下午娱乐活动，午后演出会</Interpretation>
+	<AudioFile>109</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>110</Id>
+	<CategoryId>8</CategoryId>
+	<DeWord>der Abend</DeWord>
+	<CnWord>晚上</CnWord>
+	<Interpretation>m.-s,-e ①傍晚，晚上，夜晚 ②晚会 ③【转，雅】后期，末期 ④【诗】西方</Interpretation>
+	<AudioFile>110</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>111</Id>
+	<CategoryId>8</CategoryId>
+	<DeWord>die Nacht</DeWord>
+	<CnWord>夜晚</CnWord>
+	<Interpretation>f.-,¨e 夜晚，夜(22点后)</Interpretation>
+	<AudioFile>111</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>112</Id>
+	<CategoryId>8</CategoryId>
+	<DeWord>heute</DeWord>
+	<CnWord>今天</CnWord>
+	<Interpretation>Adv. ①今天，今日 ②目前，现在，如今 </Interpretation>
+	<AudioFile>112</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>113</Id>
+	<CategoryId>8</CategoryId>
+	<DeWord>morgen</DeWord>
+	<CnWord>明天</CnWord>
+	<Interpretation>Adv. ①明天 ②将来，未来 ③早上，上午</Interpretation>
+	<AudioFile>113</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>114</Id>
+	<CategoryId>8</CategoryId>
+	<DeWord>übermorgen</DeWord>
+	<CnWord>后天</CnWord>
+	<Interpretation>Adv. 后天</Interpretation>
+	<AudioFile>114</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>115</Id>
+	<CategoryId>8</CategoryId>
+	<DeWord>gestern</DeWord>
+	<CnWord>昨天，昨日</CnWord>
+	<Interpretation>Adv. 昨天，昨日</Interpretation>
+	<AudioFile>115</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>116</Id>
+	<CategoryId>8</CategoryId>
+	<DeWord>vorgestern</DeWord>
+	<CnWord>前天</CnWord>
+	<Interpretation>Adv. 前天</Interpretation>
+	<AudioFile>116</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>117</Id>
+	<CategoryId>8</CategoryId>
+	<DeWord>die Stunde</DeWord>
+	<CnWord>小时</CnWord>
+	<Interpretation>f.-,-n ①小时，钟头 ②课时，一节课 ③时刻，时候</Interpretation>
+	<AudioFile>117</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>118</Id>
+	<CategoryId>8</CategoryId>
+	<DeWord>die Minute</DeWord>
+	<CnWord>分钟</CnWord>
+	<Interpretation>f.-,-n ①分(钟) ②瞬间，时刻 ③【专业用于】分(度的六十分之一)</Interpretation>
+	<AudioFile>118</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>119</Id>
+	<CategoryId>8</CategoryId>
+	<DeWord>die Sekunde</DeWord>
+	<CnWord>秒</CnWord>
+	<Interpretation>f.-,-n ①(时间单位)秒 ②【口】瞬间，片刻</Interpretation>
+	<AudioFile>119</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>120</Id>
+	<CategoryId>8</CategoryId>
+	<DeWord>der Tag</DeWord>
+	<CnWord>天，日</CnWord>
+	<Interpretation>m.-(e)s,-e ①(一)天，(一)日，日子 ②白天，白昼 ③&lt;复数&gt; 日子，时光，时代 ④&lt;用于复合词&gt;议会，议院，代表大会</Interpretation>
+	<AudioFile>120</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>121</Id>
+	<CategoryId>7</CategoryId>
+	<DeWord>der Montag</DeWord>
+	<CnWord>星期一</CnWord>
+	<Interpretation>m.-(e)s,-e 星期一</Interpretation>
+	<AudioFile>121</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>122</Id>
+	<CategoryId>7</CategoryId>
+	<DeWord>der Dienstag</DeWord>
+	<CnWord>星期二</CnWord>
+	<Interpretation>m.-(e)s,-e 星期二</Interpretation>
+	<AudioFile>122</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>123</Id>
+	<CategoryId>7</CategoryId>
+	<DeWord>der Mittwoch</DeWord>
+	<CnWord>星期三</CnWord>
+	<Interpretation>m.-(e)s,-e 星期三</Interpretation>
+	<AudioFile>123</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>124</Id>
+	<CategoryId>7</CategoryId>
+	<DeWord>der Donnerstag</DeWord>
+	<CnWord>星期四</CnWord>
+	<Interpretation>m.-(e)s,-e 星期四</Interpretation>
+	<AudioFile>124</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>125</Id>
+	<CategoryId>7</CategoryId>
+	<DeWord>der Freitag</DeWord>
+	<CnWord>星期五</CnWord>
+	<Interpretation>m.-(e)s,-e 星期五</Interpretation>
+	<AudioFile>125</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>126</Id>
+	<CategoryId>7</CategoryId>
+	<DeWord>der Samstag</DeWord>
+	<CnWord>星期六</CnWord>
+	<Interpretation>m.-(e)s,-e 星期六</Interpretation>
+	<AudioFile>126</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>127</Id>
+	<CategoryId>7</CategoryId>
+	<DeWord>der Sonntag</DeWord>
+	<CnWord>星期七，星期日</CnWord>
+	<Interpretation>m.-(e)s,-e 星期七，星期日</Interpretation>
+	<AudioFile>127</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>128</Id>
+	<CategoryId>7</CategoryId>
+	<DeWord>das Wochenende</DeWord>
+	<CnWord>周末</CnWord>
+	<Interpretation>n.-s,-n 周末</Interpretation>
+	<AudioFile>128</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>129</Id>
+	<CategoryId>7</CategoryId>
+	<DeWord>der Werktag</DeWord>
+	<CnWord>工作日</CnWord>
+	<Interpretation>m.-(e)s,-e 工作日</Interpretation>
+	<AudioFile>129</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>130</Id>
+	<CategoryId>10</CategoryId>
+	<DeWord>der Januar</DeWord>
+	<CnWord>一月</CnWord>
+	<Interpretation>m.-s,-e 一月</Interpretation>
+	<AudioFile>130</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>131</Id>
+	<CategoryId>10</CategoryId>
+	<DeWord>der Februar</DeWord>
+	<CnWord>二月</CnWord>
+	<Interpretation>m.-(s),-e 二月</Interpretation>
+	<AudioFile>131</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>132</Id>
+	<CategoryId>10</CategoryId>
+	<DeWord>der März</DeWord>
+	<CnWord>三月</CnWord>
+	<Interpretation>m.-es,-e  三月</Interpretation>
+	<AudioFile>132</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>133</Id>
+	<CategoryId>10</CategoryId>
+	<DeWord>der April</DeWord>
+	<CnWord>四月</CnWord>
+	<Interpretation>m.-(s),(-e) 四月</Interpretation>
+	<AudioFile>133</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>134</Id>
+	<CategoryId>10</CategoryId>
+	<DeWord>der Mai</DeWord>
+	<CnWord>五月</CnWord>
+	<Interpretation>m.-(e)s/ -e ①五月 ②【转，雅】青春(时代)，青年恋爱时期</Interpretation>
+	<AudioFile>134</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>135</Id>
+	<CategoryId>10</CategoryId>
+	<DeWord>der Juni</DeWord>
+	<CnWord>六月</CnWord>
+	<Interpretation>m.-(s),-s 六月</Interpretation>
+	<AudioFile>135</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>136</Id>
+	<CategoryId>10</CategoryId>
+	<DeWord>der Juli</DeWord>
+	<CnWord>七月</CnWord>
+	<Interpretation>m.-(s),-s 七月</Interpretation>
+	<AudioFile>136</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>137</Id>
+	<CategoryId>10</CategoryId>
+	<DeWord>der August</DeWord>
+	<CnWord>八月</CnWord>
+	<Interpretation>m.-(e)s,-e 八月</Interpretation>
+	<AudioFile>137</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>138</Id>
+	<CategoryId>10</CategoryId>
+	<DeWord>der September</DeWord>
+	<CnWord>九月</CnWord>
+	<Interpretation>m.-(s),- 九月</Interpretation>
+	<AudioFile>138</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>139</Id>
+	<CategoryId>10</CategoryId>
+	<DeWord>der Oktober</DeWord>
+	<CnWord>十月</CnWord>
+	<Interpretation>m.-(s),- 十月</Interpretation>
+	<AudioFile>139</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>140</Id>
+	<CategoryId>10</CategoryId>
+	<DeWord>der November</DeWord>
+	<CnWord>十一月</CnWord>
+	<Interpretation>m.-(s),- 十一月</Interpretation>
+	<AudioFile>140</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>141</Id>
+	<CategoryId>10</CategoryId>
+	<DeWord>der Dezember</DeWord>
+	<CnWord>十二月</CnWord>
+	<Interpretation>m.-(s),- 十二月</Interpretation>
+	<AudioFile>141</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>142</Id>
+	<CategoryId>10</CategoryId>
+	<DeWord>der Frühling</DeWord>
+	<CnWord>春季，春天</CnWord>
+	<Interpretation>m.-s,-e ①春季，春天  ②【转】青春，繁荣(时期)</Interpretation>
+	<AudioFile>142</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>143</Id>
+	<CategoryId>10</CategoryId>
+	<DeWord>der Sommer</DeWord>
+	<CnWord>夏季，夏天</CnWord>
+	<Interpretation>m.-s,- 夏，夏天，夏季</Interpretation>
+	<AudioFile>143</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>144</Id>
+	<CategoryId>10</CategoryId>
+	<DeWord>der Herbst</DeWord>
+	<CnWord>秋季，秋天</CnWord>
+	<Interpretation>m.-(e)s,-e 秋天，秋季</Interpretation>
+	<AudioFile>144</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>145</Id>
+	<CategoryId>10</CategoryId>
+	<DeWord>der Winter</DeWord>
+	<CnWord>冬季，冬天</CnWord>
+	<Interpretation>m.-s,- 冬季，冬天</Interpretation>
+	<AudioFile>145</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>147</Id>
+	<CategoryId>11</CategoryId>
+	<DeWord>die U-Bahn</DeWord>
+	<CnWord>地铁</CnWord>
+	<Interpretation>f.-,-en &lt;Untergrundbahn的简称&gt;地下铁道，地铁</Interpretation>
+	<AudioFile>147</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>148</Id>
+	<CategoryId>11</CategoryId>
+	<DeWord>die S-Bahn</DeWord>
+	<CnWord>轻轨</CnWord>
+	<Interpretation>f.-,-en &lt;Schnellbahn,Stadtbahn的简称&gt;(市内及市郊的)市区快速火车，轻轨</Interpretation>
+	<AudioFile>148</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>149</Id>
+	<CategoryId>11</CategoryId>
+	<DeWord>der Bus</DeWord>
+	<CnWord>公共汽车，巴士</CnWord>
+	<Interpretation>m.-ses,-se &lt;Omnibus的简称&gt;公共汽车，巴士</Interpretation>
+	<AudioFile>149</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>150</Id>
+	<CategoryId>11</CategoryId>
+	<DeWord>die Haltestelle</DeWord>
+	<CnWord>车站</CnWord>
+	<Interpretation>f.-,-n 公共汽车站，电车站，小火车站</Interpretation>
+	<AudioFile>150</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>151</Id>
+	<CategoryId>11</CategoryId>
+	<DeWord>der Bahnhof</DeWord>
+	<CnWord>火车站</CnWord>
+	<Interpretation>m. -(e)s,¨e 火车站</Interpretation>
+	<AudioFile>151</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>152</Id>
+	<CategoryId>11</CategoryId>
+	<DeWord>der Wartesaal</DeWord>
+	<CnWord>候车厅</CnWord>
+	<Interpretation>m.-(e)s,  Wartesäle (车站)候车室</Interpretation>
+	<AudioFile>152</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>153</Id>
+	<CategoryId>11</CategoryId>
+	<DeWord>der Flughafen</DeWord>
+	<CnWord>飞机场</CnWord>
+	<Interpretation>m.-s,¨ 机场，航空港，航空站</Interpretation>
+	<AudioFile>153</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>154</Id>
+	<CategoryId>11</CategoryId>
+	<DeWord>der Parkplatz</DeWord>
+	<CnWord>停车场</CnWord>
+	<Interpretation>m.-es,¨e 停车场，停车处</Interpretation>
+	<AudioFile>154</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>155</Id>
+	<CategoryId>11</CategoryId>
+	<DeWord>das Auto</DeWord>
+	<CnWord>汽车</CnWord>
+	<Interpretation>n.-s,-s 汽车</Interpretation>
+	<AudioFile>155</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>156</Id>
+	<CategoryId>11</CategoryId>
+	<DeWord>das Taxi</DeWord>
+	<CnWord>出租车</CnWord>
+	<Interpretation>n.-(s),-(s) 出租车</Interpretation>
+	<AudioFile>156</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>157</Id>
+	<CategoryId>11</CategoryId>
+	<DeWord>die Autobahn</DeWord>
+	<CnWord>高速公路</CnWord>
+	<Interpretation>f.-,-en 高速公路</Interpretation>
+	<AudioFile>157</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>158</Id>
+	<CategoryId>11</CategoryId>
+	<DeWord>die Tankstelle</DeWord>
+	<CnWord>加油站</CnWord>
+	<Interpretation>f.-,-n 加油站</Interpretation>
+	<AudioFile>158</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>159</Id>
+	<CategoryId>11</CategoryId>
+	<DeWord>der Zug</DeWord>
+	<CnWord>火车，列车</CnWord>
+	<Interpretation>m.-(e)s,¨e\nⅠ zählb. ①火车，列车 ②拖斗卡车 ③(进行的)队伍，行列 ④移动，迁移，迁徙 ⑤拉，拖，拽，牵引 ⑥(划船及游泳时)臂部划动动作 ⑦笔画，线条，笔锋 ⑧走棋，一着(棋) ⑨通风管，通气管 ⑩特点，特征，特色\nⅡ unz. ①拉力，牵引力 ②气流，穿堂风 ③通风，通气</Interpretation>
+	<AudioFile>159</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>160</Id>
+	<CategoryId>11</CategoryId>
+	<DeWord>das Flugzeug</DeWord>
+	<CnWord>飞机</CnWord>
+	<Interpretation>n.-(e)s,-e 飞机</Interpretation>
+	<AudioFile>160</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>161</Id>
+	<CategoryId>11</CategoryId>
+	<DeWord>der Dampfer</DeWord>
+	<CnWord>轮船</CnWord>
+	<Interpretation>m.-s,- &lt;Dampfschiff 的简称&gt;轮船</Interpretation>
+	<AudioFile>161</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>162</Id>
+	<CategoryId>12</CategoryId>
+	<DeWord>die Allergie</DeWord>
+	<CnWord>过敏</CnWord>
+	<Interpretation>f.-,-n 【医】变态反应，过敏反应</Interpretation>
+	<AudioFile>162</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>163</Id>
+	<CategoryId>12</CategoryId>
+	<DeWord>der Blutdruck</DeWord>
+	<CnWord>血压</CnWord>
+	<Interpretation>m.-(e)s,unz. 【医】血压</Interpretation>
+	<AudioFile>163</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>164</Id>
+	<CategoryId>12</CategoryId>
+	<DeWord>der Durchfall</DeWord>
+	<CnWord>腹泻</CnWord>
+	<Interpretation>m.-(e)s,unz. 【医】腹泻，拉肚子</Interpretation>
+	<AudioFile>164</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>165</Id>
+	<CategoryId>12</CategoryId>
+	<DeWord>die Erkältung</DeWord>
+	<CnWord>感冒</CnWord>
+	<Interpretation>f.-,-en 伤风，感冒</Interpretation>
+	<AudioFile>165</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>166</Id>
+	<CategoryId>12</CategoryId>
+	<DeWord>das Fieber</DeWord>
+	<CnWord>发烧</CnWord>
+	<Interpretation>n.-s,- ①【医】发烧，热度 ②【转】狂热，热情，冲动</Interpretation>
+	<AudioFile>166</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>167</Id>
+	<CategoryId>12</CategoryId>
+	<DeWord>der Knochenbruch</DeWord>
+	<CnWord>骨折</CnWord>
+	<Interpretation>m.-(e)s,¨e 【医】骨折</Interpretation>
+	<AudioFile>167</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>168</Id>
+	<CategoryId>12</CategoryId>
+	<DeWord>der Arzt</DeWord>
+	<CnWord>医生</CnWord>
+	<Interpretation>m.-(e)s,¨e 医生，医师，大夫</Interpretation>
+	<AudioFile>168</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>169</Id>
+	<CategoryId>12</CategoryId>
+	<DeWord>der Schmerz</DeWord>
+	<CnWord>痛，痛苦</CnWord>
+	<Interpretation>m.-es,-en ①&lt;常用复数&gt;(肉体上的)痛，疼痛 ②【转】(精神上的)痛苦，悲痛</Interpretation>
+	<AudioFile>169</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>170</Id>
+	<CategoryId>12</CategoryId>
+	<DeWord>das Aspirin</DeWord>
+	<CnWord>阿司匹林</CnWord>
+	<Interpretation>n.-s,unz. 【药】阿司匹林</Interpretation>
+	<AudioFile>170</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>171</Id>
+	<CategoryId>12</CategoryId>
+	<DeWord>das Medikament</DeWord>
+	<CnWord>药品，药物</CnWord>
+	<Interpretation>n.-(e)s,-e 药品，药物，药剂</Interpretation>
+	<AudioFile>171</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>172</Id>
+	<CategoryId>12</CategoryId>
+	<DeWord>die Tablette</DeWord>
+	<CnWord>药片</CnWord>
+	<Interpretation>f.-,-n 药片</Interpretation>
+	<AudioFile>172</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>173</Id>
+	<CategoryId>12</CategoryId>
+	<DeWord>die Spritze</DeWord>
+	<CnWord>针剂，注射器，打针</CnWord>
+	<Interpretation>f.-,-n ①注射器 ②注射，打针 ③注射剂，针剂 ④喷射器 ⑤灭火器，消防水枪</Interpretation>
+	<AudioFile>173</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>174</Id>
+	<CategoryId>12</CategoryId>
+	<DeWord>der Krankenwagen</DeWord>
+	<CnWord>救护车</CnWord>
+	<Interpretation>m.-s,- 救护车</Interpretation>
+	<AudioFile>174</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>175</Id>
+	<CategoryId>12</CategoryId>
+	<DeWord>das Wartezimmer</DeWord>
+	<CnWord>候诊室</CnWord>
+	<Interpretation>n.-s,- 等候室(尤指候诊室)</Interpretation>
+	<AudioFile>175</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>176</Id>
+	<CategoryId>12</CategoryId>
+	<DeWord>die Operation</DeWord>
+	<CnWord>外科手术</CnWord>
+	<Interpretation>f.-,-en ①外科手术 ②工作程序 ③【数】运算程序 ④【军】军事行动</Interpretation>
+	<AudioFile>176</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>177</Id>
+	<CategoryId>13</CategoryId>
+	<DeWord>Berlin</DeWord>
+	<CnWord>柏林（州）</CnWord>
+	<Interpretation>德国联邦州(首都，市州)</Interpretation>
+	<AudioFile>177</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>178</Id>
+	<CategoryId>13</CategoryId>
+	<DeWord>Hamburg</DeWord>
+	<CnWord>汉堡（州）</CnWord>
+	<Interpretation>德国联邦州(市州)</Interpretation>
+	<AudioFile>178</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>179</Id>
+	<CategoryId>13</CategoryId>
+	<DeWord>Bremen</DeWord>
+	<CnWord>不来梅（州）</CnWord>
+	<Interpretation>德国联邦州(市州)</Interpretation>
+	<AudioFile>179</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>180</Id>
+	<CategoryId>13</CategoryId>
+	<DeWord>Baden-Württemberg</DeWord>
+	<CnWord>巴登·符腾堡（州）</CnWord>
+	<Interpretation>德国联邦州</Interpretation>
+	<AudioFile>180</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>181</Id>
+	<CategoryId>13</CategoryId>
+	<DeWord>Bayern</DeWord>
+	<CnWord>巴伐利亚（州）</CnWord>
+	<Interpretation>德国联邦州</Interpretation>
+	<AudioFile>181</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>182</Id>
+	<CategoryId>13</CategoryId>
+	<DeWord>Brandenburg</DeWord>
+	<CnWord>勃兰登堡（州）</CnWord>
+	<Interpretation>德国联邦州</Interpretation>
+	<AudioFile>182</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>183</Id>
+	<CategoryId>13</CategoryId>
+	<DeWord>Hessen</DeWord>
+	<CnWord>黑森（州）</CnWord>
+	<Interpretation>德国联邦州</Interpretation>
+	<AudioFile>183</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>184</Id>
+	<CategoryId>13</CategoryId>
+	<DeWord>Mecklenburg-Vorpommern</DeWord>
+	<CnWord>梅克伦堡-前波莫瑞（州）</CnWord>
+	<Interpretation>德国联邦州</Interpretation>
+	<AudioFile>184</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>185</Id>
+	<CategoryId>13</CategoryId>
+	<DeWord>Niedersachsen</DeWord>
+	<CnWord>下萨克森（州）</CnWord>
+	<Interpretation>德国联邦州</Interpretation>
+	<AudioFile>185</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>186</Id>
+	<CategoryId>13</CategoryId>
+	<DeWord>Nordrhein-Westfalen</DeWord>
+	<CnWord>北莱茵·威斯特法伦（州）</CnWord>
+	<Interpretation>德国联邦州</Interpretation>
+	<AudioFile>186</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>187</Id>
+	<CategoryId>13</CategoryId>
+	<DeWord>Rheinland-Pfalz</DeWord>
+	<CnWord>莱茵兰·法耳茨（州）</CnWord>
+	<Interpretation>德国联邦州</Interpretation>
+	<AudioFile>187</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>188</Id>
+	<CategoryId>13</CategoryId>
+	<DeWord>Saarland</DeWord>
+	<CnWord>萨尔（州）</CnWord>
+	<Interpretation>德国联邦州</Interpretation>
+	<AudioFile>188</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>189</Id>
+	<CategoryId>13</CategoryId>
+	<DeWord>Sachsen</DeWord>
+	<CnWord>萨克森（州）</CnWord>
+	<Interpretation>德国联邦州</Interpretation>
+	<AudioFile>189</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>190</Id>
+	<CategoryId>13</CategoryId>
+	<DeWord>Sachsen-Anhalt</DeWord>
+	<CnWord>萨克森·安哈尔特（州）</CnWord>
+	<Interpretation>德国联邦州</Interpretation>
+	<AudioFile>190</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>191</Id>
+	<CategoryId>13</CategoryId>
+	<DeWord>Schleswig-Holstein</DeWord>
+	<CnWord>施勒苏益格-荷尔斯泰因（州）</CnWord>
+	<Interpretation>德国联邦州</Interpretation>
+	<AudioFile>191</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>192</Id>
+	<CategoryId>13</CategoryId>
+	<DeWord>Thüringen</DeWord>
+	<CnWord>图林根（州）</CnWord>
+	<Interpretation>德国联邦州</Interpretation>
+	<AudioFile>192</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>193</Id>
+	<CategoryId>13</CategoryId>
+	<DeWord>Bonn  </DeWord>
+	<CnWord>波恩</CnWord>
+	<Interpretation>德国城市</Interpretation>
+	<AudioFile>193</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>194</Id>
+	<CategoryId>13</CategoryId>
+	<DeWord>Aachen</DeWord>
+	<CnWord>亚琛</CnWord>
+	<Interpretation>德国城市</Interpretation>
+	<AudioFile>194</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>195</Id>
+	<CategoryId>13</CategoryId>
+	<DeWord>Augsburg   </DeWord>
+	<CnWord>奥格斯堡</CnWord>
+	<Interpretation>德国城市</Interpretation>
+	<AudioFile>195</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>196</Id>
+	<CategoryId>13</CategoryId>
+	<DeWord>Darmstadt</DeWord>
+	<CnWord>达姆施塔特</CnWord>
+	<Interpretation>德国城市</Interpretation>
+	<AudioFile>196</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>197</Id>
+	<CategoryId>13</CategoryId>
+	<DeWord>Dortmund</DeWord>
+	<CnWord>多特蒙德</CnWord>
+	<Interpretation>德国城市</Interpretation>
+	<AudioFile>197</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>198</Id>
+	<CategoryId>13</CategoryId>
+	<DeWord>Dresden</DeWord>
+	<CnWord>德累斯顿</CnWord>
+	<Interpretation>德国城市</Interpretation>
+	<AudioFile>198</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>199</Id>
+	<CategoryId>13</CategoryId>
+	<DeWord>Duisburg</DeWord>
+	<CnWord>杜伊斯堡</CnWord>
+	<Interpretation>德国城市</Interpretation>
+	<AudioFile>199</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>200</Id>
+	<CategoryId>13</CategoryId>
+	<DeWord>Düsseldorf</DeWord>
+	<CnWord>杜塞尔多夫</CnWord>
+	<Interpretation>德国城市</Interpretation>
+	<AudioFile>200</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>201</Id>
+	<CategoryId>13</CategoryId>
+	<DeWord>Frankfurt </DeWord>
+	<CnWord>法兰克福</CnWord>
+	<Interpretation>德国城市</Interpretation>
+	<AudioFile>201</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>202</Id>
+	<CategoryId>13</CategoryId>
+	<DeWord>Freiburg</DeWord>
+	<CnWord>弗莱堡</CnWord>
+	<Interpretation>德国城市</Interpretation>
+	<AudioFile>202</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>203</Id>
+	<CategoryId>13</CategoryId>
+	<DeWord>Göttingen</DeWord>
+	<CnWord>哥廷根</CnWord>
+	<Interpretation>德国城市</Interpretation>
+	<AudioFile>203</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>204</Id>
+	<CategoryId>13</CategoryId>
+	<DeWord>Hanau</DeWord>
+	<CnWord>哈瑙</CnWord>
+	<Interpretation>德国城市</Interpretation>
+	<AudioFile>204</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>205</Id>
+	<CategoryId>13</CategoryId>
+	<DeWord>Hannover</DeWord>
+	<CnWord>汉诺威</CnWord>
+	<Interpretation>德国城市</Interpretation>
+	<AudioFile>205</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>206</Id>
+	<CategoryId>13</CategoryId>
+	<DeWord>Karlsruhe</DeWord>
+	<CnWord>卡尔斯鲁厄</CnWord>
+	<Interpretation>德国城市</Interpretation>
+	<AudioFile>206</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>207</Id>
+	<CategoryId>13</CategoryId>
+	<DeWord>Kiel</DeWord>
+	<CnWord>基尔</CnWord>
+	<Interpretation>德国城市</Interpretation>
+	<AudioFile>207</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>208</Id>
+	<CategoryId>13</CategoryId>
+	<DeWord>Köln</DeWord>
+	<CnWord>科隆</CnWord>
+	<Interpretation>德国城市</Interpretation>
+	<AudioFile>208</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>209</Id>
+	<CategoryId>13</CategoryId>
+	<DeWord>Konstanz</DeWord>
+	<CnWord>康斯坦茨</CnWord>
+	<Interpretation>德国城市</Interpretation>
+	<AudioFile>209</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>210</Id>
+	<CategoryId>13</CategoryId>
+	<DeWord>Leipzig</DeWord>
+	<CnWord>莱比锡</CnWord>
+	<Interpretation>德国城市</Interpretation>
+	<AudioFile>210</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>211</Id>
+	<CategoryId>13</CategoryId>
+	<DeWord>Mannheim</DeWord>
+	<CnWord>曼海姆</CnWord>
+	<Interpretation>德国城市</Interpretation>
+	<AudioFile>211</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>212</Id>
+	<CategoryId>13</CategoryId>
+	<DeWord>München</DeWord>
+	<CnWord>慕尼黑</CnWord>
+	<Interpretation>德国城市</Interpretation>
+	<AudioFile>212</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>213</Id>
+	<CategoryId>14</CategoryId>
+	<DeWord>die Kleidung</DeWord>
+	<CnWord>衣服，服装</CnWord>
+	<Interpretation>f.-,unz 衣服，服装（总称）</Interpretation>
+	<AudioFile>213</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>214</Id>
+	<CategoryId>14</CategoryId>
+	<DeWord>der Anzug</DeWord>
+	<CnWord>（男）西装</CnWord>
+	<Interpretation>m.-(e)s,¨e①（整套男西装）\n②（汽车）启动\n③（瑞）被套\n④开棋，开局</Interpretation>
+	<AudioFile>214</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>215</Id>
+	<CategoryId>14</CategoryId>
+	<DeWord>das Hemd</DeWord>
+	<CnWord>衬衣</CnWord>
+	<Interpretation>n.-(e)s,-en 衬衫，衬衣</Interpretation>
+	<AudioFile>215</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>216</Id>
+	<CategoryId>14</CategoryId>
+	<DeWord>die Jacke</DeWord>
+	<CnWord>夹克衫，开衫</CnWord>
+	<Interpretation>f.-,-n 上衣，夹克衫，开衫，外套</Interpretation>
+	<AudioFile>216</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>217</Id>
+	<CategoryId>14</CategoryId>
+	<DeWord>der Mantel</DeWord>
+	<CnWord>大衣，外套</CnWord>
+	<Interpretation>m.-s,¨①大衣，长外套\n②外胎\n③【技】外壳，外套，护套（筒）</Interpretation>
+	<AudioFile>217</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>218</Id>
+	<CategoryId>14</CategoryId>
+	<DeWord>das Unterhemd</DeWord>
+	<CnWord>内衣</CnWord>
+	<Interpretation>n.-es,-en 内衣，内衫</Interpretation>
+	<AudioFile>218</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>219</Id>
+	<CategoryId>14</CategoryId>
+	<DeWord>das T-Shirt</DeWord>
+	<CnWord>T恤衫</CnWord>
+	<Interpretation>n.-,-s T 恤衫</Interpretation>
+	<AudioFile>219</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>220</Id>
+	<CategoryId>14</CategoryId>
+	<DeWord>der Pullover</DeWord>
+	<CnWord>毛衣，套头衫</CnWord>
+	<Interpretation>m.-s,- 套头衫，套头毛衣</Interpretation>
+	<AudioFile>220</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>221</Id>
+	<CategoryId>14</CategoryId>
+	<DeWord>die Bluse</DeWord>
+	<CnWord>女上衣，女衬衫</CnWord>
+	<Interpretation>f.-,-n 女衬衫，女上衣</Interpretation>
+	<AudioFile>221</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>222</Id>
+	<CategoryId>14</CategoryId>
+	<DeWord>die Hose</DeWord>
+	<CnWord>裤子</CnWord>
+	<Interpretation>f.-,-n ①裤，裤子（女）内裤\n②（猛禽的）腿毛\n③（马的）小腿，胫肉\n④蜜蜂腿上的花粉</Interpretation>
+	<AudioFile>222</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>223</Id>
+	<CategoryId>14</CategoryId>
+	<DeWord>die Jeans</DeWord>
+	<CnWord>牛仔裤</CnWord>
+	<Interpretation>f.-,- 牛仔裤</Interpretation>
+	<AudioFile>223</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>224</Id>
+	<CategoryId>14</CategoryId>
+	<DeWord>der Rock</DeWord>
+	<CnWord>裙子</CnWord>
+	<Interpretation>I m.-(e)s,¨紧的宽松的，长、短裙 II m.-(s),unz.摇滚乐</Interpretation>
+	<AudioFile>224</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>225</Id>
+	<CategoryId>14</CategoryId>
+	<DeWord>die Strumpfhose</DeWord>
+	<CnWord>连裤袜</CnWord>
+	<Interpretation>f.-,-n 连裤袜</Interpretation>
+	<AudioFile>225</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>226</Id>
+	<CategoryId>14</CategoryId>
+	<DeWord>die Unterhose</DeWord>
+	<CnWord>内裤</CnWord>
+	<Interpretation>f.-,-n 内裤，短裤，衬裤</Interpretation>
+	<AudioFile>226</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>227</Id>
+	<CategoryId>14</CategoryId>
+	<DeWord>die Mütze</DeWord>
+	<CnWord>帽子</CnWord>
+	<Interpretation>f.-,-n 帽子，便帽</Interpretation>
+	<AudioFile>227</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>228</Id>
+	<CategoryId>14</CategoryId>
+	<DeWord>der Schal</DeWord>
+	<CnWord>围巾</CnWord>
+	<Interpretation>m.-(e)s.-e/-s 围巾</Interpretation>
+	<AudioFile>228</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>229</Id>
+	<CategoryId>14</CategoryId>
+	<DeWord>die Krawatte</DeWord>
+	<CnWord>领带</CnWord>
+	<Interpretation>f.-,-n 领带</Interpretation>
+	<AudioFile>229</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>230</Id>
+	<CategoryId>14</CategoryId>
+	<DeWord>der Handschuhe</DeWord>
+	<CnWord>手套</CnWord>
+	<Interpretation>m.-s,-e 手套</Interpretation>
+	<AudioFile>230</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>231</Id>
+	<CategoryId>14</CategoryId>
+	<DeWord>der Gürtel</DeWord>
+	<CnWord>腰带，裤带</CnWord>
+	<Interpretation>m.-s,- ①腰带，裤带，袋子\n②地带\n③【解】腰部</Interpretation>
+	<AudioFile>231</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>232</Id>
+	<CategoryId>14</CategoryId>
+	<DeWord>die Socke</DeWord>
+	<CnWord>袜子</CnWord>
+	<Interpretation>f.-,-n 短袜 ||sich auf die ～n machen 【口】动身，出发，上路</Interpretation>
+	<AudioFile>232</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>233</Id>
+	<CategoryId>14</CategoryId>
+	<DeWord>der Schuhe</DeWord>
+	<CnWord>鞋子</CnWord>
+	<Interpretation>m.-（e）s,-e 鞋子 ||jmdm .etw. in die ～e schieben 【口】把某事的责任推给某人，将某事家伙给某人</Interpretation>
+	<AudioFile>233</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>234</Id>
+	<CategoryId>14</CategoryId>
+	<DeWord>die Sandale</DeWord>
+	<CnWord>凉鞋</CnWord>
+	<Interpretation>f.-,-n 凉鞋</Interpretation>
+	<AudioFile>234</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>235</Id>
+	<CategoryId>14</CategoryId>
+	<DeWord>der Pantoffel</DeWord>
+	<CnWord>拖鞋</CnWord>
+	<Interpretation>m.-s,-n 拖鞋</Interpretation>
+	<AudioFile>235</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>236</Id>
+	<CategoryId>14</CategoryId>
+	<DeWord>der Stiefel</DeWord>
+	<CnWord>靴子</CnWord>
+	<Interpretation>m.-s,- 靴子</Interpretation>
+	<AudioFile>236</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>237</Id>
+	<CategoryId>14</CategoryId>
+	<DeWord>der Schmuck</DeWord>
+	<CnWord>首饰</CnWord>
+	<Interpretation>m.-(e)s,unz. ①首饰\n②装饰品\n③装饰，装修，美化</Interpretation>
+	<AudioFile>237</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>238</Id>
+	<CategoryId>14</CategoryId>
+	<DeWord>die Brille</DeWord>
+	<CnWord>眼镜</CnWord>
+	<Interpretation>f.-,-n 眼镜</Interpretation>
+	<AudioFile>238</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>239</Id>
+	<CategoryId>14</CategoryId>
+	<DeWord>der Ring</DeWord>
+	<CnWord>戒子</CnWord>
+	<Interpretation>m.-(e)s,-e ①戒子\n②圈，环\n③【体】拳击台\n④集团，社团</Interpretation>
+	<AudioFile>239</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>240</Id>
+	<CategoryId>14</CategoryId>
+	<DeWord>der Ohrring</DeWord>
+	<CnWord>耳环</CnWord>
+	<Interpretation>m.-(e)s,-e 耳环，耳饰，耳坠</Interpretation>
+	<AudioFile>240</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>241</Id>
+	<CategoryId>14</CategoryId>
+	<DeWord>der Armreif</DeWord>
+	<CnWord>手镯</CnWord>
+	<Interpretation>m.-(e)s,-e 手镯</Interpretation>
+	<AudioFile>241</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>242</Id>
+	<CategoryId>14</CategoryId>
+	<DeWord>die Halskette</DeWord>
+	<CnWord>项链</CnWord>
+	<Interpretation>f.-,-n① 项链\n②狗颈锁链</Interpretation>
+	<AudioFile>242</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>243</Id>
+	<CategoryId>15</CategoryId>
+	<DeWord>die Omnibushaltestelle</DeWord>
+	<CnWord>公共汽车站</CnWord>
+	<Interpretation>f.-,-n 公共汽车站</Interpretation>
+	<AudioFile>243</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>244</Id>
+	<CategoryId>15</CategoryId>
+	<DeWord>die Tankstelle</DeWord>
+	<CnWord>加油站</CnWord>
+	<Interpretation>f.-,-n 加油站</Interpretation>
+	<AudioFile>244</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>245</Id>
+	<CategoryId>15</CategoryId>
+	<DeWord>die Polizei    </DeWord>
+	<CnWord>警察，警察局</CnWord>
+	<Interpretation>f.-,unz. ①公安部门，公安机关\n②公安人员，警察\n③公安局，警察局；派出所</Interpretation>
+	<AudioFile>245</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>246</Id>
+	<CategoryId>15</CategoryId>
+	<DeWord>die Schule</DeWord>
+	<CnWord>学校</CnWord>
+	<Interpretation>f.-,-n I z_hlb.①(中、小)学校 \n②学校，校舍\n③全体师生\n④ 学派，流派 II    unz.①【口】课程，功课，学业②学校教育；培养；训练||aus der ~plaudern 【口】把内部的事情捅出去、etw.macht~①某事有追随者，某事为众人效仿\n②某事自成一派</Interpretation>
+	<AudioFile>246</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>247</Id>
+	<CategoryId>15</CategoryId>
+	<DeWord>das Krankenhaus</DeWord>
+	<CnWord>医院，病院</CnWord>
+	<Interpretation>n.-es,-¨er 医院，病院</Interpretation>
+	<AudioFile>247</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>248</Id>
+	<CategoryId>15</CategoryId>
+	<DeWord>die Toilette</DeWord>
+	<CnWord>厕所，盥洗室</CnWord>
+	<Interpretation>f.-,-n [法]  I z_hlb.①马桶，便桶\n②厕所，盥洗室\n③梳妆台 II unz.梳妆打扮，盥洗</Interpretation>
+	<AudioFile>248</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>249</Id>
+	<CategoryId>15</CategoryId>
+	<DeWord>die Bibliothek</DeWord>
+	<CnWord>图书馆，藏书室</CnWord>
+	<Interpretation>f.-,-en ①藏书，图书\n②图书馆，藏书室</Interpretation>
+	<AudioFile>249</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>250</Id>
+	<CategoryId>15</CategoryId>
+	<DeWord>das Kino</DeWord>
+	<CnWord>电影院，电影</CnWord>
+	<Interpretation>n.-s,-s ①电影院\n②电影</Interpretation>
+	<AudioFile>250</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>251</Id>
+	<CategoryId>15</CategoryId>
+	<DeWord>der Supermarkt</DeWord>
+	<CnWord>超市</CnWord>
+	<Interpretation>m.-(e)s,¨e超(级)市(场)</Interpretation>
+	<AudioFile>251</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>252</Id>
+	<CategoryId>15</CategoryId>
+	<DeWord>das Waisenhaus</DeWord>
+	<CnWord>孤儿院</CnWord>
+	<Interpretation>n.-es,¨er 孤儿院</Interpretation>
+	<AudioFile>252</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>253</Id>
+	<CategoryId>15</CategoryId>
+	<DeWord>das Pflegeheim</DeWord>
+	<CnWord>敬老院</CnWord>
+	<Interpretation>n.-(e)s,-e  养育院，护养院</Interpretation>
+	<AudioFile>253</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>254</Id>
+	<CategoryId>15</CategoryId>
+	<DeWord>das Stadion</DeWord>
+	<CnWord>体育馆，体育场</CnWord>
+	<Interpretation>n.-s,�dien 体育场，体育馆</Interpretation>
+	<AudioFile>254</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>255</Id>
+	<CategoryId>15</CategoryId>
+	<DeWord>das Restaurant</DeWord>
+	<CnWord>餐馆,饭店</CnWord>
+	<Interpretation>n.-s,-s 餐馆，酒家，饭店</Interpretation>
+	<AudioFile>255</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>256</Id>
+	<CategoryId>15</CategoryId>
+	<DeWord>die Klinik</DeWord>
+	<CnWord>诊所，专科医院</CnWord>
+	<Interpretation>f.-,-en 诊所，专科医院</Interpretation>
+	<AudioFile>256</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>257</Id>
+	<CategoryId>15</CategoryId>
+	<DeWord>das Hotel</DeWord>
+	<CnWord>宾馆，旅店，旅馆</CnWord>
+	<Interpretation>n.-s,-s 宾馆，旅店，旅馆</Interpretation>
+	<AudioFile>257</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>258</Id>
+	<CategoryId>15</CategoryId>
+	<DeWord>der Krankenwagen</DeWord>
+	<CnWord>救护车</CnWord>
+	<Interpretation>m.,-s,- 救护车</Interpretation>
+	<AudioFile>258</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>259</Id>
+	<CategoryId>15</CategoryId>
+	<DeWord>die Feuerwache</DeWord>
+	<CnWord>消防站</CnWord>
+	<Interpretation>f.-,-n 消防站</Interpretation>
+	<AudioFile>259</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>260</Id>
+	<CategoryId>16</CategoryId>
+	<DeWord>die Informatik</DeWord>
+	<CnWord>计算机科学</CnWord>
+	<Interpretation>f.-,unz.【计】信息学，计算机科学</Interpretation>
+	<AudioFile>260</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>261</Id>
+	<CategoryId>16</CategoryId>
+	<DeWord>der Computer</DeWord>
+	<CnWord>计算机，电脑</CnWord>
+	<Interpretation>m.-s,- [英]计算机，电脑</Interpretation>
+	<AudioFile>261</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>262</Id>
+	<CategoryId>16</CategoryId>
+	<DeWord>das Internet</DeWord>
+	<CnWord>互联网</CnWord>
+	<Interpretation>n.-s,-s [英]【计】国际互联网，因特网</Interpretation>
+	<AudioFile>262</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>263</Id>
+	<CategoryId>16</CategoryId>
+	<DeWord>die Ressource</DeWord>
+	<CnWord>资源</CnWord>
+	<Interpretation>f.-,-n[法]①资源\n②财力</Interpretation>
+	<AudioFile>263</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>264</Id>
+	<CategoryId>16</CategoryId>
+	<DeWord>die Online bibliothek</DeWord>
+	<CnWord>网上图书馆</CnWord>
+	<Interpretation>f.-,-en【计】网上图书馆，在线图书馆</Interpretation>
+	<AudioFile>264</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>265</Id>
+	<CategoryId>16</CategoryId>
+	<DeWord>die Computerkriminalität</DeWord>
+	<CnWord>电脑犯罪</CnWord>
+	<Interpretation>f.-,unz.电脑犯罪</Interpretation>
+	<AudioFile>265</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>266</Id>
+	<CategoryId>16</CategoryId>
+	<DeWord>die Webseite</DeWord>
+	<CnWord>网页</CnWord>
+	<Interpretation>f.-,-n 网页</Interpretation>
+	<AudioFile>266</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>267</Id>
+	<CategoryId>16</CategoryId>
+	<DeWord>der Informationsfluss</DeWord>
+	<CnWord>信息流</CnWord>
+	<Interpretation>m.-es,unz. 信息流</Interpretation>
+	<AudioFile>267</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>268</Id>
+	<CategoryId>16</CategoryId>
+	<DeWord>das Betriebssystem</DeWord>
+	<CnWord>操作系统</CnWord>
+	<Interpretation>n.-s,-e 操作系统，运转系统，调度系统</Interpretation>
+	<AudioFile>268</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>269</Id>
+	<CategoryId>16</CategoryId>
+	<DeWord>das Netzwerk</DeWord>
+	<CnWord>网络</CnWord>
+	<Interpretation>n.-(e)s,-e①网状织物，网织品\n②（由线路构成的）网络，网状系统\n③【医】（细胞原生质的）网状结构</Interpretation>
+	<AudioFile>269</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>270</Id>
+	<CategoryId>16</CategoryId>
+	<DeWord>der Lautsprecher</DeWord>
+	<CnWord>音箱</CnWord>
+	<Interpretation>m.-s,- 扩音器，扬声器，喇叭</Interpretation>
+	<AudioFile>270</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>271</Id>
+	<CategoryId>16</CategoryId>
+	<DeWord>die Maus</DeWord>
+	<CnWord>鼠标</CnWord>
+	<Interpretation>f.-,¨e①（家）鼠，老鼠，耗子\n②【计】（计算机的）鼠标（器）</Interpretation>
+	<AudioFile>271</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>272</Id>
+	<CategoryId>16</CategoryId>
+	<DeWord>die Tastatur </DeWord>
+	<CnWord>键盘</CnWord>
+	<Interpretation>f.-,-en 键盘</Interpretation>
+	<AudioFile>272</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>273</Id>
+	<CategoryId>16</CategoryId>
+	<DeWord>der Drucker</DeWord>
+	<CnWord>打印机</CnWord>
+	<Interpretation>m.-s,-①印刷者，印刷工厂\n②（计算机的）打印机</Interpretation>
+	<AudioFile>273</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>274</Id>
+	<CategoryId>16</CategoryId>
+	<DeWord>die Leitseite </DeWord>
+	<CnWord>主页</CnWord>
+	<Interpretation>f.-,-n 主页</Interpretation>
+	<AudioFile>274</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>275</Id>
+	<CategoryId>16</CategoryId>
+	<DeWord>der Bildschirm</DeWord>
+	<CnWord>屏幕</CnWord>
+	<Interpretation>m.-(e)s,-e 屏幕，荧光屏，像屏</Interpretation>
+	<AudioFile>275</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>276</Id>
+	<CategoryId>16</CategoryId>
+	<DeWord>das Dokument</DeWord>
+	<CnWord>文档</CnWord>
+	<Interpretation>n.-(e)s,-e①文件，公文\n②文献，档案\n③证件，证明</Interpretation>
+	<AudioFile>276</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>277</Id>
+	<CategoryId>16</CategoryId>
+	<DeWord>der Anwender</DeWord>
+	<CnWord>用户</CnWord>
+	<Interpretation>m.-s,-【计】（电脑程序）用户</Interpretation>
+	<AudioFile>277</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>278</Id>
+	<CategoryId>16</CategoryId>
+	<DeWord>die Applikation</DeWord>
+	<CnWord>应用程序</CnWord>
+	<Interpretation>f.-,-en①【旧】申请，申请书\n②【雅】应用，使用\n③【医】给药，注射，实施（疗法）</Interpretation>
+	<AudioFile>278</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>279</Id>
+	<CategoryId>16</CategoryId>
+	<DeWord>der Programmierer</DeWord>
+	<CnWord>程序员</CnWord>
+	<Interpretation>m.-s,-【计】程序编制人员</Interpretation>
+	<AudioFile>279</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>280</Id>
+	<CategoryId>16</CategoryId>
+	<DeWord>die Festplatte</DeWord>
+	<CnWord>硬盘</CnWord>
+	<Interpretation>f.-,-n【计】硬盘</Interpretation>
+	<AudioFile>280</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>281</Id>
+	<CategoryId>16</CategoryId>
+	<DeWord>der Internet-Chat</DeWord>
+	<CnWord>网聊</CnWord>
+	<Interpretation>m.-s,-s 网聊</Interpretation>
+	<AudioFile>281</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>282</Id>
+	<CategoryId>16</CategoryId>
+	<DeWord>speichern </DeWord>
+	<CnWord>存储</CnWord>
+	<Interpretation>V .t.①贮藏，储蓄，储存，存放\n②【计】存储</Interpretation>
+	<AudioFile>282</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>283</Id>
+	<CategoryId>16</CategoryId>
+	<DeWord>herunterladen </DeWord>
+	<CnWord>下载</CnWord>
+	<Interpretation>V.t.①卸下\n②【计】下载</Interpretation>
+	<AudioFile>283</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>284</Id>
+	<CategoryId>16</CategoryId>
+	<DeWord>der Scanner</DeWord>
+	<CnWord>扫描仪</CnWord>
+	<Interpretation>m.-s,- 扫描仪</Interpretation>
+	<AudioFile>284</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>285</Id>
+	<CategoryId>17</CategoryId>
+	<DeWord>das Bett</DeWord>
+	<CnWord>床</CnWord>
+	<Interpretation>n.-(e)s,-en ①床，床铺，床位\n②被褥\n③河床\n④（机床的）机座，台架</Interpretation>
+	<AudioFile>285</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>286</Id>
+	<CategoryId>17</CategoryId>
+	<DeWord>das Bücherregal </DeWord>
+	<CnWord>书架</CnWord>
+	<Interpretation>n.-(e)s,-e 书架</Interpretation>
+	<AudioFile>286</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>287</Id>
+	<CategoryId>17</CategoryId>
+	<DeWord>der Bücherschrank</DeWord>
+	<CnWord>书橱</CnWord>
+	<Interpretation>m.-(e)s,¨e 书橱</Interpretation>
+	<AudioFile>287</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>288</Id>
+	<CategoryId>17</CategoryId>
+	<DeWord>das Doppelbett</DeWord>
+	<CnWord>双人床</CnWord>
+	<Interpretation>n.-s,-en 双人床</Interpretation>
+	<AudioFile>288</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>289</Id>
+	<CategoryId>17</CategoryId>
+	<DeWord>das Einzelbett</DeWord>
+	<CnWord>单人床</CnWord>
+	<Interpretation>n.-(e)s,-en 单人床</Interpretation>
+	<AudioFile>289</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>290</Id>
+	<CategoryId>17</CategoryId>
+	<DeWord>der Esstisch</DeWord>
+	<CnWord>餐桌</CnWord>
+	<Interpretation>m.-(e)s,-e 餐桌，饭桌</Interpretation>
+	<AudioFile>290</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>291</Id>
+	<CategoryId>17</CategoryId>
+	<DeWord>der Hocker</DeWord>
+	<CnWord>凳子</CnWord>
+	<Interpretation>m.-s,-①凳子\n②【地区】长期待在某地的人</Interpretation>
+	<AudioFile>291</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>292</Id>
+	<CategoryId>17</CategoryId>
+	<DeWord>das Kissen</DeWord>
+	<CnWord>枕头</CnWord>
+	<Interpretation>n.-s,- 软垫，靠背垫子，枕头</Interpretation>
+	<AudioFile>292</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>293</Id>
+	<CategoryId>17</CategoryId>
+	<DeWord>der Kleiderschrank</DeWord>
+	<CnWord>衣柜</CnWord>
+	<Interpretation>m.-(e)s,¨e 衣柜，衣橱</Interpretation>
+	<AudioFile>293</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>294</Id>
+	<CategoryId>17</CategoryId>
+	<DeWord>die Matratze</DeWord>
+	<CnWord>床垫</CnWord>
+	<Interpretation>f.-,-n ①（弹簧）床垫\n②床褥\n③气垫，气褥</Interpretation>
+	<AudioFile>294</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>295</Id>
+	<CategoryId>17</CategoryId>
+	<DeWord>der Nachttisch</DeWord>
+	<CnWord>床头柜</CnWord>
+	<Interpretation>m.-(e)s,-e</Interpretation>
+	<AudioFile>295</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>296</Id>
+	<CategoryId>17</CategoryId>
+	<DeWord>die Polstergarnitur</DeWord>
+	<CnWord>全套（软垫）沙发</CnWord>
+	<Interpretation>f.-,-en 全套（软垫）沙发</Interpretation>
+	<AudioFile>296</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>297</Id>
+	<CategoryId>17</CategoryId>
+	<DeWord>der Schemel</DeWord>
+	<CnWord>小板凳</CnWord>
+	<Interpretation>m.-s,- 小板凳，搁脚凳</Interpretation>
+	<AudioFile>297</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>298</Id>
+	<CategoryId>17</CategoryId>
+	<DeWord>der Schrank</DeWord>
+	<CnWord>橱，柜</CnWord>
+	<Interpretation>m.-(e)s,¨e 橱，柜</Interpretation>
+	<AudioFile>298</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>299</Id>
+	<CategoryId>17</CategoryId>
+	<DeWord>der Schreibtisch</DeWord>
+	<CnWord>书桌</CnWord>
+	<Interpretation>m.-(e)s,-e 书桌，写字台</Interpretation>
+	<AudioFile>299</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>300</Id>
+	<CategoryId>17</CategoryId>
+	<DeWord>der Sessel</DeWord>
+	<CnWord>（单人）沙发</CnWord>
+	<Interpretation>m.-s,- 单人沙发，沙发椅</Interpretation>
+	<AudioFile>300</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>301</Id>
+	<CategoryId>17</CategoryId>
+	<DeWord>das Sofa</DeWord>
+	<CnWord>沙发</CnWord>
+	<Interpretation>n.-s,-s 长沙发</Interpretation>
+	<AudioFile>301</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>302</Id>
+	<CategoryId>17</CategoryId>
+	<DeWord>der Stuhl</DeWord>
+	<CnWord>椅子</CnWord>
+	<Interpretation>I m.-(e)s,¨e ①椅，椅子\n②席位，座席，职位，职务||fast vom _ fallen 【口】差点从椅子上跌下来（表示惊愕万分）/jmdn. vom _ hauen（或rei_en）【口】使某人大吃一惊（或惊叹不已）/sich zwischen zwei Stühle setzen 两头落空 II m.-(e)s,unz.&lt;Stuhlgang的简称&gt;排便，大便</Interpretation>
+	<AudioFile>302</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>303</Id>
+	<CategoryId>17</CategoryId>
+	<DeWord>der Teetisch</DeWord>
+	<CnWord>茶几</CnWord>
+	<Interpretation>m.-(e)s,-e 茶几</Interpretation>
+	<AudioFile>303</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>304</Id>
+	<CategoryId>17</CategoryId>
+	<DeWord>der Tisch</DeWord>
+	<CnWord>桌子</CnWord>
+	<Interpretation>m.-(e)s,- 桌子台子</Interpretation>
+	<AudioFile>304</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>305</Id>
+	<CategoryId>17</CategoryId>
+	<DeWord>der Wandschrank </DeWord>
+	<CnWord>壁橱</CnWord>
+	<Interpretation>m.-(e)s,¨e 壁橱</Interpretation>
+	<AudioFile>305</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>306</Id>
+	<CategoryId>18</CategoryId>
+	<DeWord>das Bügeleisen</DeWord>
+	<CnWord>熨斗</CnWord>
+	<Interpretation>n.-s,- 熨斗</Interpretation>
+	<AudioFile>306</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>307</Id>
+	<CategoryId>18</CategoryId>
+	<DeWord>die Bügelmaschine</DeWord>
+	<CnWord>熨斗机</CnWord>
+	<Interpretation>f.-,-n 熨斗机</Interpretation>
+	<AudioFile>307</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>308</Id>
+	<CategoryId>18</CategoryId>
+	<DeWord>die Dunstabzugshaube</DeWord>
+	<CnWord>抽油烟机</CnWord>
+	<Interpretation>f.-,-n（厨房用的）抽油烟机</Interpretation>
+	<AudioFile>308</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>309</Id>
+	<CategoryId>18</CategoryId>
+	<DeWord>der Fernseher</DeWord>
+	<CnWord>电视机</CnWord>
+	<Interpretation>m.-s - ①电视机\n②电视观众</Interpretation>
+	<AudioFile>309</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>310</Id>
+	<CategoryId>18</CategoryId>
+	<DeWord>der Haartrockner</DeWord>
+	<CnWord>吹风机</CnWord>
+	<Interpretation>m.-s,- 吹风机</Interpretation>
+	<AudioFile>310</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>311</Id>
+	<CategoryId>18</CategoryId>
+	<DeWord>der Kühlschrank</DeWord>
+	<CnWord>电冰箱</CnWord>
+	<Interpretation>m.-(e)s,¨e 电冰箱</Interpretation>
+	<AudioFile>311</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>312</Id>
+	<CategoryId>18</CategoryId>
+	<DeWord>die Kühltrube</DeWord>
+	<CnWord>冰柜</CnWord>
+	<Interpretation>f.-,-n 冷冻柜，冰柜</Interpretation>
+	<AudioFile>312</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>313</Id>
+	<CategoryId>18</CategoryId>
+	<DeWord>die Klimaanlage</DeWord>
+	<CnWord>空调</CnWord>
+	<Interpretation>f.-,-n 空调器，空气调节设备</Interpretation>
+	<AudioFile>313</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>314</Id>
+	<CategoryId>18</CategoryId>
+	<DeWord>die Lampe</DeWord>
+	<CnWord>电灯</CnWord>
+	<Interpretation>f.-,-n 灯，灯具，电灯泡</Interpretation>
+	<AudioFile>314</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>315</Id>
+	<CategoryId>18</CategoryId>
+	<DeWord>der Mikrowellenherd</DeWord>
+	<CnWord>微波炉</CnWord>
+	<Interpretation>m.-(e)s ,-e 微波炉</Interpretation>
+	<AudioFile>315</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>316</Id>
+	<CategoryId>18</CategoryId>
+	<DeWord>der Rasierapparat</DeWord>
+	<CnWord>剃须刀（具）</CnWord>
+	<Interpretation>m.-(e)s,-e 剃须刀（具）</Interpretation>
+	<AudioFile>316</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>317</Id>
+	<CategoryId>18</CategoryId>
+	<DeWord>der Reiskocher</DeWord>
+	<CnWord>电饭煲</CnWord>
+	<Interpretation>m.-(e)s,-e 电饭煲</Interpretation>
+	<AudioFile>317</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>318</Id>
+	<CategoryId>18</CategoryId>
+	<DeWord>die Spülmaschine</DeWord>
+	<CnWord>洗碗机</CnWord>
+	<Interpretation>f.-,-n ①餐具洗涤机，洗碗机\n②漂洗机</Interpretation>
+	<AudioFile>318</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>319</Id>
+	<CategoryId>18</CategoryId>
+	<DeWord>der Staubsauger</DeWord>
+	<CnWord>吸尘器</CnWord>
+	<Interpretation>m.-s,- 吸尘器</Interpretation>
+	<AudioFile>319</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>320</Id>
+	<CategoryId>18</CategoryId>
+	<DeWord>die Steckdose</DeWord>
+	<CnWord>插座</CnWord>
+	<Interpretation>f.-,-n 插座</Interpretation>
+	<AudioFile>320</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>321</Id>
+	<CategoryId>18</CategoryId>
+	<DeWord>der Stecker</DeWord>
+	<CnWord>插头</CnWord>
+	<Interpretation>m.-s - 插头</Interpretation>
+	<AudioFile>321</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>322</Id>
+	<CategoryId>18</CategoryId>
+	<DeWord>der Ventilator</DeWord>
+	<CnWord>电风扇</CnWord>
+	<Interpretation>m.-s,...oren 电风扇，排风扇，通风机，鼓风机</Interpretation>
+	<AudioFile>322</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>323</Id>
+	<CategoryId>18</CategoryId>
+	<DeWord>die Waschmaschine</DeWord>
+	<CnWord>洗衣机</CnWord>
+	<Interpretation>f.-,-n 洗衣机</Interpretation>
+	<AudioFile>323</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>324</Id>
+	<CategoryId>18</CategoryId>
+	<DeWord>der Trockner</DeWord>
+	<CnWord>烘干机</CnWord>
+	<Interpretation>m.-s,- 干燥器，烘干机</Interpretation>
+	<AudioFile>324</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>325</Id>
+	<CategoryId>19</CategoryId>
+	<DeWord>der Finanzmarkt</DeWord>
+	<CnWord>金融市场</CnWord>
+	<Interpretation>m.-(e)s,¨e 金融市场，经济市场</Interpretation>
+	<AudioFile>325</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>326</Id>
+	<CategoryId>19</CategoryId>
+	<DeWord>das Finanzministerium</DeWord>
+	<CnWord>财政部</CnWord>
+	<Interpretation>n.-s,...rien 财政部</Interpretation>
+	<AudioFile>326</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>327</Id>
+	<CategoryId>19</CategoryId>
+	<DeWord>die Finanzpolitik</DeWord>
+	<CnWord>财政政策</CnWord>
+	<Interpretation>f.-,unz.财政政策</Interpretation>
+	<AudioFile>327</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>328</Id>
+	<CategoryId>19</CategoryId>
+	<DeWord>der Buchhalter</DeWord>
+	<CnWord>会计师</CnWord>
+	<Interpretation>m.-s,-薄记员，会计员</Interpretation>
+	<AudioFile>328</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>329</Id>
+	<CategoryId>19</CategoryId>
+	<DeWord>der Wechselkurs</DeWord>
+	<CnWord>汇率</CnWord>
+	<Interpretation>m.-es,-e 【经】汇率</Interpretation>
+	<AudioFile>329</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>330</Id>
+	<CategoryId>19</CategoryId>
+	<DeWord>die Aktie</DeWord>
+	<CnWord>股份</CnWord>
+	<Interpretation>f.-,-n(公司)股份，股票</Interpretation>
+	<AudioFile>330</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>331</Id>
+	<CategoryId>19</CategoryId>
+	<DeWord>das Monopol</DeWord>
+	<CnWord>垄断</CnWord>
+	<Interpretation>n.-s,-e ①垄断，独占\n②垄断组织，垄断集团\n③垄断商品，专利品\n④垄断权，专利权</Interpretation>
+	<AudioFile>331</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>332</Id>
+	<CategoryId>19</CategoryId>
+	<DeWord>die Hypothek</DeWord>
+	<CnWord>抵押</CnWord>
+	<Interpretation>f.-,-en ①【经，律】抵押，押权；(通过)抵押(获得)资金\n②【转】罪责，负担</Interpretation>
+	<AudioFile>332</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>333</Id>
+	<CategoryId>19</CategoryId>
+	<DeWord>die Kreditgenossenschaft</DeWord>
+	<CnWord>信用合作社</CnWord>
+	<Interpretation>f.-,-en 信用合作社</Interpretation>
+	<AudioFile>333</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>334</Id>
+	<CategoryId>19</CategoryId>
+	<DeWord>der Kreditgeber</DeWord>
+	<CnWord>债权人</CnWord>
+	<Interpretation>m.-s,- 债权人</Interpretation>
+	<AudioFile>334</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>335</Id>
+	<CategoryId>19</CategoryId>
+	<DeWord>der Außenhandel</DeWord>
+	<CnWord>外贸</CnWord>
+	<Interpretation>m.-s,unz.对外贸易，国际贸易</Interpretation>
+	<AudioFile>335</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>336</Id>
+	<CategoryId>19</CategoryId>
+	<DeWord>die Außenhandelsbilanz</DeWord>
+	<CnWord>进出口贸易差额</CnWord>
+	<Interpretation>f.-,-en 进出口贸易差额</Interpretation>
+	<AudioFile>336</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>337</Id>
+	<CategoryId>19</CategoryId>
+	<DeWord>die Immobilie</DeWord>
+	<CnWord>房地产</CnWord>
+	<Interpretation>f.-,-n 不动产，地产</Interpretation>
+	<AudioFile>337</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>338</Id>
+	<CategoryId>19</CategoryId>
+	<DeWord>Staatspapiere</DeWord>
+	<CnWord>国库券</CnWord>
+	<Interpretation>Pl.国库券，公债券</Interpretation>
+	<AudioFile>338</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>339</Id>
+	<CategoryId>19</CategoryId>
+	<DeWord>die Versicherung</DeWord>
+	<CnWord>保险</CnWord>
+	<Interpretation>f.-,-en ①担保，保证\n②保险\n③保险合同\n④【口】保险公司\n⑤【口】保险费</Interpretation>
+	<AudioFile>339</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>340</Id>
+	<CategoryId>19</CategoryId>
+	<DeWord>der Versicherer</DeWord>
+	<CnWord>保险人，保险机构</CnWord>
+	<Interpretation>m.-s,-保险人，承包人；保险机构</Interpretation>
+	<AudioFile>340</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>341</Id>
+	<CategoryId>19</CategoryId>
+	<DeWord>das Versicherungswesen</DeWord>
+	<CnWord>保险业</CnWord>
+	<Interpretation>n.-s,unz.保险业</Interpretation>
+	<AudioFile>341</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>342</Id>
+	<CategoryId>19</CategoryId>
+	<DeWord>der Versicherungsbeitrag</DeWord>
+	<CnWord>保险费</CnWord>
+	<Interpretation>m.-s,¨e (投保人所支付的)保险金，保险费</Interpretation>
+	<AudioFile>342</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>343</Id>
+	<CategoryId>19</CategoryId>
+	<DeWord>finanzieren</DeWord>
+	<CnWord>融资</CnWord>
+	<Interpretation>V.t.为···筹措经费，向···提供经费</Interpretation>
+	<AudioFile>343</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>344</Id>
+	<CategoryId>19</CategoryId>
+	<DeWord>Effekten</DeWord>
+	<CnWord>证券</CnWord>
+	<Interpretation>Pl.【经】①证券，债券\n②股票\n③【旧】动产，财物</Interpretation>
+	<AudioFile>344</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>345</Id>
+	<CategoryId>19</CategoryId>
+	<DeWord>die Kreditkarte</DeWord>
+	<CnWord>信用卡</CnWord>
+	<Interpretation>f.-,-n信用卡</Interpretation>
+	<AudioFile>345</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>346</Id>
+	<CategoryId>19</CategoryId>
+	<DeWord>der Kreditnehmer</DeWord>
+	<CnWord>贷款人</CnWord>
+	<Interpretation>m.-s,-贷款人</Interpretation>
+	<AudioFile>346</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>347</Id>
+	<CategoryId>19</CategoryId>
+	<DeWord>überziehen </DeWord>
+	<CnWord>透支</CnWord>
+	<Interpretation>I V.t.包上，盖上，蒙上，铺上；抹上，涂上，敷上 II V.t./V.i.①透支\n②超出(限度),超过(规定时间) III V.refl. 覆盖，布满</Interpretation>
+	<AudioFile>347</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>348</Id>
+	<CategoryId>19</CategoryId>
+	<DeWord>der Konkurs</DeWord>
+	<CnWord>破产</CnWord>
+	<Interpretation>m.-es,-e ①破产，倒闭\n②【律】破产诉讼程序</Interpretation>
+	<AudioFile>348</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>349</Id>
+	<CategoryId>19</CategoryId>
+	<DeWord>die Bilanz </DeWord>
+	<CnWord>资产负债表</CnWord>
+	<Interpretation>f.-,-en ①收支平衡表，资产负债表，结算\n②【转】(对往事的)回顾，总结</Interpretation>
+	<AudioFile>349</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>350</Id>
+	<CategoryId>19</CategoryId>
+	<DeWord>der Gesellschafter </DeWord>
+	<CnWord>股东</CnWord>
+	<Interpretation>m.-,-s①聊天伴侣，陪同聊天消遣的人\n②【商】股东</Interpretation>
+	<AudioFile>350</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>351</Id>
+	<CategoryId>19</CategoryId>
+	<DeWord>die Devisenbörse</DeWord>
+	<CnWord>外汇交易所</CnWord>
+	<Interpretation>f.-,-n 外汇交易所</Interpretation>
+	<AudioFile>351</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>352</Id>
+	<CategoryId>19</CategoryId>
+	<DeWord>der Devisenhandel</DeWord>
+	<CnWord>外汇交易</CnWord>
+	<Interpretation>m.-,unz.【经】外汇买卖，外汇交易</Interpretation>
+	<AudioFile>352</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>353</Id>
+	<CategoryId>19</CategoryId>
+	<DeWord>der Geldwechsel</DeWord>
+	<CnWord>货币兑换</CnWord>
+	<Interpretation>m.-s,unz.货币兑换，换钱</Interpretation>
+	<AudioFile>353</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>354</Id>
+	<CategoryId>19</CategoryId>
+	<DeWord>die Schlichtung</DeWord>
+	<CnWord>仲裁</CnWord>
+	<Interpretation>f.-,-en 调解，调停，斡旋，平息</Interpretation>
+	<AudioFile>354</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>355</Id>
+	<CategoryId>20</CategoryId>
+	<DeWord>der Intercity</DeWord>
+	<CnWord>城际火车</CnWord>
+	<Interpretation>m. -s, -s 城际快车</Interpretation>
+	<AudioFile>355</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>356</Id>
+	<CategoryId>20</CategoryId>
+	<DeWord>der Nahverkehrszug</DeWord>
+	<CnWord>短途火车</CnWord>
+	<Interpretation>m. -(e) s, ¨e 短途火车，郊区火车</Interpretation>
+	<AudioFile>356</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>357</Id>
+	<CategoryId>20</CategoryId>
+	<DeWord>der Bahnhof</DeWord>
+	<CnWord>火车站</CnWord>
+	<Interpretation>m. -(e)s, ¨e 火车站</Interpretation>
+	<AudioFile>357</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>358</Id>
+	<CategoryId>20</CategoryId>
+	<DeWord>die Fahrkarte</DeWord>
+	<CnWord>车票</CnWord>
+	<Interpretation>f. -, -n 车票，船票\n= Fahrschein</Interpretation>
+	<AudioFile>358</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>359</Id>
+	<CategoryId>20</CategoryId>
+	<DeWord>der Fahrpreis</DeWord>
+	<CnWord>票价</CnWord>
+	<Interpretation>m. -es, -e （旅行）票价（飞机票除外）</Interpretation>
+	<AudioFile>359</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>360</Id>
+	<CategoryId>20</CategoryId>
+	<DeWord>die Ermäßigung</DeWord>
+	<CnWord>优惠</CnWord>
+	<Interpretation>f. -, -en\nerm??igen V. t ①减少，减轻\n②降低，减低</Interpretation>
+	<AudioFile>360</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>361</Id>
+	<CategoryId>20</CategoryId>
+	<DeWord>der Fahrkartenautomat</DeWord>
+	<CnWord>自动售票机</CnWord>
+	<Interpretation>m. -en, -en 自助售票机</Interpretation>
+	<AudioFile>361</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>362</Id>
+	<CategoryId>20</CategoryId>
+	<DeWord>der Fahrplan</DeWord>
+	<CnWord>时刻表</CnWord>
+	<Interpretation>m. -(e)s, ¨e 行车时刻表，渡船时刻表</Interpretation>
+	<AudioFile>362</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>363</Id>
+	<CategoryId>20</CategoryId>
+	<DeWord>der Wartesaal</DeWord>
+	<CnWord>候车大厅</CnWord>
+	<Interpretation>m. -(e)s Wates?le （车站）候车室</Interpretation>
+	<AudioFile>363</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>364</Id>
+	<CategoryId>20</CategoryId>
+	<DeWord>das Schließfach</DeWord>
+	<CnWord>行李保管柜</CnWord>
+	<Interpretation>n. -es, ¨er ①（车站的）行李自锁保管柜\n②（供租用的）银行保险箱\n③（供租用的）邮政信箱</Interpretation>
+	<AudioFile>364</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>365</Id>
+	<CategoryId>20</CategoryId>
+	<DeWord>der Wagen</DeWord>
+	<CnWord>车厢</CnWord>
+	<Interpretation>m. -s, -/¨ ①汽车\n②（人力或畜力驱动）车辆\n③火车（或有轨电车、地铁的）车厢</Interpretation>
+	<AudioFile>365</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>366</Id>
+	<CategoryId>20</CategoryId>
+	<DeWord>das Raucherabteil</DeWord>
+	<CnWord>吸烟区</CnWord>
+	<Interpretation>n. -(e)s, -e 吸烟车厢</Interpretation>
+	<AudioFile>366</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>367</Id>
+	<CategoryId>20</CategoryId>
+	<DeWord>die Abfahrt</DeWord>
+	<CnWord>出发</CnWord>
+	<Interpretation>f. -, -en ①启程，开车，起航，出发\n②【体】滑雪时顺坡滑行③【体】（滑雪）斜坡\n④（车辆驶离高速公路的）出口（跟Einfahrt相对）</Interpretation>
+	<AudioFile>367</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>368</Id>
+	<CategoryId>20</CategoryId>
+	<DeWord>die Ankunft</DeWord>
+	<CnWord>到达</CnWord>
+	<Interpretation>f. -, unz. 到达，来到</Interpretation>
+	<AudioFile>368</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>369</Id>
+	<CategoryId>20</CategoryId>
+	<DeWord>der Anschluss</DeWord>
+	<CnWord>衔接，转车</CnWord>
+	<Interpretation>m. -es, ¨e ①连接，接通，接口，通话\n②中转车，联运车\n③结交，交朋友\n④接轨，结合，合并</Interpretation>
+	<AudioFile>369</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>370</Id>
+	<CategoryId>21</CategoryId>
+	<DeWord>die Reise</DeWord>
+	<CnWord>旅行</CnWord>
+	<Interpretation>f.-,-n 旅行</Interpretation>
+	<AudioFile>370</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>371</Id>
+	<CategoryId>21</CategoryId>
+	<DeWord>das Reisebüro</DeWord>
+	<CnWord>旅行社</CnWord>
+	<Interpretation>n.-s,-s 旅行社</Interpretation>
+	<AudioFile>371</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>372</Id>
+	<CategoryId>21</CategoryId>
+	<DeWord>das Reiseandenken</DeWord>
+	<CnWord>旅游纪念品</CnWord>
+	<Interpretation>n.-s,-旅游纪念品</Interpretation>
+	<AudioFile>372</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>373</Id>
+	<CategoryId>21</CategoryId>
+	<DeWord>der Reiseführer</DeWord>
+	<CnWord>导游</CnWord>
+	<Interpretation>m.-s,-①导游\n②旅游指南</Interpretation>
+	<AudioFile>373</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>374</Id>
+	<CategoryId>21</CategoryId>
+	<DeWord>die Reisende(r)</DeWord>
+	<CnWord>游客</CnWord>
+	<Interpretation>f.(m.)/&lt;按形容词变化&gt;旅行者，游客</Interpretation>
+	<AudioFile>374</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>375</Id>
+	<CategoryId>21</CategoryId>
+	<DeWord>der Reisepass</DeWord>
+	<CnWord>护照</CnWord>
+	<Interpretation>m.-es,¨e（出国）旅行护照</Interpretation>
+	<AudioFile>375</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>376</Id>
+	<CategoryId>21</CategoryId>
+	<DeWord>die Reiseroute</DeWord>
+	<CnWord>旅行路线</CnWord>
+	<Interpretation>f.-,-n 旅行路线，旅程</Interpretation>
+	<AudioFile>376</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>377</Id>
+	<CategoryId>21</CategoryId>
+	<DeWord>der Rucksack</DeWord>
+	<CnWord>背包</CnWord>
+	<Interpretation>m.-(e)s,¨e 旅行背包，背囊</Interpretation>
+	<AudioFile>377</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>378</Id>
+	<CategoryId>21</CategoryId>
+	<DeWord>das Reiseziel</DeWord>
+	<CnWord>旅行目的地</CnWord>
+	<Interpretation>n.-(e)s,-e 旅行目的地</Interpretation>
+	<AudioFile>378</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>379</Id>
+	<CategoryId>21</CategoryId>
+	<DeWord>die Landschaft</DeWord>
+	<CnWord>风景</CnWord>
+	<Interpretation>f.-,-en ①风景，风光\n②地形，地区\n③风景画</Interpretation>
+	<AudioFile>379</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>380</Id>
+	<CategoryId>21</CategoryId>
+	<DeWord>das Visum</DeWord>
+	<CnWord>签证</CnWord>
+	<Interpretation>n.-s,...sa/sen[拉]（护照上的）签证</Interpretation>
+	<AudioFile>380</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>381</Id>
+	<CategoryId>21</CategoryId>
+	<DeWord>die Spiegelreflexkamera</DeWord>
+	<CnWord>单反相机</CnWord>
+	<Interpretation>f.-,-s 单反相机</Interpretation>
+	<AudioFile>381</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>382</Id>
+	<CategoryId>21</CategoryId>
+	<DeWord>besuchen</DeWord>
+	<CnWord>参观，访问</CnWord>
+	<Interpretation>V.t. ①访问，拜访，探望\n②参观，游览\n③为··出诊\n④出席，参加</Interpretation>
+	<AudioFile>382</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>383</Id>
+	<CategoryId>21</CategoryId>
+	<DeWord>der Urlaub</DeWord>
+	<CnWord>度假，假期</CnWord>
+	<Interpretation>m.-(e)s,-e ①假，假期\n②休假，度假，休养</Interpretation>
+	<AudioFile>383</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>384</Id>
+	<CategoryId>21</CategoryId>
+	<DeWord>das Landschaftsschutzgebiet</DeWord>
+	<CnWord>风景保护区</CnWord>
+	<Interpretation>n.-(e)s,-e 自然保护区，风景保护区</Interpretation>
+	<AudioFile>384</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>385</Id>
+	<CategoryId>21</CategoryId>
+	<DeWord>das Flugticket</DeWord>
+	<CnWord>飞机票</CnWord>
+	<Interpretation>n.-s,-s 飞机票</Interpretation>
+	<AudioFile>385</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>386</Id>
+	<CategoryId>21</CategoryId>
+	<DeWord>die Flugreise</DeWord>
+	<CnWord>乘飞机旅行</CnWord>
+	<Interpretation>f.-,-n乘飞机旅行</Interpretation>
+	<AudioFile>386</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>387</Id>
+	<CategoryId>21</CategoryId>
+	<DeWord>die Bahnfahrt</DeWord>
+	<CnWord>乘火车（旅行）</CnWord>
+	<Interpretation>f.-,-en 乘火车（旅行）</Interpretation>
+	<AudioFile>387</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>388</Id>
+	<CategoryId>21</CategoryId>
+	<DeWord>erreichen</DeWord>
+	<CnWord>到达，实现</CnWord>
+	<Interpretation>V.t. ①伸手够到\n②到达，抵达\n③达到，实现\n④与···联系上</Interpretation>
+	<AudioFile>388</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>389</Id>
+	<CategoryId>21</CategoryId>
+	<DeWord>abreisen</DeWord>
+	<CnWord>出发</CnWord>
+	<Interpretation>V.i.(s.) 动身，启程，出发</Interpretation>
+	<AudioFile>389</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>390</Id>
+	<CategoryId>21</CategoryId>
+	<DeWord>wandern</DeWord>
+	<CnWord>徒步旅行</CnWord>
+	<Interpretation>V.i.(s.)①徒步旅行，漫游\n②（动物）定期迁徙，（鱼类）洄游\n③【转】思想游移，徘徊\n④（文化）传播，流传到\n⑤【转】送到；落到</Interpretation>
+	<AudioFile>390</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>391</Id>
+	<CategoryId>22</CategoryId>
+	<DeWord>der Termin</DeWord>
+	<CnWord>约会，预约</CnWord>
+	<Interpretation>m.-s,-e ①日子，日期\n②（规定的）日期，期限\n③（约定的）时间，预约，约会\n④【律】开庭日，审讯期，传讯期</Interpretation>
+	<AudioFile>391</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>392</Id>
+	<CategoryId>22</CategoryId>
+	<DeWord>halo</DeWord>
+	<CnWord>你好</CnWord>
+	<Interpretation>Int.喂！嗨！</Interpretation>
+	<AudioFile>392</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>393</Id>
+	<CategoryId>22</CategoryId>
+	<DeWord>tschüs</DeWord>
+	<CnWord>再见</CnWord>
+	<Interpretation>Int.【口】再见</Interpretation>
+	<AudioFile>393</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>394</Id>
+	<CategoryId>22</CategoryId>
+	<DeWord>danke</DeWord>
+	<CnWord>谢谢</CnWord>
+	<Interpretation>Int.谢谢</Interpretation>
+	<AudioFile>394</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>395</Id>
+	<CategoryId>22</CategoryId>
+	<DeWord>danken</DeWord>
+	<CnWord>感谢，感激</CnWord>
+	<Interpretation>I  V.i.①&lt;jmdm.(für etw.)～&gt;对xx表示感谢\n②答谢\n II V.t.①&lt;jmdm.etw.～&gt;感谢，感激\n②&lt;jmdm.[einter Sache]etw.～&gt;【雅】归功于</Interpretation>
+	<AudioFile>395</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>396</Id>
+	<CategoryId>22</CategoryId>
+	<DeWord>bitte</DeWord>
+	<CnWord>请，好，没关系</CnWord>
+	<Interpretation>Int.①&lt;表示愿望或要求&gt;请\n②&lt;在问句中&gt;请问\n③&lt;回答问话或请求，表示同意&gt;行，好，可以，请吧\n④&lt;回答表示歉意或谢意的句子&gt;没关系，别客气\n⑤（请求对方重复一下自己没听懂的话）（Wie） bitte?您说什么？</Interpretation>
+	<AudioFile>396</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>397</Id>
+	<CategoryId>22</CategoryId>
+	<DeWord>entschuldigen</DeWord>
+	<CnWord>为xx请求原谅，道歉</CnWord>
+	<Interpretation>I V.t.①&lt;etw.～&gt;原谅，为xx辩解\n②替xx请假\n③原谅 II refl.&lt;sich ～&gt;①道歉，请求原谅\n②【口】请假</Interpretation>
+	<AudioFile>397</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>398</Id>
+	<CategoryId>22</CategoryId>
+	<DeWord>die Entschuldigung</DeWord>
+	<CnWord>对不起</CnWord>
+	<Interpretation>f.-,-en ①原谅\n②道歉，抱歉\n③请假\n④【口】请假条\n⑤申辩，辩解\n⑥托词，借口</Interpretation>
+	<AudioFile>398</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>399</Id>
+	<CategoryId>22</CategoryId>
+	<DeWord>helfen</DeWord>
+	<CnWord>帮助</CnWord>
+	<Interpretation>V.i.①&lt;jmdm ～&gt;帮助，帮忙，援助，救济\n②治好\n③&lt;etw. hilft&gt;有效，生效，见效，有益，有利</Interpretation>
+	<AudioFile>399</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>400</Id>
+	<CategoryId>22</CategoryId>
+	<DeWord>ja</DeWord>
+	<CnWord>是的，一定</CnWord>
+	<Interpretation>Adv.1 &lt;重读&gt;①&lt;表示赞同、确认&gt;是的，对，行，可以\n②&lt;对别人的说法表示惊讶、或怀疑，或谨慎地强调自己说话的正确性&gt;真的吗，是吗，哦\n③（强调愿望和要求）一定，非得\n④【口】&lt;引出一个句子，或停顿、或争取时间思考&gt;嗯，对呀，是呀\n 2&lt;非重读&gt; ①&lt;加强语气&gt;真的，的确\n②&lt;强调下文更进一层的意思&gt;甚至，连···也···\n③&lt;加强祈使语气，表示警告和威胁&gt;千万，一定，知道吗</Interpretation>
+	<AudioFile>400</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>401</Id>
+	<CategoryId>22</CategoryId>
+	<DeWord>nein</DeWord>
+	<CnWord>不</CnWord>
+	<Interpretation>Adv.①&lt;表示拒绝或反对的回答&gt;不，不是，不对，不行\n②&lt;表示程度增加&gt;而是，更进一步，简直是\n③&lt;用于跟句子并列&gt;不\n④&lt;用于否定句中，期待对疑问或请求给予一个肯定的答复&gt;不是(吗)</Interpretation>
+	<AudioFile>401</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>402</Id>
+	<CategoryId>22</CategoryId>
+	<DeWord>der Mann</DeWord>
+	<CnWord>男人</CnWord>
+	<Interpretation>m.-(e)s,¨er/- ①&lt;复数:¨er&gt;成年男子，男人\n②&lt;复数:-,用于固定短语或在数词后面作为数量单位&gt;人，人员</Interpretation>
+	<AudioFile>402</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>403</Id>
+	<CategoryId>22</CategoryId>
+	<DeWord>die Frau</DeWord>
+	<CnWord>女人</CnWord>
+	<Interpretation>f.-,-en ①女人，女子，妇女，妇人\n②妻子\n③夫人，太太</Interpretation>
+	<AudioFile>403</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>404</Id>
+	<CategoryId>22</CategoryId>
+	<DeWord>das Geschlecht</DeWord>
+	<CnWord>性别</CnWord>
+	<Interpretation>n.-(e)s,-er I z?hlb.①性别\n②种属，种\n③家族，宗族\n④【雅】世代，代，后裔 II unz.①生殖器\n②性欲</Interpretation>
+	<AudioFile>404</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>405</Id>
+	<CategoryId>22</CategoryId>
+	<DeWord>das Alter</DeWord>
+	<CnWord>年龄</CnWord>
+	<Interpretation>n.-s,unz. ①年龄，年岁\n②老年，晚年\n③老年人</Interpretation>
+	<AudioFile>405</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>406</Id>
+	<CategoryId>22</CategoryId>
+	<DeWord>die Nationalitöt</DeWord>
+	<CnWord>国籍</CnWord>
+	<Interpretation>f.-,-en ①国籍\n②【旧】（一个国家内的）民族，少数民族</Interpretation>
+	<AudioFile>406</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>407</Id>
+	<CategoryId>22</CategoryId>
+	<DeWord>die Körpergröße</DeWord>
+	<CnWord>身高</CnWord>
+	<Interpretation>f,-,-n 身长，身材，身高，体高</Interpretation>
+	<AudioFile>407</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>408</Id>
+	<CategoryId>22</CategoryId>
+	<DeWord>das Körpergewicht</DeWord>
+	<CnWord>体重</CnWord>
+	<Interpretation>n.-(e)s,unz. 体重</Interpretation>
+	<AudioFile>408</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>409</Id>
+	<CategoryId>22</CategoryId>
+	<DeWord>das ich</DeWord>
+	<CnWord>自己</CnWord>
+	<Interpretation>n.-(s),-(s) 自我，自己，本人</Interpretation>
+	<AudioFile>409</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>410</Id>
+	<CategoryId>22</CategoryId>
+	<DeWord>ich</DeWord>
+	<CnWord>我</CnWord>
+	<Interpretation>Pron. 我</Interpretation>
+	<AudioFile>410</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>411</Id>
+	<CategoryId>22</CategoryId>
+	<DeWord>sie</DeWord>
+	<CnWord>她，它</CnWord>
+	<Interpretation>Pron. ①&lt;人称代词，第三人称单数&gt;（指代阴性名词）她，它\n②&lt;人称代词，第三人称复数&gt;他们，她们，它们</Interpretation>
+	<AudioFile>411</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>412</Id>
+	<CategoryId>22</CategoryId>
+	<DeWord>Sie</DeWord>
+	<CnWord>您，您们</CnWord>
+	<Interpretation>Pron. &lt;人称代词，第二人称尊称单、复数&gt;您，您们（尊称）</Interpretation>
+	<AudioFile>412</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>413</Id>
+	<CategoryId>22</CategoryId>
+	<DeWord>der Mediziner</DeWord>
+	<CnWord>医生</CnWord>
+	<Interpretation>m.-s,- ①医生\n②医科大学生</Interpretation>
+	<AudioFile>413</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>414</Id>
+	<CategoryId>22</CategoryId>
+	<DeWord>die Polizei</DeWord>
+	<CnWord>警察</CnWord>
+	<Interpretation>f.-,unz. ①公安部门，公安机关\n②公安人员，警察\n③公安局，警察局；派出所</Interpretation>
+	<AudioFile>414</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>415</Id>
+	<CategoryId>22</CategoryId>
+	<DeWord>das Liebespaar</DeWord>
+	<CnWord>情侣</CnWord>
+	<Interpretation>n.-(e)s,-e 情侣</Interpretation>
+	<AudioFile>415</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>416</Id>
+	<CategoryId>22</CategoryId>
+	<DeWord>der Mitschüler</DeWord>
+	<CnWord>同学</CnWord>
+	<Interpretation>m.-s,- 同学</Interpretation>
+	<AudioFile>416</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>417</Id>
+	<CategoryId>22</CategoryId>
+	<DeWord>der Freund</DeWord>
+	<CnWord>朋友</CnWord>
+	<Interpretation>m.-(e)s,-e ①朋友，志同道合者，同志\n②【口】男朋友，对象\n③爱好者</Interpretation>
+	<AudioFile>417</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>418</Id>
+	<CategoryId>22</CategoryId>
+	<DeWord>die Familie</DeWord>
+	<CnWord>家庭</CnWord>
+	<Interpretation>f.-,-n ①家庭\n②家族\n③【生】科</Interpretation>
+	<AudioFile>418</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>419</Id>
+	<CategoryId>22</CategoryId>
+	<DeWord>der Kollege</DeWord>
+	<CnWord>同事</CnWord>
+	<Interpretation>m.-n,-n 同事，同僚，同行</Interpretation>
+	<AudioFile>419</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>420</Id>
+	<CategoryId>23</CategoryId>
+	<DeWord>das Lebensmittel</DeWord>
+	<CnWord>食物</CnWord>
+	<Interpretation>n.-s,- (多用复数)食物，食品</Interpretation>
+	<AudioFile>420</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>421</Id>
+	<CategoryId>23</CategoryId>
+	<DeWord>das Frühstück </DeWord>
+	<CnWord>早餐</CnWord>
+	<Interpretation>n.-s,-e ①早餐，早点\n②【口】早餐(休息)时间</Interpretation>
+	<AudioFile>421</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>422</Id>
+	<CategoryId>23</CategoryId>
+	<DeWord>das Mittagessen</DeWord>
+	<CnWord>午餐</CnWord>
+	<Interpretation>n.-s,-午餐</Interpretation>
+	<AudioFile>422</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>423</Id>
+	<CategoryId>23</CategoryId>
+	<DeWord>das Abendessen </DeWord>
+	<CnWord>晚餐</CnWord>
+	<Interpretation>n.-s,-晚饭，晚餐</Interpretation>
+	<AudioFile>423</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>424</Id>
+	<CategoryId>23</CategoryId>
+	<DeWord>das Fleisch</DeWord>
+	<CnWord>肉</CnWord>
+	<Interpretation>n.-(e)s,unz.①肉，肌肉\n②(食用)肉\n③果肉\n④【转】(人的)肉体</Interpretation>
+	<AudioFile>424</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>425</Id>
+	<CategoryId>23</CategoryId>
+	<DeWord>das Rind</DeWord>
+	<CnWord>牛，牛肉</CnWord>
+	<Interpretation>n.-(e)s,-er 牛，牛肉</Interpretation>
+	<AudioFile>425</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>426</Id>
+	<CategoryId>23</CategoryId>
+	<DeWord>die Wurst</DeWord>
+	<CnWord>香肠</CnWord>
+	<Interpretation>f.-,¨e ①香肠，腊肠\n②香肠状物</Interpretation>
+	<AudioFile>426</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>427</Id>
+	<CategoryId>23</CategoryId>
+	<DeWord>der Schinken</DeWord>
+	<CnWord>腿肉，火腿</CnWord>
+	<Interpretation>m.-s,- ①（多指猪的）腿肉，火腿\n②【口，谑，贬】大部头的书；蹩脚的大幅油画；蹩脚的戏剧或电影</Interpretation>
+	<AudioFile>427</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>428</Id>
+	<CategoryId>23</CategoryId>
+	<DeWord>der Aufschnitt</DeWord>
+	<CnWord>切成片的肉食</CnWord>
+	<Interpretation>m.-(e)s,unz.（香肠，火腿或干酪）切片</Interpretation>
+	<AudioFile>428</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>429</Id>
+	<CategoryId>23</CategoryId>
+	<DeWord>das Brot</DeWord>
+	<CnWord>面包，面包片</CnWord>
+	<Interpretation>n.-(e)s,-e①面包\n②大面包\n③面包片</Interpretation>
+	<AudioFile>429</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>430</Id>
+	<CategoryId>23</CategoryId>
+	<DeWord>das Brötchen</DeWord>
+	<CnWord>小面包</CnWord>
+	<Interpretation>n.-s,- 小面包</Interpretation>
+	<AudioFile>430</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>431</Id>
+	<CategoryId>23</CategoryId>
+	<DeWord>der Käse</DeWord>
+	<CnWord>奶酪</CnWord>
+	<Interpretation>m.-s,- ①奶酪，干酪\n②【俗，贬】废话，胡扯，胡闹</Interpretation>
+	<AudioFile>431</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>432</Id>
+	<CategoryId>23</CategoryId>
+	<DeWord>der Kuchen</DeWord>
+	<CnWord>蛋糕，糕点</CnWord>
+	<Interpretation>m.-s,-①蛋糕，糕点\n②糊状物，(油料)渣滓</Interpretation>
+	<AudioFile>432</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>433</Id>
+	<CategoryId>23</CategoryId>
+	<DeWord>die Butter</DeWord>
+	<CnWord>黄油</CnWord>
+	<Interpretation>f.-,unz.（食用）黄油</Interpretation>
+	<AudioFile>433</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>434</Id>
+	<CategoryId>23</CategoryId>
+	<DeWord>das Ei</DeWord>
+	<CnWord>鸡蛋</CnWord>
+	<Interpretation>n.-(e)s,-er ①蛋，卵，卵细胞\n②鸡蛋\n③&lt;复数&gt;【俗】钱</Interpretation>
+	<AudioFile>434</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>435</Id>
+	<CategoryId>23</CategoryId>
+	<DeWord>der Zucker</DeWord>
+	<CnWord>糖</CnWord>
+	<Interpretation>m.-s,- ①糖，食糖\n②【口】糖尿病</Interpretation>
+	<AudioFile>435</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>436</Id>
+	<CategoryId>23</CategoryId>
+	<DeWord>der Salat</DeWord>
+	<CnWord>沙拉,生菜</CnWord>
+	<Interpretation>m.-(e)s,-e I unz.生菜 II z_hlb.色拉</Interpretation>
+	<AudioFile>436</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>437</Id>
+	<CategoryId>23</CategoryId>
+	<DeWord>die Suppe</DeWord>
+	<CnWord>汤</CnWord>
+	<Interpretation>f.-,-n 汤 || jmdm. die_versalzen 【口】使某人扫兴，坏某人的事，搅乱某人的计划</Interpretation>
+	<AudioFile>437</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>438</Id>
+	<CategoryId>23</CategoryId>
+	<DeWord>die Marmelade</DeWord>
+	<CnWord>果酱</CnWord>
+	<Interpretation>f.-,-n 果酱</Interpretation>
+	<AudioFile>438</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>440</Id>
+	<CategoryId>23</CategoryId>
+	<DeWord>die Nudeln</DeWord>
+	<CnWord>面条</CnWord>
+	<Interpretation>f.-,-n 面条</Interpretation>
+	<AudioFile>440</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>441</Id>
+	<CategoryId>23</CategoryId>
+	<DeWord>der Imbiss</DeWord>
+	<CnWord>小吃</CnWord>
+	<Interpretation>m.-s,-e 点心，小吃</Interpretation>
+	<AudioFile>441</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>442</Id>
+	<CategoryId>23</CategoryId>
+	<DeWord>der Pfefferkuchen</DeWord>
+	<CnWord>姜饼</CnWord>
+	<Interpretation>m.-s-（圣诞节食用的）姜味糕饼</Interpretation>
+	<AudioFile>442</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>443</Id>
+	<CategoryId>23</CategoryId>
+	<DeWord>der Kartoffelchip</DeWord>
+	<CnWord>炸土豆片</CnWord>
+	<Interpretation>m.-s,-s 炸土豆片</Interpretation>
+	<AudioFile>443</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>444</Id>
+	<CategoryId>23</CategoryId>
+	<DeWord>der Eisbecher</DeWord>
+	<CnWord>(配有水果、掼奶油等)大杯冰淇凌</CnWord>
+	<Interpretation>m.-s,-((配有水果、掼奶油等)大杯冰淇凌)</Interpretation>
+	<AudioFile>444</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>445</Id>
+	<CategoryId>23</CategoryId>
+	<DeWord>der Reis</DeWord>
+	<CnWord>米饭</CnWord>
+	<Interpretation>m.-es,unz.稻谷，米饭</Interpretation>
+	<AudioFile>445</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>446</Id>
+	<CategoryId>23</CategoryId>
+	<DeWord>das Wasser</DeWord>
+	<CnWord>水</CnWord>
+	<Interpretation>n.-s,¨①水\n②汗水，泪水，小便③水流\n④溶液||ins _ fallen 某事泡汤了（落空了）/sich über _ halten勉强维生，量入为出/auch nur mit _ kochen 做事十分平庸，没有特点</Interpretation>
+	<AudioFile>446</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>447</Id>
+	<CategoryId>23</CategoryId>
+	<DeWord>die Milch</DeWord>
+	<CnWord>牛奶，乳液</CnWord>
+	<Interpretation>f.-,unz ①奶，乳\n②牛奶，羊奶\n③（植物）乳液</Interpretation>
+	<AudioFile>447</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>448</Id>
+	<CategoryId>23</CategoryId>
+	<DeWord>der/das Kaffee</DeWord>
+	<CnWord>咖啡</CnWord>
+	<Interpretation> I m.-s,unz. ①咖啡\n②咖啡豆\n③咖啡饮料 II n.-s,-s &lt;德语化&gt;=Cafe 咖啡馆</Interpretation>
+	<AudioFile>448</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>449</Id>
+	<CategoryId>23</CategoryId>
+	<DeWord>das Bier</DeWord>
+	<CnWord>啤酒</CnWord>
+	<Interpretation>n.-(e)s,-e 啤酒</Interpretation>
+	<AudioFile>449</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>450</Id>
+	<CategoryId>24</CategoryId>
+	<DeWord>das Wetter</DeWord>
+	<CnWord>天气</CnWord>
+	<Interpretation>n.-s,unz.天气，气象||bei jmdm. gut～machen 消除某人不愉快的心情，使某人高兴起来</Interpretation>
+	<AudioFile>450</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>451</Id>
+	<CategoryId>24</CategoryId>
+	<DeWord>die Wettervorhersage</DeWord>
+	<CnWord>天气预报</CnWord>
+	<Interpretation>f.-,-n 天气预报</Interpretation>
+	<AudioFile>451</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>452</Id>
+	<CategoryId>24</CategoryId>
+	<DeWord>das Klima</DeWord>
+	<CnWord>气候，气氛</CnWord>
+	<Interpretation>n.-s,-s/-te①气候\n②【转】气氛，气候</Interpretation>
+	<AudioFile>452</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>453</Id>
+	<CategoryId>24</CategoryId>
+	<DeWord>die Wetterwarte</DeWord>
+	<CnWord>气象台</CnWord>
+	<Interpretation>f.-,-n 气象台，天气观测站</Interpretation>
+	<AudioFile>453</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>454</Id>
+	<CategoryId>24</CategoryId>
+	<DeWord>die Temperatur</DeWord>
+	<CnWord>温度</CnWord>
+	<Interpretation>f.-,-en[拉]①温度；气温；体温\n②【医】热度，发烧</Interpretation>
+	<AudioFile>454</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>455</Id>
+	<CategoryId>24</CategoryId>
+	<DeWord>die Luftfeuchtigkeit</DeWord>
+	<CnWord>湿度</CnWord>
+	<Interpretation>f.-,unz.空气湿度</Interpretation>
+	<AudioFile>455</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>456</Id>
+	<CategoryId>24</CategoryId>
+	<DeWord>die Luftfeuchtigkeit</DeWord>
+	<CnWord>空气</CnWord>
+	<Interpretation>f.-,¨e&lt;复数只用于【诗，雅】&gt;①空气，大气\n②室外\n③空间，天空，空中\n④微风，气流\n⑤【口】空间，空地方，间隙，余地</Interpretation>
+	<AudioFile>456</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>457</Id>
+	<CategoryId>24</CategoryId>
+	<DeWord>der Nebel</DeWord>
+	<CnWord>雾</CnWord>
+	<Interpretation>m.-s,- ①雾\n②烟雾，尘雾\n③【天】星云，星系\n④【转】朦胧，模糊</Interpretation>
+	<AudioFile>457</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>458</Id>
+	<CategoryId>24</CategoryId>
+	<DeWord>der Donner</DeWord>
+	<CnWord>雷，隆隆声</CnWord>
+	<Interpretation>m.-s,- ①雷，雷声\n②隆隆声</Interpretation>
+	<AudioFile>458</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>459</Id>
+	<CategoryId>24</CategoryId>
+	<DeWord>der Blitz</DeWord>
+	<CnWord>闪电</CnWord>
+	<Interpretation>m.-es,-e ①闪电\n② =Blitzlicht</Interpretation>
+	<AudioFile>459</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>460</Id>
+	<CategoryId>24</CategoryId>
+	<DeWord>nebelig</DeWord>
+	<CnWord>有雾的</CnWord>
+	<Interpretation>Adj.有雾的，多雾的，模糊不清的，朦胧的</Interpretation>
+	<AudioFile>460</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>461</Id>
+	<CategoryId>24</CategoryId>
+	<DeWord>nass</DeWord>
+	<CnWord>潮湿的</CnWord>
+	<Interpretation>Adj.湿的，潮湿的</Interpretation>
+	<AudioFile>461</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>462</Id>
+	<CategoryId>24</CategoryId>
+	<DeWord>trocken</DeWord>
+	<CnWord>干燥的，枯燥的</CnWord>
+	<Interpretation>Adj.①干的，干燥的，干旱的，干枯的，干涸的\n②干巴巴的，枯燥乏味的；就事论事的，不渲染的\n③（葡萄酒）酸涩的\n④【口】戒了酒瘾的||auf dem Trockenen sitzen 【口】经济拮据/ Seine Sch?fchen im Trockenen haben 【口】经济有保障</Interpretation>
+	<AudioFile>462</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>463</Id>
+	<CategoryId>24</CategoryId>
+	<DeWord>regenreich</DeWord>
+	<CnWord>要下雨的</CnWord>
+	<Interpretation>Adj. 要下雨的，多雨的</Interpretation>
+	<AudioFile>463</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>464</Id>
+	<CategoryId>24</CategoryId>
+	<DeWord>heiß</DeWord>
+	<CnWord>炎热的</CnWord>
+	<Interpretation>Adj.①热的，烫的，炎热的\n②激烈的，猛烈的\n③刺激性的，热情的，激动的\n④热烈的，热诚的\n⑤【口】（体育比赛中）夺标呼声最高的\n⑥快速而轻便的\n⑦【物】放射性强的</Interpretation>
+	<AudioFile>464</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>465</Id>
+	<CategoryId>24</CategoryId>
+	<DeWord>kalt</DeWord>
+	<CnWord>寒冷的</CnWord>
+	<Interpretation>Adj.①冷的，寒冷的\n②【转】（内心）冷漠的，冷酷的\n③【转】冷淡的\n④【转】冷静的，清醒的</Interpretation>
+	<AudioFile>465</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>466</Id>
+	<CategoryId>24</CategoryId>
+	<DeWord>kühl</DeWord>
+	<CnWord>凉爽的</CnWord>
+	<Interpretation>Adj.①凉的，清凉的，凉爽的\n②冷淡的，冷漠的，\n③冷静的，沉着的</Interpretation>
+	<AudioFile>466</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>467</Id>
+	<CategoryId>24</CategoryId>
+	<DeWord>sonnig</DeWord>
+	<CnWord>晴朗的</CnWord>
+	<Interpretation>Adj.①晴朗的，阳光明媚的\n②向阳的，阳光充足的\n③开朗的，乐观的，愉快的</Interpretation>
+	<AudioFile>467</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>468</Id>
+	<CategoryId>24</CategoryId>
+	<DeWord>wolkig</DeWord>
+	<CnWord>多云的，阴天的</CnWord>
+	<Interpretation>Adj.①多云的，阴天的\n②如云的，云一般的\n③模糊不清的，昏暗的，混沌的</Interpretation>
+	<AudioFile>468</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>469</Id>
+	<CategoryId>24</CategoryId>
+	<DeWord>windig</DeWord>
+	<CnWord>多风的</CnWord>
+	<Interpretation>Adj.①有风的，多风的\n②【口，贬】不可信赖的，不可靠的，轻浮的</Interpretation>
+	<AudioFile>469</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>470</Id>
+	<CategoryId>24</CategoryId>
+	<DeWord>schneien</DeWord>
+	<CnWord>下雪</CnWord>
+	<Interpretation>V.i&lt;es schneit&gt;下雪</Interpretation>
+	<AudioFile>470</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>471</Id>
+	<CategoryId>24</CategoryId>
+	<DeWord>frieren</DeWord>
+	<CnWord>霜冻</CnWord>
+	<Interpretation>I V.i.(h.)①感到寒冷\n②&lt;es friert&gt;.上冻，霜冻  II V.i.（s.）结冰，冻结</Interpretation>
+	<AudioFile>471</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>472</Id>
+	<CategoryId>24</CategoryId>
+	<DeWord>regnen</DeWord>
+	<CnWord>下雨</CnWord>
+	<Interpretation>V.i.下雨</Interpretation>
+	<AudioFile>472</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>473</Id>
+	<CategoryId>24</CategoryId>
+	<DeWord>der Regenschirm</DeWord>
+	<CnWord>雨伞</CnWord>
+	<Interpretation>m.-(e)s,-e 雨伞</Interpretation>
+	<AudioFile>473</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>474</Id>
+	<CategoryId>24</CategoryId>
+	<DeWord>der Himmel</DeWord>
+	<CnWord>天空</CnWord>
+	<Interpretation>m.-s,- ①天，天空\n②顶，天盖，华盖\n③【宗】天堂，天国，极乐世界</Interpretation>
+	<AudioFile>474</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>475</Id>
+	<CategoryId>24</CategoryId>
+	<DeWord>die Sonne</DeWord>
+	<CnWord>太阳，阳光</CnWord>
+	<Interpretation>f.-,-n ①太阳，日\n②阳光，日光</Interpretation>
+	<AudioFile>475</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>476</Id>
+	<CategoryId>24</CategoryId>
+	<DeWord>der Stern</DeWord>
+	<CnWord>星星，星座</CnWord>
+	<Interpretation>m.-(e)s,-e①星，星体\n②星座，星宿，星象\n③星形物\n④明星\n⑤（宾馆、饭店等的）星级|| ～e sehen 【口】眼冒金星 / nach den ～ en greifen 【雅】伸手去摘星星（意指追求可望而不可即的东西）/（noch） in den ～ en (geschrieben) stehen （某事）还很难预料 / mit jmdm.geht ein  neuer～auf.【雅】某人崭露头角/etw. steht unter einem guten（或 günstigen 或glücklichen）～【雅】某事吉星高照，一帆风顺/unter fremden ～en 【雅】在异乡</Interpretation>
+	<AudioFile>476</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>477</Id>
+	<CategoryId>24</CategoryId>
+	<DeWord>der Mond</DeWord>
+	<CnWord>月亮</CnWord>
+	<Interpretation>m.-(e)s,-e ①月球，月亮\n②【天】卫星\n③【俗，谑】秃头，秃顶</Interpretation>
+	<AudioFile>477</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>478</Id>
+	<CategoryId>25</CategoryId>
+	<DeWord>das Badezimmer</DeWord>
+	<CnWord>浴室</CnWord>
+	<Interpretation>n.-s,- 浴室，洗澡间</Interpretation>
+	<AudioFile>478</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>479</Id>
+	<CategoryId>25</CategoryId>
+	<DeWord>die Badewanne</DeWord>
+	<CnWord>浴缸</CnWord>
+	<Interpretation>f.-,-n 浴缸，浴盆</Interpretation>
+	<AudioFile>479</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>480</Id>
+	<CategoryId>25</CategoryId>
+	<DeWord>das Duschgel</DeWord>
+	<CnWord>沐浴露</CnWord>
+	<Interpretation>n.-s,-e/-s 浴液</Interpretation>
+	<AudioFile>480</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>481</Id>
+	<CategoryId>25</CategoryId>
+	<DeWord>die Haarbürste</DeWord>
+	<CnWord>梳子</CnWord>
+	<Interpretation>f.-,-n 梳子</Interpretation>
+	<AudioFile>481</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>482</Id>
+	<CategoryId>25</CategoryId>
+	<DeWord>das Handtuch</DeWord>
+	<CnWord>毛巾</CnWord>
+	<Interpretation>n.-(e)s,¨er 毛巾，手巾 || das _werfen 【口】放弃</Interpretation>
+	<AudioFile>482</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>483</Id>
+	<CategoryId>25</CategoryId>
+	<DeWord>der Schwamm</DeWord>
+	<CnWord>海绵</CnWord>
+	<Interpretation>m.-(e)s,¨e①菌类，蘑菇\n②【动】海绵（动物门），多空动物门\n③海绵（多孔材料）|| _drüber！【口】别再提这事了！</Interpretation>
+	<AudioFile>483</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>484</Id>
+	<CategoryId>25</CategoryId>
+	<DeWord>das Shampoo</DeWord>
+	<CnWord>洗发水</CnWord>
+	<Interpretation>n.-s,-s 洗发剂，香波</Interpretation>
+	<AudioFile>484</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>485</Id>
+	<CategoryId>25</CategoryId>
+	<DeWord>der Spiegel</DeWord>
+	<CnWord>镜子</CnWord>
+	<Interpretation>m.-s,- ①镜子\n②（医用）反射镜，（内）窥镜\n③（水）面，平面\n④【转】反映，写照|| jmdm.den _ vorhalten ①给某人照照镜子\n②【转】指出某人的错误（或缺点）</Interpretation>
+	<AudioFile>485</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>486</Id>
+	<CategoryId>25</CategoryId>
+	<DeWord>die Toilette</DeWord>
+	<CnWord>马桶</CnWord>
+	<Interpretation>f.-,-n [法] I z_hlb.①马桶，便桶\n②厕所，盥洗室\n③梳妆台 II unz.梳妆打扮，盥洗</Interpretation>
+	<AudioFile>486</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>487</Id>
+	<CategoryId>25</CategoryId>
+	<DeWord>das Toilettenpapier</DeWord>
+	<CnWord>手纸</CnWord>
+	<Interpretation>n.-s,unz.卫生纸，手纸</Interpretation>
+	<AudioFile>487</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>488</Id>
+	<CategoryId>25</CategoryId>
+	<DeWord>die Toilettenseife</DeWord>
+	<CnWord>香皂</CnWord>
+	<Interpretation>f.-,-n 香皂</Interpretation>
+	<AudioFile>488</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>489</Id>
+	<CategoryId>25</CategoryId>
+	<DeWord>das Waschbecken</DeWord>
+	<CnWord>盥洗盆</CnWord>
+	<Interpretation>n.-s -（大多固定在墙上的）盥洗盆，洗脸盆，洗脸池</Interpretation>
+	<AudioFile>489</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>490</Id>
+	<CategoryId>25</CategoryId>
+	<DeWord>der Waschlappen</DeWord>
+	<CnWord>浴巾</CnWord>
+	<Interpretation>m.-s,-①毛巾，浴巾\n②【口，贬】胆小鬼，懦夫</Interpretation>
+	<AudioFile>490</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>491</Id>
+	<CategoryId>25</CategoryId>
+	<DeWord>die Zahnpasta</DeWord>
+	<CnWord>牙膏</CnWord>
+	<Interpretation>f.-,unz. 牙膏</Interpretation>
+	<AudioFile>491</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>492</Id>
+	<CategoryId>25</CategoryId>
+	<DeWord>die Zahnbürste</DeWord>
+	<CnWord>牙刷</CnWord>
+	<Interpretation>f.-,-n 牙刷</Interpretation>
+	<AudioFile>492</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>493</Id>
+	<CategoryId>26</CategoryId>
+	<DeWord>der Fußball</DeWord>
+	<CnWord>足球</CnWord>
+	<Interpretation>m.-es ①足球\n② Fu_ball speilen 踢足球</Interpretation>
+	<AudioFile>493</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>494</Id>
+	<CategoryId>26</CategoryId>
+	<DeWord>das Stadion</DeWord>
+	<CnWord>体育场，体育馆</CnWord>
+	<Interpretation>n.-s,�dien 体育场，体育馆</Interpretation>
+	<AudioFile>494</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>495</Id>
+	<CategoryId>26</CategoryId>
+	<DeWord>das Auswärtsspiel</DeWord>
+	<CnWord>【体】客场比赛</CnWord>
+	<Interpretation>n.-(e)s,-e【体】客场比赛</Interpretation>
+	<AudioFile>495</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>496</Id>
+	<CategoryId>26</CategoryId>
+	<DeWord>die Nationalelf</DeWord>
+	<CnWord>国家队</CnWord>
+	<Interpretation>f.-,unz.【体】国家(足球)队</Interpretation>
+	<AudioFile>496</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>497</Id>
+	<CategoryId>26</CategoryId>
+	<DeWord>remis</DeWord>
+	<CnWord>平局的</CnWord>
+	<Interpretation>Adj.[法]【体】不分胜负的，未决的</Interpretation>
+	<AudioFile>497</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>498</Id>
+	<CategoryId>26</CategoryId>
+	<DeWord>das Endspiel</DeWord>
+	<CnWord>决赛</CnWord>
+	<Interpretation>n.-(e)s,-e 【体】决赛</Interpretation>
+	<AudioFile>498</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>499</Id>
+	<CategoryId>26</CategoryId>
+	<DeWord>der Abwehrspieler</DeWord>
+	<CnWord>防守队员</CnWord>
+	<Interpretation>m.-s,- 防守队员</Interpretation>
+	<AudioFile>499</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>500</Id>
+	<CategoryId>26</CategoryId>
+	<DeWord>der Torhüter</DeWord>
+	<CnWord>守门员,看门人</CnWord>
+	<Interpretation>m.-s -①看门人\n②【体】守门员</Interpretation>
+	<AudioFile>500</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>501</Id>
+	<CategoryId>26</CategoryId>
+	<DeWord>der Schiedsrichter</DeWord>
+	<CnWord>裁判</CnWord>
+	<Interpretation>m.-s,-  ①【律】仲裁人，公断人\n②【体】裁判(员)</Interpretation>
+	<AudioFile>501</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>502</Id>
+	<CategoryId>26</CategoryId>
+	<DeWord>die Halbzeit</DeWord>
+	<CnWord>半场</CnWord>
+	<Interpretation>f.-,unz.【体】①(球场的)半场(时间)\n②上下半场之间的休息时间</Interpretation>
+	<AudioFile>502</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>503</Id>
+	<CategoryId>26</CategoryId>
+	<DeWord>das Mittelfeld</DeWord>
+	<CnWord>中场</CnWord>
+	<Interpretation>n.-(e)s,unz. ①(一个面积的)中央区域，中央部分\n②(徽章的)中心部分\n③【体】(球场的)中场，中场队员\n④【语】(句子的)中场，中段</Interpretation>
+	<AudioFile>503</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>504</Id>
+	<CategoryId>26</CategoryId>
+	<DeWord>der Strafraum</DeWord>
+	<CnWord>禁区</CnWord>
+	<Interpretation>m.-(e)s,¨e 【体】(足球）罚球区</Interpretation>
+	<AudioFile>504</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>505</Id>
+	<CategoryId>26</CategoryId>
+	<DeWord>zuspielen</DeWord>
+	<CnWord>传球</CnWord>
+	<Interpretation>I V.t./V.i. 传球 II V.t.(悄悄地)传递，提供(消息等)</Interpretation>
+	<AudioFile>505</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>506</Id>
+	<CategoryId>26</CategoryId>
+	<DeWord>dribbeln</DeWord>
+	<CnWord>带球过人</CnWord>
+	<Interpretation>V.I.【体】(足球中的)带球过人</Interpretation>
+	<AudioFile>506</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>507</Id>
+	<CategoryId>26</CategoryId>
+	<DeWord>das Abseits</DeWord>
+	<CnWord>越位</CnWord>
+	<Interpretation>n.-,unz.【体】越位</Interpretation>
+	<AudioFile>507</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>508</Id>
+	<CategoryId>26</CategoryId>
+	<DeWord>der Elfmeter</DeWord>
+	<CnWord>点球</CnWord>
+	<Interpretation>m.-s,- 【体】点球(足球赛中距离球门十一米处的罚球)</Interpretation>
+	<AudioFile>508</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>509</Id>
+	<CategoryId>26</CategoryId>
+	<DeWord>der Freistoß</DeWord>
+	<CnWord>任意球</CnWord>
+	<Interpretation>m.-es,¨e【体】(足球)任意球</Interpretation>
+	<AudioFile>509</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>510</Id>
+	<CategoryId>26</CategoryId>
+	<DeWord>der Strafstoß</DeWord>
+	<CnWord>罚球</CnWord>
+	<Interpretation>m.-es,¨e【体】(足球的)罚球</Interpretation>
+	<AudioFile>510</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>511</Id>
+	<CategoryId>26</CategoryId>
+	<DeWord>der Eckball</DeWord>
+	<CnWord>角球</CnWord>
+	<Interpretation>m.-(e)s,¨e 【体】角球</Interpretation>
+	<AudioFile>511</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>512</Id>
+	<CategoryId>26</CategoryId>
+	<DeWord>der Einwurf</DeWord>
+	<CnWord>界外球</CnWord>
+	<Interpretation>m,-(e)s,¨e ①投入，掷入\n②【体】发界外球\n③【转】反对的理由，反驳，异议</Interpretation>
+	<AudioFile>512</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>513</Id>
+	<CategoryId>26</CategoryId>
+	<DeWord>das Tor</DeWord>
+	<CnWord>(射)进球(门)</CnWord>
+	<Interpretation>n.-(e)s,-e ①大门\n②入口\n③【体】球门\n④【体】射中球门，进球</Interpretation>
+	<AudioFile>513</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>514</Id>
+	<CategoryId>26</CategoryId>
+	<DeWord>flanken</DeWord>
+	<CnWord>外围传球，边线传中</CnWord>
+	<Interpretation>V.i. ① 侧腾跃(下) ②外围传球，边线传中</Interpretation>
+	<AudioFile>514</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>515</Id>
+	<CategoryId>26</CategoryId>
+	<DeWord>das Foul</DeWord>
+	<CnWord>犯规</CnWord>
+	<Interpretation>n.-s,-s [英]【体】犯规</Interpretation>
+	<AudioFile>515</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>516</Id>
+	<CategoryId>26</CategoryId>
+	<DeWord>die rote Karte</DeWord>
+	<CnWord>红牌</CnWord>
+	<Interpretation>f.-,-n 红牌</Interpretation>
+	<AudioFile>516</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>517</Id>
+	<CategoryId>26</CategoryId>
+	<DeWord>die Gelbe Karte</DeWord>
+	<CnWord>黄牌</CnWord>
+	<Interpretation>f.-,-n 黄牌</Interpretation>
+	<AudioFile>517</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>518</Id>
+	<CategoryId>26</CategoryId>
+	<DeWord>der Punktgewinn</DeWord>
+	<CnWord>得分</CnWord>
+	<Interpretation>m.-(e)s,-e【体】得分</Interpretation>
+	<AudioFile>518</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>519</Id>
+	<CategoryId>26</CategoryId>
+	<DeWord>der Pokal</DeWord>
+	<CnWord>奖杯,高脚酒杯</CnWord>
+	<Interpretation>m.-s,-e ①高脚酒杯\n②奖杯，优胜杯</Interpretation>
+	<AudioFile>519</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>520</Id>
+	<CategoryId>26</CategoryId>
+	<DeWord>der Zuschauer</DeWord>
+	<CnWord>旁观者，观众</CnWord>
+	<Interpretation>m.-s,- ① 旁观者\n②观众</Interpretation>
+	<AudioFile>520</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>521</Id>
+	<CategoryId>26</CategoryId>
+	<DeWord>der Kopfball</DeWord>
+	<CnWord>头球</CnWord>
+	<Interpretation>m.-(e)s e(足球比赛时的)头球</Interpretation>
+	<AudioFile>521</AudioFile>
+</RECORD>
+<RECORD>
+	<Id>522</Id>
+	<CategoryId>26</CategoryId>
+	<DeWord>die Tragbahre</DeWord>
+	<CnWord>担架</CnWord>
+	<Interpretation>f.-,-n 担架</Interpretation>
+	<AudioFile>522</AudioFile>
+</RECORD>
+</RECORDS>

@@ -42,13 +42,12 @@
 		2E5E456D1D028F8700FF318D /* PsdModiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E456C1D028F8700FF318D /* PsdModiViewController.m */; };
 		2E5E45701D028FAA00FF318D /* EmailModiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E456F1D028FAA00FF318D /* EmailModiViewController.m */; };
 		2E5E45731D028FC000FF318D /* NameModiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E45721D028FC000FF318D /* NameModiViewController.m */; };
-		2E5E45861D040E4D00FF318D /* Words.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2E5E45851D040E4D00FF318D /* Words.xml */; };
-		2E5E45881D0411DB00FF318D /* Words.xml in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2E5E45851D040E4D00FF318D /* Words.xml */; };
 		2E65851A1D06622D009AC2D7 /* HJCAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6585191D06622D009AC2D7 /* HJCAccount.m */; };
 		2E6585761D069FA6009AC2D7 /* XMLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6585751D069FA6009AC2D7 /* XMLDictionary.m */; };
 		2E65857B1D06B037009AC2D7 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2E65857A1D06B037009AC2D7 /* Settings.bundle */; };
 		2EC50C011D073E0200A1D655 /* SoftwareSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2EC50C001D073E0200A1D655 /* SoftwareSettings.plist */; };
 		2ED115311D0C0BCC006E568D /* UserAccount.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2ED115301D0C0BCC006E568D /* UserAccount.plist */; };
+		2ED115331D0C66CA006E568D /* Words.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2ED115321D0C66CA006E568D /* Words.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,7 +74,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 7;
 			files = (
-				2E5E45881D0411DB00FF318D /* Words.xml in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,7 +149,6 @@
 		2E5E456F1D028FAA00FF318D /* EmailModiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailModiViewController.m; sourceTree = "<group>"; };
 		2E5E45711D028FC000FF318D /* NameModiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NameModiViewController.h; sourceTree = "<group>"; };
 		2E5E45721D028FC000FF318D /* NameModiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NameModiViewController.m; sourceTree = "<group>"; };
-		2E5E45851D040E4D00FF318D /* Words.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Words.xml; path = ../../Words.xml; sourceTree = "<group>"; };
 		2E6585181D06622D009AC2D7 /* HJCAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJCAccount.h; sourceTree = "<group>"; };
 		2E6585191D06622D009AC2D7 /* HJCAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJCAccount.m; sourceTree = "<group>"; };
 		2E6585741D069FA6009AC2D7 /* XMLDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLDictionary.h; sourceTree = "<group>"; };
@@ -159,6 +156,7 @@
 		2E65857A1D06B037009AC2D7 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		2EC50C001D073E0200A1D655 /* SoftwareSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SoftwareSettings.plist; sourceTree = "<group>"; };
 		2ED115301D0C0BCC006E568D /* UserAccount.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UserAccount.plist; sourceTree = "<group>"; };
+		2ED115321D0C66CA006E568D /* Words.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Words.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -457,7 +455,7 @@
 			children = (
 				2ED115301D0C0BCC006E568D /* UserAccount.plist */,
 				2EC50C001D073E0200A1D655 /* SoftwareSettings.plist */,
-				2E5E45851D040E4D00FF318D /* Words.xml */,
+				2ED115321D0C66CA006E568D /* Words.xml */,
 			);
 			name = Resource;
 			path = Drawords;
@@ -572,10 +570,10 @@
 			files = (
 				2E5E45271CFF18ED00FF318D /* Images.xcassets in Resources */,
 				2E5E455A1D018F0E00FF318D /* MBProgressHUD.bundle in Resources */,
+				2ED115331D0C66CA006E568D /* Words.xml in Resources */,
 				2E5E44CB1CFE7D1700FF318D /* LaunchScreen.storyboard in Resources */,
 				2EC50C011D073E0200A1D655 /* SoftwareSettings.plist in Resources */,
 				2E5E44C81CFE7D1700FF318D /* Assets.xcassets in Resources */,
-				2E5E45861D040E4D00FF318D /* Words.xml in Resources */,
 				2E65857B1D06B037009AC2D7 /* Settings.bundle in Resources */,
 				2ED115311D0C0BCC006E568D /* UserAccount.plist in Resources */,
 			);
